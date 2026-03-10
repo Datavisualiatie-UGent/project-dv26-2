@@ -32,4 +32,4 @@ files = [
 
 if __name__ == "__main__":
     for f in files:
-        convert_from_google_to_decent_csv(f"../assets/nato-defence-expenditure/{f}.csv")
+        convert_from_google_to_decent_csv(f"assets/nato-defence-expenditure/{f}.csv")
