@@ -1,2 +1,5 @@
 /.venv/
 *.ipynb
+/assets/nato-defence-expenditure
+/assets/global-firepower
+/log/
