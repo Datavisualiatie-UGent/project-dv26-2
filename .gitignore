@@ -1,5 +1,4 @@
 /.venv/
-*.ipynb
 /log/
 
 .idea
