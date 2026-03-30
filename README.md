@@ -56,7 +56,7 @@ By the time Spain joined in 1982, the alliance had grown into a sixteen-nation b
 
 The Fall of the Berlin Wall in 1989 and the subsequent collapse of the Soviet Union fundamentally changed NATO’s purpose.
 No longer just a Cold War shield, the alliance became a tool for stabilising a newly free Eastern Europe.
-In 1999, former Warsaw Pact [^2] members — the Czech Republic, Hungary, and Poland — let the way and joined the West.
+In 1999, former Warsaw Pact [^2] members the Poland, Hungary, and the Czech Republic let the way and joined the West.
 
 Just five years later, in 2004, NATO underwent its most ambitious expansion to date.
 Seven nations, including the three Baltic States of Estonia, Latvia, and Lithuania, joined together with Bulgaria, Romania, Slovenia and Slovakia in a single wave.
