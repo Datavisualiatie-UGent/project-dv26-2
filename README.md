@@ -56,7 +56,7 @@ By the time Spain joined in 1982, the alliance had grown into a sixteen-nation b
 
 The Fall of the Berlin Wall in 1989 and the subsequent collapse of the Soviet Union fundamentally changed NATO’s purpose.
 No longer just a Cold War shield, the alliance became a tool for stabilising a newly free Eastern Europe.
-In 1999, former Warsaw Pact [^2] members the Poland, Hungary, and the Czech Republic let the way and joined the West.
+In 1999, former Warsaw Pact [^2] members Poland, Hungary, and the Czech Republic led the way and joined the West.
 
 Just five years later, in 2004, NATO underwent its most ambitious expansion to date.
 Seven nations, including the three Baltic States of Estonia, Latvia, and Lithuania, joined together with Bulgaria, Romania, Slovenia and Slovakia in a single wave.
@@ -65,8 +65,8 @@ This move shifted the alliance’s borders directly to the doorstep of the forme
 > massive blue wave sweeps accross central and eastern Europe
 
 In the last two decades, the focus has shifted again; this time toward the Balkans, with the accession of Albania, Croatia, Montenegro, and North Macedonia.
-However, the most dramatic pivot occurred in 2023 and 2024.
-As a direct response to Russia’s invasion of Ukraine and a radically changed safety situation, the long-neutral Nordic giants Finland and Sweden joined the alliance.
+However, the most dramatic pivot occurred in 2023 and 2024;
+as a direct response to Russia’s invasion of Ukraine and a radically changed safety situation, the long-neutral Nordic giants Finland and Sweden joined the alliance.
 
 > Show final map indicating the alliance in full power
 
@@ -91,9 +91,9 @@ Our data shows a radical pivot: defense budgets are no longer stagnating; they a
 
 #### More than just Salaries
 
-But where does that money actually go?
+Where does that money actually go?
 A common criticism is that European armies spend too much on pensions and salaries, and not enough on the hard power needed for modern war.
-NATO targets a **20% minimum** for key equipment that provides hard combat power, like missiles, fighter jets, combat vehicles... [^5]
+NATO targets a **20% minimum** for key equipment that provides hard combat power like missiles, fighter jets, combat vehicles etc. [^5]
 
 > TODO: chart showing expenditure shares
 > Perhaps might be interesting to allow comparing/selecting countries?
@@ -116,10 +116,10 @@ To see the true "fairness" of the alliance, we must ask: how much does the avera
 
 > TODO: show expenditure per capita in a bar chart?
 
-When viewed per capita, the "spending gap" begins to shrink.
+When viewed per capita, the spending gap begins to shrink.
 While the US still leads, citizens in nations like Norway and the Baltic states often shoulder a personal financial burden that rivals or even exceeds that of the average American.
 This data suggests that the "cowardly" label ignores the significant personal investment made by people living on the alliance's frontlines. [^6]
-This figure is also shown in the number of soldiers per 1,000 inhabitants:
+This fact is also shown in the number of soldiers per 1,000 inhabitants:
 
 > TODO: show number of soldiers in relative and absolute numbers next to each other\
 > Note to self: two horizontal bar charts? Pictogram or waffle charts showing blocks of thousands of soldiers?
@@ -127,13 +127,13 @@ This figure is also shown in the number of soldiers per 1,000 inhabitants:
 [^1]: D. J. Trump (@realDonaldTrump), "Without the U.S.A., NATO IS A PAPER TIGER!," Truth Social, Mar. 20, 2026. [Online]. Available: <https://truthsocial.com/@realDonaldTrump>. [Accessed: Mar. 30, 2026].
 
 [^2]: the Warsaw Pact was NATO's biggest challenger during the Cold War era.
-    Backed by the Soviet Unions nuclear umbrella, many communist countries joined forming a defensive alliance of 8 members a its peak, with a few notable observers.
+    Backed by the Soviet Union's nuclear umbrella, many communist countries joined forming a defensive alliance of 8 members a its peak, with a few notable observers.
     See also: [Warsaw Pact](https://en.wikipedia.org/wiki/Warsaw_Pact).
 
 [^3]: There are some notable countries not included in the NATO alliance.
     The most well-known is of course Switzerland, which has known a history of neutrality since centuries ago.
     However, the attentive reader also notices some EU countries missing on the map: Ireland, Austria, Cyprus and Malta are also holding on to their military neutrality, which is often anchored in their constitutions.
-    Although this fundamental objection to picking a side, these countries often cooperate with NATO in the so-called [**Partnership for Peace**-programme](https://www.nato.int/en/what-we-do/partnerships-and-cooperation/partnership-for-peace-programme).
+    Even though they have fundamental objection to picking a side, these countries often cooperate with NATO in the so-called [**Partnership for Peace**-programme](https://www.nato.int/en/what-we-do/partnerships-and-cooperation/partnership-for-peace-programme).
 
     > It might be interesting to include a map showing all EU countries, coloured into NATO/EU and just NATO or EU members in different colours to provide more information and context to the readers.
 
