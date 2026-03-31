@@ -5,6 +5,7 @@ It aims at exploring NATO's strategic capabilities by focusing on budget and har
 
 Currently, we're aiming for a _scrollystelling_-style website using (e.g.) [Scrollama](https://pudding.cool/process/introducing-scrollama/) that enables users to both read our own story and explore the data themselves, using visualisations brought by [Vega Lite](https://vega.github.io/vega-lite/).
 The [draft storyline](#draft-storyline) focuses on the storyline, while the specific graph's captions will have to provide the necessary context that isn't provided in the text to keep reading fluent.
+It will be important to check numbers and add comments to figures that look surprising in the process.
 
 ## Draft Storyline
 
@@ -124,6 +125,53 @@ This fact is also shown in the number of soldiers per 1,000 inhabitants:
 > TODO: show number of soldiers in relative and absolute numbers next to each other\
 > Note to self: two horizontal bar charts? Pictogram or waffle charts showing blocks of thousands of soldiers?
 
+### 3. The Iron Reality
+
+If the budget is the promise, the hardware is the proof.
+To understand NATO’s true strategic weight, we must look at the hard power sitting in hangars, motor pools, and docks across 32 nations.
+Using data from Global Firepower 2026, we can look past the price tags to see the actual machines of war. [^7]
+
+#### Clear Skies
+
+Air superiority is the cornerstone of Western military doctrine.
+Clear skies are of utmost importance not only for air operations, but also for ground support and logistics
+NATO’s combined air fleets are staggering, but the numbers tell two different stories: quantity versus readiness.
+
+> TODO: charts showing total number of aircraft with a toggle to make ready / stock visible (play with opacity?)\
+
+The USA is the unrivaled king of air superiority with modern combat systems like the F-35 and F-22.
+To project power globally in a matter of hours, the US Air Force maintains a massive fleet of Multi-Role Tanker Transports (MRTT) for in-air refueling, such as the KC-135, alongside heavy Fixed Wing Transport like the C-17.
+
+The Alliance’s arsenal is a shared burden, forming a complex patchwork of air power that spans generations of aviation history.
+While the United States operates the iconic A-10 Warthog for close air support, its NATO allies contribute a diverse array of high-end strike and interceptor capabilities.
+This includes sophisticated European platforms like the French Dassault Rafale, the British-German Eurofighter Typhoon, and the Swedish JAS Gripen.
+
+This collective shield is defined by its contrast.
+While some members deploy cutting-edge 5th-generation stealth fighters like the F-35, others continue to rely on modernized but aging legacy systems.
+This fleet ranges from the ubiquitous F-16 to Soviet-era MiG-29s, creating a mix of state-of-the-art technology and Cold War relics.
+Ultimately, managing this variety of hardware highlights the persistent challenge of interoperability within a 32-nation alliance.
+
+In this sense, it is important to nuance the graphs below.
+Even though they allow to compare different countries' air force strengths, a fleet of 50 F-16's is far from the same as a fleet of 50 F-35s.
+
+> TODO: charts showing total number of specific airplanes: fighter jets, Multi-Role Tanker Transporters (MRTT) and Close Air Support (CAS) (ready/stock)
+
+#### The Steel Backbone of Ground Combat
+
+While air power provides the shield, ground forces remain the ultimate sword of territorial integrity.
+In the flatlands of Eastern Europe, strategic depth is measured in tracks and armor.
+Modern land warfare relies on the interoperability between ground systems, like main battle tanks (MBTs) that provide breakthrough power, infantry fighting vehicles (IFVs) and armored personel carriers (APCs) which ensure infantry can move under protection of armor. [^8]
+Where the US has the obvious upper hand in air capabilities, it is the European allies that hold a majority of modern MBTs, e.g. the German Leopard 2A7 (and its older variants).
+
+> TODO: charts showing MBTs per country, IFVs and APCs
+
+These systems rarely fight alone, but are rather supported by modern heavy artillery, both in the form of traditional self-propelled guns (SPGs) and towed artillery as in the form of multiple-launch rocket systems (MLRS).
+The NATO allies can trust an enormous supply of these weapon systems.
+
+> TODO: charts exploring artillery systems and mlrs
+
+### Sources
+
 [^1]: D. J. Trump (@realDonaldTrump), "Without the U.S.A., NATO IS A PAPER TIGER!," Truth Social, Mar. 20, 2026. [Online]. Available: <https://truthsocial.com/@realDonaldTrump>. [Accessed: Mar. 30, 2026].
 
 [^2]: the Warsaw Pact was NATO's biggest challenger during the Cold War era.
@@ -145,3 +193,7 @@ This fact is also shown in the number of soldiers per 1,000 inhabitants:
     Numbers show that although in absolute numbers, the US lost most soldiers by far, relatively speaking more Danish soldiers laid their lifes in combat for the US.
     The campaign in Afghanistan was the only time NATO's famous Article 5 was activated, another fact President Trump failed to recognise.
     [source](https://www.bbc.com/news/articles/crmjewpkje9o)
+
+[^7]: Global Firepower data provides a quantitative snapshot, but does not account for qualitative force multipliers like training or logistical integration, however.
+
+[^8]: in the past four years, it has also become increasingly clear that first-person view (FPV) drone warfare has gained a key role
