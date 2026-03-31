@@ -1,0 +1,14 @@
+{
+  "name": "fdbcddf848d81939",
+  "main": "fdbcddf848d81939@387.js",
+  "version": "387.0.0",
+  "homepage": "https://observablehq.com/d/fdbcddf848d81939",
+  "author": {
+    "name": "Datavisualisatie-exploratie",
+    "url": "https://observablehq.com/@datavisualisatie-exploratie"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
