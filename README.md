@@ -202,7 +202,7 @@ European allies contribute a diverse array of frigates, submarines [^9], and amp
 [^4]: in 2025, NATO increased this benchmark to a minimum core budget of 3.5% of a countries GDP, with a goal of 5% in total. [source](https://www.nato.int/content/dam/nato/webready/documents/publications-and-reports/annual-reports/sgar25-en.pdf)
     Give how recent this change is and the fact that the numbers for 2024 and 2025 remain estimates, we have decided to focus on the 2% benchmark for the sake of consistency and reliability.
 
-[^5]: NATO, "Defence Expenditure of NATO Countries (2014-2024)," NATO, Brussels, Belgium, June 2024. Accessed: Mar. 30, 2026. [Online]. Available: <https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf>
+[^5]: NATO, "Defence Expenditure of NATO Countries (2014-2024)", NATO, Brussels, Belgium, June 2024. Accessed: Mar. 30, 2026. [Online]. Available: <https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf>
 
 [^6]: Recently, Donald Trump downplayed the contribution of NATO allies in Afghanistan following the American invasion after 9/11.
     Numbers show that although in absolute numbers, the US lost most soldiers by far, relatively speaking more Danish soldiers laid their lifes in combat for the US.
