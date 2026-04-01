@@ -4,7 +4,7 @@ This documents is a draft outline of the end product we'll be implementing for t
 It aims at exploring NATO's strategic capabilities by focusing on budget and hard power, through data provided by both NATO and [Global Firepower](https://globalfirepower.com/).
 
 Currently, we're aiming for a _scrollystelling_-style website using (e.g.) [Scrollama](https://pudding.cool/process/introducing-scrollama/) that enables users to both read our own story and explore the data themselves, using visualisations brought by [Vega Lite](https://vega.github.io/vega-lite/).
-The [draft storyline](#draft-storyline) focuses on the storyline, while the specific graph's captions will have to provide the necessary context that isn't provided in the text to keep reading fluent.
+The [draft storyline](#draft-storyline) focuses on the storyline, while the specific graph's captions will have to provide the necessary context that isn't given in the text to keep reading fluent.
 It will be important to check numbers and add comments to figures that look surprising in the process.
 
 ## Draft Storyline
@@ -21,7 +21,7 @@ Donald Trump famously argues that NATO is little more than the United States in 
 
 Is this true?
 As countries pivot away from the _peace dividend_ and begin funneling billions back into their war chests, we decided to look past the rhetoric.
-By analyzing NATO’s own financial audits and Global Firepower’s hardware data, we aim to uncover the reality of the Alliance's strategic weight.
+By analyzing NATO’s own financial audits and Global Firepower’s hardware data, we aim to uncover the reality of the alliance's strategic weight.
 Is the European pillar finally standing on its own, or is the shield truly made in the USA?
 
 ### 1. Before the Billions: Securing a Broken Continent
@@ -74,11 +74,10 @@ as a direct response to Russia’s invasion of Ukraine and a radically changed s
 What began as a small club of twelve has transformed into a 32-nation powerhouse. [^3]
 As the map grew, so did the friction: can 32 different nations truly share the burden of an alliance that Trump calls "the United States in a trench coat"?
 
-### 2. The Price of Protection: Who is actually paying?
+### 2. The Price of Protection - If NATO is a shield, then the defense budget is the cost of the steel
 
-If NATO is a "shield," then the defense budget is the cost of the steel.
 For decades, the United States has shouldered the majority of the financial burden; a fact that led to the friction we see in modern politics.
-In 2014, the Alliance set a clear benchmark: every member should spend at least **2% of its GDP** on defense. [^4]
+In 2014, the alliance set a clear benchmark: every member should spend at least **2% of its GDP** on defense. [^4]
 
 > TODO: graph showing 2014 share of GDP for defense indicating the 2% threshold\
 > Note to self: can be interesting to look at countries that have a large portion, probably countries close to Russia?
@@ -96,7 +95,7 @@ Where does that money actually go?
 A common criticism is that European armies spend too much on pensions and salaries, and not enough on the hard power needed for modern war.
 NATO targets a **20% minimum** for key equipment that provides hard combat power like missiles, fighter jets, combat vehicles etc. [^5]
 
-> TODO: chart showing expenditure shares
+> TODO: chart showing expenditure shares\
 > Perhaps might be interesting to allow comparing/selecting countries?
 
 By breaking down the portion of expenditure, we can see which countries are simply maintaining the status quo and which are actively building the arsenal of the future.
@@ -106,7 +105,8 @@ By breaking down the portion of expenditure, we can see which countries are simp
 To understand the friction within NATO, we have to look past percentages and look at raw cash.
 In 2023, the United States spent nearly **twice as much** on defense as the rest of the 31 allies combined.
 
-> TODO: add chart showing this comparison
+> TODO: add chart showing this comparison\
+> Check claim in scentence above
 
 While almost every member now meets the 2% threshold, the absolute dollar amounts reveal the true scale of American dominance.
 For every $1 spent by a European ally, the US spends nearly $2.
@@ -125,9 +125,8 @@ This fact is also shown in the number of soldiers per 1,000 inhabitants:
 > TODO: show number of soldiers in relative and absolute numbers next to each other\
 > Note to self: two horizontal bar charts? Pictogram or waffle charts showing blocks of thousands of soldiers?
 
-### 3. The Iron Reality
+### 3. The Iron Reality - If budget is the promise, hardware is the proof
 
-If the budget is the promise, the hardware is the proof.
 To understand NATO’s true strategic weight, we must look at the hard power sitting in hangars, motor pools, and docks across 32 nations.
 Using data from Global Firepower 2026, we can look past the price tags to see the actual machines of war. [^7]
 
@@ -142,7 +141,7 @@ NATO’s combined air fleets are staggering, but the numbers tell two different 
 The USA is the unrivaled king of air superiority with modern combat systems like the F-35 and F-22.
 To project power globally in a matter of hours, the US Air Force maintains a massive fleet of Multi-Role Tanker Transports (MRTT) for in-air refueling, such as the KC-135, alongside heavy Fixed Wing Transport like the C-17.
 
-The Alliance’s arsenal is a shared burden, forming a complex patchwork of air power that spans generations of aviation history.
+the alliance’s arsenal is a shared burden, forming a complex patchwork of air power that spans generations of aviation history.
 While the United States operates the iconic A-10 Warthog for close air support, its NATO allies contribute a diverse array of high-end strike and interceptor capabilities.
 This includes sophisticated European platforms like the French Dassault Rafale, the British-German Eurofighter Typhoon, and the Swedish JAS Gripen.
 
@@ -170,11 +169,26 @@ The NATO allies can trust an enormous supply of these weapon systems.
 
 > TODO: charts exploring artillery systems and mlrs
 
+In order to quickly move troops and equipment across the continent and to the frontlines, NATO allies often rely on rotary-wing transport helicopters.
+Together with attack helicopters, they often form a force to be reckoned with, but aren't mostly included in air components.
+These assets are crucial for rapid deployment, close air support, logistical resupply, and medical evacuation, especially in the challenging terrains of Eastern Europe.
+
+> TODO: charts showing number of transport and attack helicopters
+
+#### Naval Power - The Unsung Shield
+
+While NATO’s air and land forces often take the spotlight, its naval power forms an unsung but critical shield.
+The alliance’s combined naval fleet is a formidable force, with the United States leading the charge with its 11 aircraft carriers, 22 cruisers, and 68 destroyers.
+European allies contribute a diverse array of frigates, submarines [^9], and amphibious assault ships that provide critical capabilities for maritime security, power projection, and anti-submarine warfare.
+
+> TODO: charts showing number of aircraft carriers, cruisers, destroyers, frigates, submarines and amphibious assault ships\
+> Note to self: check numbers in claims above
+
 ### Sources
 
 [^1]: D. J. Trump (@realDonaldTrump), "Without the U.S.A., NATO IS A PAPER TIGER!," Truth Social, Mar. 20, 2026. [Online]. Available: <https://truthsocial.com/@realDonaldTrump>. [Accessed: Mar. 30, 2026].
 
-[^2]: the Warsaw Pact was NATO's biggest challenger during the Cold War era.
+[^2]: The Warsaw Pact formed NATO's biggest challenger during the Cold War era.
     Backed by the Soviet Union's nuclear umbrella, many communist countries joined forming a defensive alliance of 8 members a its peak, with a few notable observers.
     See also: [Warsaw Pact](https://en.wikipedia.org/wiki/Warsaw_Pact).
 
@@ -186,6 +200,7 @@ The NATO allies can trust an enormous supply of these weapon systems.
     > It might be interesting to include a map showing all EU countries, coloured into NATO/EU and just NATO or EU members in different colours to provide more information and context to the readers.
 
 [^4]: in 2025, NATO increased this benchmark to a minimum core budget of 3.5% of a countries GDP, with a goal of 5% in total. [source](https://www.nato.int/content/dam/nato/webready/documents/publications-and-reports/annual-reports/sgar25-en.pdf)
+    Give how recent this change is and the fact that the numbers for 2024 and 2025 remain estimates, we have decided to focus on the 2% benchmark for the sake of consistency and reliability.
 
 [^5]: NATO, "Defence Expenditure of NATO Countries (2014-2024)," NATO, Brussels, Belgium, June 2024. Accessed: Mar. 30, 2026. [Online]. Available: <https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf>
 
@@ -196,4 +211,9 @@ The NATO allies can trust an enormous supply of these weapon systems.
 
 [^7]: Global Firepower data provides a quantitative snapshot, but does not account for qualitative force multipliers like training or logistical integration, however.
 
-[^8]: in the past four years, it has also become increasingly clear that first-person view (FPV) drone warfare has gained a key role
+[^8]: In the past four years, it has also become increasingly clear that first-person view (FPV) drone warfare has gained a key role.
+    We have not accounted for this, as there is limited data available.
+
+[^9]: Submarines are a particularly important component of NATO’s naval strategy, providing stealthy platforms for intelligence gathering, special operations, and strategic deterrence.
+    Only few countries operate submarines capable of launching ballistic (nuclear) missiles, which are a key component of NATO’s nuclear deterrence strategy and often form the most challenging part of obtaining a _nuclear triad_, i.e. the ability to launch nuclear weapons from land, air and sea.
+    NATO's nuclear deterrence relies heavily on the United States, with only the UK and France maintaining independent nuclear arsenals, while other allies benefit from the extended deterrence provided by the US nuclear umbrella.
