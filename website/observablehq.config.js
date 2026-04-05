@@ -2,6 +2,7 @@ export default {
   title: "NATO Strategic Capacities Visualised",
 
   root: "src",
+  head: '<link rel="stylesheet" href="./style.css">',
 
   // logo: "logo.png",
 
