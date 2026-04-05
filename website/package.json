@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "mkdir -p src/data-visualisation && cp -r ../src/data-visualisation/. src/data-visualisation/ 2>/dev/null || :",
     "dev": "observable preview",
+    "prebuild": "mkdir -p src/data-visualisation && cp -r ../src/data-visualisation/. src/data-visualisation/ 2>/dev/null || :",
     "build": "observable build"
   },
   "devDependencies": {
