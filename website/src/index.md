@@ -13,3 +13,5 @@ As countries pivot away from the _peace dividend_ and begin funneling billions b
 By analyzing NATO’s own financial audits and Global Firepower’s hardware data, we aim to uncover the reality of the alliance's strategic weight.
 Is the European pillar finally standing on its own, or is the shield truly made in the USA?
 
+[^1]: D. J. Trump (@realDonaldTrump), "Without the U.S.A., NATO IS A PAPER TIGER!", Truth Social, Mar. 20, 2026. [Online]. Available: <https://truthsocial.com/@realDonaldTrump>. [Accessed: Mar. 30, 2026].
+

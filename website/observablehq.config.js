@@ -1,3 +1,5 @@
+import footnote from "markdown-it-footnote";
+
 export default {
   title: "NATO Strategic Capacities Visualised",
 
@@ -19,4 +21,7 @@ export default {
 
   // TODO Add names
   footer: `Built with ❤️`,
+
+  // Plugins
+  markdownIt: (md) => md.use(footnote),
 };
