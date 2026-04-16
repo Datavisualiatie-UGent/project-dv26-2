@@ -6,6 +6,8 @@ That is if we are to believe the current US President, at least.
 Central to this fear is the North-Atlantic Treaty Organisation (NATO).
 Donald Trump famously argues that NATO is little more than the United States in a trench coat — an American powerhouse surrounded by "cowardly" allies who refuse to contribute both financially and military.
 
+<!-- TODO Fix embedding of image in build step -->
+
 ![Donald Trump's post in which he calls the NATO allies cowards on his social media platform "Truth Social"](./assets/nato-cowards.png) [^1]
 
 Is this true?
