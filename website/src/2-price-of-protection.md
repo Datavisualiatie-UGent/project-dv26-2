@@ -7,7 +7,7 @@ import scrollama from "npm:scrollama";
 
 <div id="scrolly-share-of-gdp" class="scrolly">
 <article>
-<div>
+<div class="step">
 For decades, the United States has shouldered the majority of the financial burden; a fact that led to the friction we see in modern politics.
 In 2014, the alliance set a clear benchmark: every member should spend at least **2% of its GDP** on defense. [^4]
 
@@ -54,12 +54,27 @@ scroller
     });
 ```
 
+<div id="scrolly-real-change" class="scrolly">
+<article>
+<div class="step">
+
 For a long time, many European allies fell short, enjoying what economists call the _peace dividend_.
 However, the world changed in 2022 with Russia's invasion of Ukraine.
 Our data shows a radical pivot: defense budgets are no longer stagnating; they are surging.
 
-> TODO: chart showing real change (%) in budgets from 2014 to 2025.
-> Notice the sharp upward trajectory for countries bordering Russia?
+</div>
+</article>
+
+<figure id="real-change-graphic">
+<div class="vis" id="vis-real-change"></div>
+</figure>
+</div>
+
+```js
+const spec = await FileAttachment("./data-visualisation/real-change.json").json();
+
+const viewPromise = vegaEmbed("#vis-real-change", spec, { actions: false }).then(res => res.view);
+```
 
 ## More than just Salaries
 

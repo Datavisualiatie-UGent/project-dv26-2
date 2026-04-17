@@ -13,7 +13,11 @@ import scrollama from "npm:scrollama";
 
 <!-- I would add the title in HTML instead of in the graph/visualisation -->
 
+<!-- TODO Highlight the currently active block -->
+
 ## The Expansion of NATO
+
+TODO Focus on Europe or global view preferred?
 
 <div id="scrolly-world-map" class="scrolly">
   <article>
