@@ -1,0 +1,113 @@
+:root {
+  --observablehq-max-width: auto;
+}
+
+#observablehq-sidebar {
+  --observablehq-sidebar-padding-left: 0px;
+}
+
+#observablehq-toc {
+  right: 2rem !important;
+  top: 2rem !important;
+  width: 180px !important;
+}
+
+/* Base resets to prevent standard ObservableHQ layout overrides */
+h1, h2, h3, p {
+  max-width: 100%;
+}
+
+/* Scrollytelling Component */
+.scrolly {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 2rem;
+  max-width: none;
+}
+
+/* Scoped elements within Scrollytelling */
+.scrolly article {
+  position: relative;
+  order: 2;
+  max-width: none;
+}
+
+.scrolly figure {
+  position: sticky;
+  top: 10vh;
+  height: 80vh;
+  margin: 0;
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdfdfd;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  z-index: 1;
+  max-width: none;
+}
+
+.scrolly .step {
+  height: auto;
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Shared utility for visualization containers */
+.vis {
+  width: 100%;
+  height: 100%;
+}
+
+/* Specific page sections */
+.exploration-plot {
+  margin-top: 4rem;
+  padding: 2rem;
+  border-top: 2px solid #eee;
+}
+
+/* Mobile Responsive Overrides */
+@media screen and (max-width: 768px) {
+  .scrolly {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .scrolly article {
+    z-index: 1;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .scrolly figure {
+    top: 0;
+    height: 40vh;
+    z-index: 10;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+  }
+
+  .scrolly .step {
+    height: auto;
+    min-height: 50vh;
+    margin-bottom: 60vh;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}

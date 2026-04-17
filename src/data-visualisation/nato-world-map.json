@@ -1,0 +1,251 @@
+{
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.3
+  },
+  "data": {
+    "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json",
+    "format": {
+      "type": "topojson",
+      "feature": "countries"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "values": [
+            {
+              "country": "Belgium",
+              "joined": 1949
+            },
+            {
+              "country": "Canada",
+              "joined": 1949
+            },
+            {
+              "country": "Denmark",
+              "joined": 1949
+            },
+            {
+              "country": "Greenland",
+              "joined": 1949
+            },
+            {
+              "country": "France",
+              "joined": 1949
+            },
+            {
+              "country": "Iceland",
+              "joined": 1949
+            },
+            {
+              "country": "Italy",
+              "joined": 1949
+            },
+            {
+              "country": "Luxembourg",
+              "joined": 1949
+            },
+            {
+              "country": "Netherlands",
+              "joined": 1949
+            },
+            {
+              "country": "Norway",
+              "joined": 1949
+            },
+            {
+              "country": "Portugal",
+              "joined": 1949
+            },
+            {
+              "country": "United Kingdom",
+              "joined": 1949
+            },
+            {
+              "country": "United States of America",
+              "joined": 1949
+            },
+            {
+              "country": "Greece",
+              "joined": 1952
+            },
+            {
+              "country": "Turkey",
+              "joined": 1952
+            },
+            {
+              "country": "Germany",
+              "joined": 1955
+            },
+            {
+              "country": "Spain",
+              "joined": 1982
+            },
+            {
+              "country": "Poland",
+              "joined": 1999
+            },
+            {
+              "country": "Czechia",
+              "joined": 1999
+            },
+            {
+              "country": "Hungary",
+              "joined": 1999
+            },
+            {
+              "country": "Bulgaria",
+              "joined": 2004
+            },
+            {
+              "country": "Estonia",
+              "joined": 2004
+            },
+            {
+              "country": "Latvia",
+              "joined": 2004
+            },
+            {
+              "country": "Lithuania",
+              "joined": 2004
+            },
+            {
+              "country": "Romania",
+              "joined": 2004
+            },
+            {
+              "country": "Slovakia",
+              "joined": 2004
+            },
+            {
+              "country": "Slovenia",
+              "joined": 2004
+            },
+            {
+              "country": "Albania",
+              "joined": 2009
+            },
+            {
+              "country": "Croatia",
+              "joined": 2009
+            },
+            {
+              "country": "Montenegro",
+              "joined": 2017
+            },
+            {
+              "country": "Macedonia",
+              "joined": 2020
+            },
+            {
+              "country": "Finland",
+              "joined": 2023
+            },
+            {
+              "country": "Sweden",
+              "joined": 2024
+            }
+          ]
+        },
+        "key": "country",
+        "fields": [
+          "joined"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.properties.name",
+      "as": "country"
+    },
+    {
+      "calculate": "datum.joined !== null && datum.joined <= SelectYear ? SelectYear - datum.joined : -1",
+      "as": "memberAge"
+    },
+    {
+      "calculate": "datum.joined === null || datum.joined > SelectYear ? 'Not a member' : datum.joined",
+      "as": "year joined"
+    }
+  ],
+  "projection": {
+    "type": "mercator",
+    "scale": 300,
+    "center": [
+      0,
+      57
+    ],
+    "rotate": [
+      -10,
+      0,
+      0
+    ]
+  },
+  "width": "container",
+  "height": "container",
+  "title": {
+    "text": "",
+    "subtitle": "Select a year to see expansion",
+    "fontSize": 20,
+    "anchor": "start",
+    "offset": 20
+  },
+  "encoding": {
+    "color": {
+      "field": "memberAge",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -1,
+          0,
+          1,
+          75
+        ],
+        "range": [
+          "#e0e0e0",
+          "#ff8c00",
+          "#7bb3ff",
+          "#001f3f"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal"
+      },
+      {
+        "field": "year joined",
+        "type": "nominal"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "SelectYear",
+      "value": 1948,
+      "bind": {
+        "input": "radio",
+        "options": [
+          1948,
+          1949,
+          1952,
+          1955,
+          1982,
+          1999,
+          2004,
+          2009,
+          2017,
+          2020,
+          2023,
+          2024,
+          2026
+        ],
+        "name": "NATO Expansion in Year:"
+      }
+    }
+  ]
+}

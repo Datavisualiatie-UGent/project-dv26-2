@@ -1,0 +1,21 @@
+{
+  "name": "project-dv26-2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "mkdir -p src/data-visualisation && cp -r ../src/data-visualisation/. src/data-visualisation/ 2>/dev/null || :",
+    "dev": "observable preview",
+    "prebuild": "mkdir -p src/data-visualisation && cp -r ../src/data-visualisation/ ../assets/ src/ 2>/dev/null || :",
+    "build": "observable build"
+  },
+  "devDependencies": {
+    "@observablehq/framework": "1.13.4"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^4.0.0",
+    "scrollama": "3.2.0",
+    "vega": "6.2.0",
+    "vega-embed": "7.1.0",
+    "vega-lite": "6.4.2"
+  }
+}
