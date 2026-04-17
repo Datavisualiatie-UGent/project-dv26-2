@@ -11,13 +11,15 @@ import scrollama from "npm:scrollama";
 
 <!-- TODO I think we should add a legend for the fading to darker colors with "age" or some bar that denotes the colors. -->
 
-<!-- I would add the title in HTML instead of in the graph/visualisation -->
+<!-- TODO I would add the title in HTML instead of in the graph/visualisation -->
 
 <!-- TODO Highlight the currently active block -->
 
 ## The Expansion of NATO
 
 TODO Focus on Europe or global view preferred?
+
+> [!plot] nato-map
 
 <div id="scrolly-world-map" class="scrolly">
   <article>
@@ -94,6 +96,24 @@ As the map grew, so did the friction: can 32 different nations truly share the b
 </figure>
 </div>
 
+---
+
+> [!plot] explore-nato-map
+> TODO Exploration with choosing between years, choose europe focus view or global view
+
+---
+
+[^2]: The Warsaw Pact formed NATO's biggest challenger during the Cold War era.
+    Backed by the Soviet Union's nuclear umbrella, many communist countries joined forming a defensive alliance of 8 members a its peak, with a few notable observers.
+    See also: [Warsaw Pact](https://en.wikipedia.org/wiki/Warsaw_Pact).
+
+[^3]: There are some notable countries not included in the NATO alliance.
+    The most well-known is of course Switzerland, which has known a history of neutrality since centuries ago.
+    However, the attentive reader also notices some EU countries missing on the map: Ireland, Austria, Cyprus and Malta are also holding on to their military neutrality, which is often anchored in their constitutions.
+    Even though they have fundamental objection to picking a side, these countries often cooperate with NATO in the so-called [**Partnership for Peace**-programme](https://www.nato.int/en/what-we-do/partnerships-and-cooperation/partnership-for-peace-programme).
+
+    > It might be interesting to include a map showing all EU countries, coloured into NATO/EU and just NATO or EU members in different colours to provide more information and context to the readers.
+
 ```js
 const spec = await FileAttachment("./data-visualisation/nato-world-map.json").json();
 
@@ -122,14 +142,3 @@ scroller
     }
   });
 ```
-
-[^2]: The Warsaw Pact formed NATO's biggest challenger during the Cold War era.
-    Backed by the Soviet Union's nuclear umbrella, many communist countries joined forming a defensive alliance of 8 members a its peak, with a few notable observers.
-    See also: [Warsaw Pact](https://en.wikipedia.org/wiki/Warsaw_Pact).
-
-[^3]: There are some notable countries not included in the NATO alliance.
-    The most well-known is of course Switzerland, which has known a history of neutrality since centuries ago.
-    However, the attentive reader also notices some EU countries missing on the map: Ireland, Austria, Cyprus and Malta are also holding on to their military neutrality, which is often anchored in their constitutions.
-    Even though they have fundamental objection to picking a side, these countries often cooperate with NATO in the so-called [**Partnership for Peace**-programme](https://www.nato.int/en/what-we-do/partnerships-and-cooperation/partnership-for-peace-programme).
-
-    > It might be interesting to include a map showing all EU countries, coloured into NATO/EU and just NATO or EU members in different colours to provide more information and context to the readers.
