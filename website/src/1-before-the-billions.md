@@ -1,4 +1,4 @@
-# 1. Before the Billions: Securing a Broken Continent
+# Before the Billions: Securing a Broken Continent
 
 In order to truly understand the contemporary situation, it is necessary to understand _how_ and _why_ NATO came to be.
 For this, we must travel back to 1949 — to a fragile Europe trying to heal the scars left behind from the Second World War.

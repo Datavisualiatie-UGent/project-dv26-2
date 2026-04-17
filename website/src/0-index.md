@@ -1,4 +1,4 @@
-# 0. The Arsenal of Democracy?
+# The Arsenal of Democracy?
 
 Global headlines are increasingly dominated by a singular anxiety: the era of peace is over.
 Russia and China are standing at our borders, armed to the teeth and searching for the one crack in our armor that would allow them to sweep across the continent.

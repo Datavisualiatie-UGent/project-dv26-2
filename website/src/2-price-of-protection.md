@@ -1,4 +1,4 @@
-# 2. The Price of Protection - If NATO is a shield, then the defense budget is the cost of the steel
+# The Price of Protection - If NATO is a shield, then the defense budget is the cost of the steel
 
 ```js
 import vegaEmbed from "npm:vega-embed";
