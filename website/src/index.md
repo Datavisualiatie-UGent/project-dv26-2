@@ -18,4 +18,3 @@ Is the European pillar finally standing on its own, or is the shield truly made 
 ---
 
 [^1]: D. J. Trump (@realDonaldTrump), "Without the U.S.A., NATO IS A PAPER TIGER!", Truth Social, Mar. 20, 2026. [Online]. Available: <https://truthsocial.com/@realDonaldTrump>. [Accessed: Mar. 30, 2026].
-

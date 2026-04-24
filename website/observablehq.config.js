@@ -4,7 +4,10 @@ export default {
   title: "NATO Strategic Capacities Visualised",
 
   root: "src",
-  head: '<link rel="stylesheet" href="./style.css">',
+  head: `
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js"></script>
+    `,
 
   // logo: "logo.png",
 
