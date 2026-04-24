@@ -1,0 +1,1996 @@
+{
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "steelblue",
+        "opacity": 0.15
+      },
+      "transform": [
+        {
+          "calculate": "\"Individual Countries\"",
+          "as": "group"
+        }
+      ],
+      "params": [
+        {
+          "name": "name7",
+          "bind": "scales",
+          "select": {
+            "type": "interval"
+          }
+        }
+      ],
+      "encoding": {
+        "detail": {
+          "field": "country",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 0.8,
+        "strokeWidth": 3
+      },
+      "transform": [
+        {
+          "filter": "datum.country === \"United States\""
+        },
+        {
+          "calculate": "\"US\"",
+          "as": "group"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "change",
+          "type": "quantitative",
+          "aggregate": "average"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 0.8,
+        "strokeWidth": 3
+      },
+      "transform": [
+        {
+          "filter": "datum.country !== \"United States\""
+        },
+        {
+          "calculate": "\"NATO Without the US\"",
+          "as": "group"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "change",
+          "type": "quantitative",
+          "aggregate": "average"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 0.8,
+        "strokeWidth": 3
+      },
+      "transform": [
+        {
+          "filter": "indexof([\"Norway\",\"Finland\",\"Estonia\",\"Latvia\",\"Lithuania\",\"Poland\"], datum.country) >= 0"
+        },
+        {
+          "calculate": "\"NATO Neighbouring Russia\"",
+          "as": "group"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "change",
+          "type": "quantitative",
+          "aggregate": "average"
+        }
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "country": "Albania",
+        "year": "2014",
+        "change": -2.736762182
+      },
+      {
+        "country": "Albania",
+        "year": "2015",
+        "change": -11.76468966
+      },
+      {
+        "country": "Albania",
+        "year": "2016",
+        "change": -1.903411028
+      },
+      {
+        "country": "Albania",
+        "year": "2017",
+        "change": 4.321689805
+      },
+      {
+        "country": "Albania",
+        "year": "2018",
+        "change": 8.840068018
+      },
+      {
+        "country": "Albania",
+        "year": "2019",
+        "change": 12.66750479
+      },
+      {
+        "country": "Albania",
+        "year": "2020",
+        "change": -1.525623299
+      },
+      {
+        "country": "Albania",
+        "year": "2021",
+        "change": 4.477176916
+      },
+      {
+        "country": "Albania",
+        "year": "2022",
+        "change": 1.975038502
+      },
+      {
+        "country": "Albania",
+        "year": "2023",
+        "change": 51.27448628
+      },
+      {
+        "country": "Albania",
+        "year": "2024",
+        "change": 0.9913997963
+      },
+      {
+        "country": "Albania",
+        "year": "2025",
+        "change": 22.71452515
+      },
+      {
+        "country": "Belgium",
+        "year": "2014",
+        "change": -2.114722814
+      },
+      {
+        "country": "Belgium",
+        "year": "2015",
+        "change": -4.246982081
+      },
+      {
+        "country": "Belgium",
+        "year": "2016",
+        "change": -0.3355595325
+      },
+      {
+        "country": "Belgium",
+        "year": "2017",
+        "change": 0.2066738109
+      },
+      {
+        "country": "Belgium",
+        "year": "2018",
+        "change": 2.520796327
+      },
+      {
+        "country": "Belgium",
+        "year": "2019",
+        "change": 1.817757088
+      },
+      {
+        "country": "Belgium",
+        "year": "2020",
+        "change": 7.961327934
+      },
+      {
+        "country": "Belgium",
+        "year": "2021",
+        "change": 10.09507387
+      },
+      {
+        "country": "Belgium",
+        "year": "2022",
+        "change": 16.20434382
+      },
+      {
+        "country": "Belgium",
+        "year": "2023",
+        "change": 2.937128108
+      },
+      {
+        "country": "Belgium",
+        "year": "2024",
+        "change": 9.875326
+      },
+      {
+        "country": "Belgium",
+        "year": "2025",
+        "change": 57.41244136
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2014",
+        "change": -9.084087587
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2015",
+        "change": -1.557274196
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2016",
+        "change": 2.798867956
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2017",
+        "change": 0.9565017759
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2018",
+        "change": 21.76916242
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2019",
+        "change": 124.9524597
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2020",
+        "change": -51.19480395
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2021",
+        "change": 2.653169051
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2022",
+        "change": 9.321986675
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2023",
+        "change": 24.82632049
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2024",
+        "change": 3.310166165
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2025",
+        "change": 7.477670235
+      },
+      {
+        "country": "Canada",
+        "year": "2014",
+        "change": 4.95226911
+      },
+      {
+        "country": "Canada",
+        "year": "2015",
+        "change": 20.08850255
+      },
+      {
+        "country": "Canada",
+        "year": "2016",
+        "change": -2.47935839
+      },
+      {
+        "country": "Canada",
+        "year": "2017",
+        "change": 27.75642502
+      },
+      {
+        "country": "Canada",
+        "year": "2018",
+        "change": -7.176229713
+      },
+      {
+        "country": "Canada",
+        "year": "2019",
+        "change": 1.61107341
+      },
+      {
+        "country": "Canada",
+        "year": "2020",
+        "change": 3.369035941
+      },
+      {
+        "country": "Canada",
+        "year": "2021",
+        "change": -5.078808368
+      },
+      {
+        "country": "Canada",
+        "year": "2022",
+        "change": -2.081568616
+      },
+      {
+        "country": "Canada",
+        "year": "2023",
+        "change": 12.15669204
+      },
+      {
+        "country": "Canada",
+        "year": "2024",
+        "change": 12.11990767
+      },
+      {
+        "country": "Canada",
+        "year": "2025",
+        "change": 39.14874315
+      },
+      {
+        "country": "Croatia",
+        "year": "2014",
+        "change": 25.94009175
+      },
+      {
+        "country": "Croatia",
+        "year": "2015",
+        "change": -1.036414598
+      },
+      {
+        "country": "Croatia",
+        "year": "2016",
+        "change": -5.987292422
+      },
+      {
+        "country": "Croatia",
+        "year": "2017",
+        "change": 6.152083148
+      },
+      {
+        "country": "Croatia",
+        "year": "2018",
+        "change": -2.820064272
+      },
+      {
+        "country": "Croatia",
+        "year": "2019",
+        "change": 7.196006977
+      },
+      {
+        "country": "Croatia",
+        "year": "2020",
+        "change": -2.997466033
+      },
+      {
+        "country": "Croatia",
+        "year": "2021",
+        "change": 30.88357422
+      },
+      {
+        "country": "Croatia",
+        "year": "2022",
+        "change": -1.907197297
+      },
+      {
+        "country": "Croatia",
+        "year": "2023",
+        "change": -4.281112246
+      },
+      {
+        "country": "Croatia",
+        "year": "2024",
+        "change": 15.95707776
+      },
+      {
+        "country": "Croatia",
+        "year": "2025",
+        "change": 12.06110579
+      },
+      {
+        "country": "Czechia",
+        "year": "2014",
+        "change": -5.025732471
+      },
+      {
+        "country": "Czechia",
+        "year": "2015",
+        "change": 13.86227924
+      },
+      {
+        "country": "Czechia",
+        "year": "2016",
+        "change": -4.940835861
+      },
+      {
+        "country": "Czechia",
+        "year": "2017",
+        "change": 13.89540575
+      },
+      {
+        "country": "Czechia",
+        "year": "2018",
+        "change": 10.06072284
+      },
+      {
+        "country": "Czechia",
+        "year": "2019",
+        "change": 10.19656874
+      },
+      {
+        "country": "Czechia",
+        "year": "2020",
+        "change": 3.911143085
+      },
+      {
+        "country": "Czechia",
+        "year": "2021",
+        "change": 9.850640741
+      },
+      {
+        "country": "Czechia",
+        "year": "2022",
+        "change": -1.362762631
+      },
+      {
+        "country": "Czechia",
+        "year": "2023",
+        "change": 2.37745791
+      },
+      {
+        "country": "Czechia",
+        "year": "2024",
+        "change": 58.71333681
+      },
+      {
+        "country": "Czechia",
+        "year": "2025",
+        "change": -1.348495938
+      },
+      {
+        "country": "Denmark",
+        "year": "2014",
+        "change": -4.823220812
+      },
+      {
+        "country": "Denmark",
+        "year": "2015",
+        "change": -1.004457197
+      },
+      {
+        "country": "Denmark",
+        "year": "2016",
+        "change": 6.426418999
+      },
+      {
+        "country": "Denmark",
+        "year": "2017",
+        "change": 2.065113346
+      },
+      {
+        "country": "Denmark",
+        "year": "2018",
+        "change": 14.64765342
+      },
+      {
+        "country": "Denmark",
+        "year": "2019",
+        "change": 2.987092274
+      },
+      {
+        "country": "Denmark",
+        "year": "2020",
+        "change": 3.858526829
+      },
+      {
+        "country": "Denmark",
+        "year": "2021",
+        "change": 0.9541406082
+      },
+      {
+        "country": "Denmark",
+        "year": "2022",
+        "change": 7.045669684
+      },
+      {
+        "country": "Denmark",
+        "year": "2023",
+        "change": 50.56777751
+      },
+      {
+        "country": "Denmark",
+        "year": "2024",
+        "change": 16.63065724
+      },
+      {
+        "country": "Denmark",
+        "year": "2025",
+        "change": 45.31015022
+      },
+      {
+        "country": "Estonia",
+        "year": "2014",
+        "change": 3.782594517
+      },
+      {
+        "country": "Estonia",
+        "year": "2015",
+        "change": 7.133285257
+      },
+      {
+        "country": "Estonia",
+        "year": "2016",
+        "change": 4.999926001
+      },
+      {
+        "country": "Estonia",
+        "year": "2017",
+        "change": 2.547539418
+      },
+      {
+        "country": "Estonia",
+        "year": "2018",
+        "change": 3.70627868
+      },
+      {
+        "country": "Estonia",
+        "year": "2019",
+        "change": 5.118787397
+      },
+      {
+        "country": "Estonia",
+        "year": "2020",
+        "change": 10.25846701
+      },
+      {
+        "country": "Estonia",
+        "year": "2021",
+        "change": -4.572608151
+      },
+      {
+        "country": "Estonia",
+        "year": "2022",
+        "change": 5.959036186
+      },
+      {
+        "country": "Estonia",
+        "year": "2023",
+        "change": 35.90993355
+      },
+      {
+        "country": "Estonia",
+        "year": "2024",
+        "change": 11.2773235
+      },
+      {
+        "country": "Estonia",
+        "year": "2025",
+        "change": 2.060350895
+      },
+      {
+        "country": "Finland",
+        "year": "2014",
+        "change": -6.046223179
+      },
+      {
+        "country": "Finland",
+        "year": "2015",
+        "change": 0.4023169341
+      },
+      {
+        "country": "Finland",
+        "year": "2016",
+        "change": 0.7159934799
+      },
+      {
+        "country": "Finland",
+        "year": "2017",
+        "change": 0.5292862692
+      },
+      {
+        "country": "Finland",
+        "year": "2018",
+        "change": 1.404354581
+      },
+      {
+        "country": "Finland",
+        "year": "2019",
+        "change": 6.000839592
+      },
+      {
+        "country": "Finland",
+        "year": "2020",
+        "change": 2.872647482
+      },
+      {
+        "country": "Finland",
+        "year": "2021",
+        "change": -6.108164472
+      },
+      {
+        "country": "Finland",
+        "year": "2022",
+        "change": 21.42171481
+      },
+      {
+        "country": "Finland",
+        "year": "2023",
+        "change": 24.32631507
+      },
+      {
+        "country": "Finland",
+        "year": "2024",
+        "change": 13.08049342
+      },
+      {
+        "country": "Finland",
+        "year": "2025",
+        "change": 17.2264535
+      },
+      {
+        "country": "France",
+        "year": "2014",
+        "change": -1.202487379
+      },
+      {
+        "country": "France",
+        "year": "2015",
+        "change": -0.9937968729
+      },
+      {
+        "country": "France",
+        "year": "2016",
+        "change": 1.382528291
+      },
+      {
+        "country": "France",
+        "year": "2017",
+        "change": 1.670925739
+      },
+      {
+        "country": "France",
+        "year": "2018",
+        "change": 3.488549725
+      },
+      {
+        "country": "France",
+        "year": "2019",
+        "change": 2.173303529
+      },
+      {
+        "country": "France",
+        "year": "2020",
+        "change": 1.087823971
+      },
+      {
+        "country": "France",
+        "year": "2021",
+        "change": 2.408361075
+      },
+      {
+        "country": "France",
+        "year": "2022",
+        "change": 0.6689098715
+      },
+      {
+        "country": "France",
+        "year": "2023",
+        "change": 5.264879773
+      },
+      {
+        "country": "France",
+        "year": "2024",
+        "change": 5.73494267
+      },
+      {
+        "country": "France",
+        "year": "2025",
+        "change": 1.960066447
+      },
+      {
+        "country": "Germany",
+        "year": "2014",
+        "change": -1.421188876
+      },
+      {
+        "country": "Germany",
+        "year": "2015",
+        "change": 1.598735992
+      },
+      {
+        "country": "Germany",
+        "year": "2016",
+        "change": 3.430001882
+      },
+      {
+        "country": "Germany",
+        "year": "2017",
+        "change": 5.537441588
+      },
+      {
+        "country": "Germany",
+        "year": "2018",
+        "change": 2.709482587
+      },
+      {
+        "country": "Germany",
+        "year": "2019",
+        "change": 9.220211312
+      },
+      {
+        "country": "Germany",
+        "year": "2020",
+        "change": 7.599492107
+      },
+      {
+        "country": "Germany",
+        "year": "2021",
+        "change": -0.7547398389
+      },
+      {
+        "country": "Germany",
+        "year": "2022",
+        "change": 4.739379003
+      },
+      {
+        "country": "Germany",
+        "year": "2023",
+        "change": 9.33919256
+      },
+      {
+        "country": "Germany",
+        "year": "2024",
+        "change": 24.04203639
+      },
+      {
+        "country": "Germany",
+        "year": "2025",
+        "change": null
+      },
+      {
+        "country": "Greece",
+        "year": "2014",
+        "change": 0.42476726
+      },
+      {
+        "country": "Greece",
+        "year": "2015",
+        "change": 3.595212239
+      },
+      {
+        "country": "Greece",
+        "year": "2016",
+        "change": 3.376951777
+      },
+      {
+        "country": "Greece",
+        "year": "2017",
+        "change": 0.22978059
+      },
+      {
+        "country": "Greece",
+        "year": "2018",
+        "change": 8.624160125
+      },
+      {
+        "country": "Greece",
+        "year": "2019",
+        "change": -1.938503544
+      },
+      {
+        "country": "Greece",
+        "year": "2020",
+        "change": 7.734171003
+      },
+      {
+        "country": "Greece",
+        "year": "2021",
+        "change": 38.63518829
+      },
+      {
+        "country": "Greece",
+        "year": "2022",
+        "change": 11.80366328
+      },
+      {
+        "country": "Greece",
+        "year": "2023",
+        "change": -27.01332304
+      },
+      {
+        "country": "Greece",
+        "year": "2024",
+        "change": 1.473694928
+      },
+      {
+        "country": "Greece",
+        "year": "2025",
+        "change": 6.194000442
+      },
+      {
+        "country": "Hungary",
+        "year": "2014",
+        "change": -5.222350323
+      },
+      {
+        "country": "Hungary",
+        "year": "2015",
+        "change": 9.341148907
+      },
+      {
+        "country": "Hungary",
+        "year": "2016",
+        "change": 13.19002081
+      },
+      {
+        "country": "Hungary",
+        "year": "2017",
+        "change": 24.19409312
+      },
+      {
+        "country": "Hungary",
+        "year": "2018",
+        "change": -11.18638336
+      },
+      {
+        "country": "Hungary",
+        "year": "2019",
+        "change": 39.21725003
+      },
+      {
+        "country": "Hungary",
+        "year": "2020",
+        "change": 25.80832165
+      },
+      {
+        "country": "Hungary",
+        "year": "2021",
+        "change": -19.32178155
+      },
+      {
+        "country": "Hungary",
+        "year": "2022",
+        "change": 45.31951059
+      },
+      {
+        "country": "Hungary",
+        "year": "2023",
+        "change": 10.74493058
+      },
+      {
+        "country": "Hungary",
+        "year": "2024",
+        "change": 4.459816618
+      },
+      {
+        "country": "Hungary",
+        "year": "2025",
+        "change": -1.372312938
+      },
+      {
+        "country": "Italy",
+        "year": "2014",
+        "change": -9.806185568
+      },
+      {
+        "country": "Italy",
+        "year": "2015",
+        "change": -5.828705889
+      },
+      {
+        "country": "Italy",
+        "year": "2016",
+        "change": 12.05346654
+      },
+      {
+        "country": "Italy",
+        "year": "2017",
+        "change": 3.754435104
+      },
+      {
+        "country": "Italy",
+        "year": "2018",
+        "change": 2.908181536
+      },
+      {
+        "country": "Italy",
+        "year": "2019",
+        "change": -4.047220543
+      },
+      {
+        "country": "Italy",
+        "year": "2020",
+        "change": 23.33094461
+      },
+      {
+        "country": "Italy",
+        "year": "2021",
+        "change": 4.87770482
+      },
+      {
+        "country": "Italy",
+        "year": "2022",
+        "change": 3.117432057
+      },
+      {
+        "country": "Italy",
+        "year": "2023",
+        "change": -1.070102956
+      },
+      {
+        "country": "Italy",
+        "year": "2024",
+        "change": 2.333195614
+      },
+      {
+        "country": "Italy",
+        "year": "2025",
+        "change": 35.20426859
+      },
+      {
+        "country": "Latvia",
+        "year": "2014",
+        "change": 2.641447813
+      },
+      {
+        "country": "Latvia",
+        "year": "2015",
+        "change": 14.34566441
+      },
+      {
+        "country": "Latvia",
+        "year": "2016",
+        "change": 42.65308224
+      },
+      {
+        "country": "Latvia",
+        "year": "2017",
+        "change": 14.87938316
+      },
+      {
+        "country": "Latvia",
+        "year": "2018",
+        "change": 34.73304957
+      },
+      {
+        "country": "Latvia",
+        "year": "2019",
+        "change": -1.307802507
+      },
+      {
+        "country": "Latvia",
+        "year": "2020",
+        "change": 2.769920561
+      },
+      {
+        "country": "Latvia",
+        "year": "2021",
+        "change": 3.571521543
+      },
+      {
+        "country": "Latvia",
+        "year": "2022",
+        "change": 6.348723247
+      },
+      {
+        "country": "Latvia",
+        "year": "2023",
+        "change": 34.02001891
+      },
+      {
+        "country": "Latvia",
+        "year": "2024",
+        "change": 12.8833118
+      },
+      {
+        "country": "Latvia",
+        "year": "2025",
+        "change": 13.22614335
+      },
+      {
+        "country": "Lithuania",
+        "year": "2014",
+        "change": 19.65029866
+      },
+      {
+        "country": "Lithuania",
+        "year": "2015",
+        "change": 32.04592895
+      },
+      {
+        "country": "Lithuania",
+        "year": "2016",
+        "change": 33.90914363
+      },
+      {
+        "country": "Lithuania",
+        "year": "2017",
+        "change": 21.01124016
+      },
+      {
+        "country": "Lithuania",
+        "year": "2018",
+        "change": 19.29964046
+      },
+      {
+        "country": "Lithuania",
+        "year": "2019",
+        "change": 6.649136695
+      },
+      {
+        "country": "Lithuania",
+        "year": "2020",
+        "change": 3.365798258
+      },
+      {
+        "country": "Lithuania",
+        "year": "2021",
+        "change": 1.185439145
+      },
+      {
+        "country": "Lithuania",
+        "year": "2022",
+        "change": 28.57489593
+      },
+      {
+        "country": "Lithuania",
+        "year": "2023",
+        "change": 11.35430991
+      },
+      {
+        "country": "Lithuania",
+        "year": "2024",
+        "change": 16.60325425
+      },
+      {
+        "country": "Lithuania",
+        "year": "2025",
+        "change": 33.55657371
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2014",
+        "change": 4.902941492
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2015",
+        "change": 15.30462019
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2016",
+        "change": -3.783688263
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2017",
+        "change": 31.97695581
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2018",
+        "change": 2.573963873
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2019",
+        "change": 12.39974577
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2020",
+        "change": 4.718066812
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2021",
+        "change": -12.59123992
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2022",
+        "change": 21.06601168
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2023",
+        "change": 27.5117849
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2024",
+        "change": 15.83177675
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2025",
+        "change": 69.00893536
+      },
+      {
+        "country": "Montenegro",
+        "year": "2014",
+        "change": 4.493123585
+      },
+      {
+        "country": "Montenegro",
+        "year": "2015",
+        "change": -3.521249248
+      },
+      {
+        "country": "Montenegro",
+        "year": "2016",
+        "change": 4.332752455
+      },
+      {
+        "country": "Montenegro",
+        "year": "2017",
+        "change": -1.333448174
+      },
+      {
+        "country": "Montenegro",
+        "year": "2018",
+        "change": 7.294346072
+      },
+      {
+        "country": "Montenegro",
+        "year": "2019",
+        "change": 1.34918064
+      },
+      {
+        "country": "Montenegro",
+        "year": "2020",
+        "change": 10.02712253
+      },
+      {
+        "country": "Montenegro",
+        "year": "2021",
+        "change": 1.483893158
+      },
+      {
+        "country": "Montenegro",
+        "year": "2022",
+        "change": -5.705858329
+      },
+      {
+        "country": "Montenegro",
+        "year": "2023",
+        "change": 17.20601377
+      },
+      {
+        "country": "Montenegro",
+        "year": "2024",
+        "change": 16.41733221
+      },
+      {
+        "country": "Montenegro",
+        "year": "2025",
+        "change": 22.11402379
+      },
+      {
+        "country": "Netherlands",
+        "year": "2014",
+        "change": 0.1939610769
+      },
+      {
+        "country": "Netherlands",
+        "year": "2015",
+        "change": 0.2604765465
+      },
+      {
+        "country": "Netherlands",
+        "year": "2016",
+        "change": 4.433574085
+      },
+      {
+        "country": "Netherlands",
+        "year": "2017",
+        "change": 2.170376703
+      },
+      {
+        "country": "Netherlands",
+        "year": "2018",
+        "change": 8.411429395
+      },
+      {
+        "country": "Netherlands",
+        "year": "2019",
+        "change": 10.90166908
+      },
+      {
+        "country": "Netherlands",
+        "year": "2020",
+        "change": 2.176643325
+      },
+      {
+        "country": "Netherlands",
+        "year": "2021",
+        "change": 2.589738705
+      },
+      {
+        "country": "Netherlands",
+        "year": "2022",
+        "change": 10.32639445
+      },
+      {
+        "country": "Netherlands",
+        "year": "2023",
+        "change": 15.74333716
+      },
+      {
+        "country": "Netherlands",
+        "year": "2024",
+        "change": 26.11818893
+      },
+      {
+        "country": "Netherlands",
+        "year": "2025",
+        "change": 26.39624913
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2014",
+        "change": -3.580543935
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2015",
+        "change": -0.08512331518
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2016",
+        "change": -4.713220853
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2017",
+        "change": -6.745934493
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2018",
+        "change": 8.397950092
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2019",
+        "change": 27.72597308
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2020",
+        "change": 2.010868043
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2021",
+        "change": 22.46486874
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2022",
+        "change": 11.72772806
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2023",
+        "change": 8.490311121
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2024",
+        "change": 15.47616027
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2025",
+        "change": 9.342888446
+      },
+      {
+        "country": "Norway",
+        "year": "2014",
+        "change": 5.37974462
+      },
+      {
+        "country": "Norway",
+        "year": "2015",
+        "change": 4.722603608
+      },
+      {
+        "country": "Norway",
+        "year": "2016",
+        "change": 10.84403272
+      },
+      {
+        "country": "Norway",
+        "year": "2017",
+        "change": 0.7777796728
+      },
+      {
+        "country": "Norway",
+        "year": "2018",
+        "change": 1.427511278
+      },
+      {
+        "country": "Norway",
+        "year": "2019",
+        "change": 8.69623346
+      },
+      {
+        "country": "Norway",
+        "year": "2020",
+        "change": 5.268304258
+      },
+      {
+        "country": "Norway",
+        "year": "2021",
+        "change": -11.40165433
+      },
+      {
+        "country": "Norway",
+        "year": "2022",
+        "change": -10.19629548
+      },
+      {
+        "country": "Norway",
+        "year": "2023",
+        "change": 25.08680749
+      },
+      {
+        "country": "Norway",
+        "year": "2024",
+        "change": 26.28050178
+      },
+      {
+        "country": "Norway",
+        "year": "2025",
+        "change": 49.87749672
+      },
+      {
+        "country": "Poland",
+        "year": "2014",
+        "change": 11.35054774
+      },
+      {
+        "country": "Poland",
+        "year": "2015",
+        "change": 23.7360805
+      },
+      {
+        "country": "Poland",
+        "year": "2016",
+        "change": -7.286984302
+      },
+      {
+        "country": "Poland",
+        "year": "2017",
+        "change": -0.356944988
+      },
+      {
+        "country": "Poland",
+        "year": "2018",
+        "change": 12.61299258
+      },
+      {
+        "country": "Poland",
+        "year": "2019",
+        "change": 2.874471214
+      },
+      {
+        "country": "Poland",
+        "year": "2020",
+        "change": 10.08020237
+      },
+      {
+        "country": "Poland",
+        "year": "2021",
+        "change": 6.077869138
+      },
+      {
+        "country": "Poland",
+        "year": "2022",
+        "change": 6.321028124
+      },
+      {
+        "country": "Poland",
+        "year": "2023",
+        "change": 48.17892531
+      },
+      {
+        "country": "Poland",
+        "year": "2024",
+        "change": 19.1377928
+      },
+      {
+        "country": "Poland",
+        "year": "2025",
+        "change": 22.23034715
+      },
+      {
+        "country": "Portugal",
+        "year": "2014",
+        "change": -8.535506088
+      },
+      {
+        "country": "Portugal",
+        "year": "2015",
+        "change": 3.305635131
+      },
+      {
+        "country": "Portugal",
+        "year": "2016",
+        "change": -2.645703545
+      },
+      {
+        "country": "Portugal",
+        "year": "2017",
+        "change": 1.008813655
+      },
+      {
+        "country": "Portugal",
+        "year": "2018",
+        "change": 11.3611697
+      },
+      {
+        "country": "Portugal",
+        "year": "2019",
+        "change": 5.234929947
+      },
+      {
+        "country": "Portugal",
+        "year": "2020",
+        "change": -4.693760162
+      },
+      {
+        "country": "Portugal",
+        "year": "2021",
+        "change": 12.62774683
+      },
+      {
+        "country": "Portugal",
+        "year": "2022",
+        "change": -2.161252182
+      },
+      {
+        "country": "Portugal",
+        "year": "2023",
+        "change": -1.839487498
+      },
+      {
+        "country": "Portugal",
+        "year": "2024",
+        "change": 20.6792394
+      },
+      {
+        "country": "Portugal",
+        "year": "2025",
+        "change": 29.29266876
+      },
+      {
+        "country": "Romania",
+        "year": "2014",
+        "change": 8.604338597
+      },
+      {
+        "country": "Romania",
+        "year": "2015",
+        "change": 11.04967572
+      },
+      {
+        "country": "Romania",
+        "year": "2016",
+        "change": 1.229966069
+      },
+      {
+        "country": "Romania",
+        "year": "2017",
+        "change": 31.38343999
+      },
+      {
+        "country": "Romania",
+        "year": "2018",
+        "change": 9.599273813
+      },
+      {
+        "country": "Romania",
+        "year": "2019",
+        "change": 6.260738811
+      },
+      {
+        "country": "Romania",
+        "year": "2020",
+        "change": 5.416197633
+      },
+      {
+        "country": "Romania",
+        "year": "2021",
+        "change": -2.668867245
+      },
+      {
+        "country": "Romania",
+        "year": "2022",
+        "change": -1.520683934
+      },
+      {
+        "country": "Romania",
+        "year": "2023",
+        "change": -6.487342465
+      },
+      {
+        "country": "Romania",
+        "year": "2024",
+        "change": 36.9512509
+      },
+      {
+        "country": "Romania",
+        "year": "2025",
+        "change": 6.553194618
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2014",
+        "change": 3.192593125
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2015",
+        "change": 18.56879238
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2016",
+        "change": 2.384812466
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2017",
+        "change": 1.834007859
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2018",
+        "change": 15.09217736
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2019",
+        "change": 43.09757047
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2020",
+        "change": 8.93151134
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2021",
+        "change": -4.893572829
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2022",
+        "change": 5.686540159
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2023",
+        "change": 3.467288717
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2024",
+        "change": 9.072213084
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2025",
+        "change": 6.823026784
+      },
+      {
+        "country": "Slovenia",
+        "year": "2014",
+        "change": -4.584921442
+      },
+      {
+        "country": "Slovenia",
+        "year": "2015",
+        "change": -2.235071472
+      },
+      {
+        "country": "Slovenia",
+        "year": "2016",
+        "change": 11.40778198
+      },
+      {
+        "country": "Slovenia",
+        "year": "2017",
+        "change": 2.629905859
+      },
+      {
+        "country": "Slovenia",
+        "year": "2018",
+        "change": 7.238371045
+      },
+      {
+        "country": "Slovenia",
+        "year": "2019",
+        "change": 7.980693596
+      },
+      {
+        "country": "Slovenia",
+        "year": "2020",
+        "change": -3.735477747
+      },
+      {
+        "country": "Slovenia",
+        "year": "2021",
+        "change": 26.08170304
+      },
+      {
+        "country": "Slovenia",
+        "year": "2022",
+        "change": 7.34997477
+      },
+      {
+        "country": "Slovenia",
+        "year": "2023",
+        "change": 3.771684663
+      },
+      {
+        "country": "Slovenia",
+        "year": "2024",
+        "change": 5.252298281
+      },
+      {
+        "country": "Slovenia",
+        "year": "2025",
+        "change": 51.46966596
+      },
+      {
+        "country": "Spain",
+        "year": "2014",
+        "change": 0.3575499151
+      },
+      {
+        "country": "Spain",
+        "year": "2015",
+        "change": 4.597516526
+      },
+      {
+        "country": "Spain",
+        "year": "2016",
+        "change": -10.19211295
+      },
+      {
+        "country": "Spain",
+        "year": "2017",
+        "change": 15.34523289
+      },
+      {
+        "country": "Spain",
+        "year": "2018",
+        "change": 4.873100505
+      },
+      {
+        "country": "Spain",
+        "year": "2019",
+        "change": -0.4467520425
+      },
+      {
+        "country": "Spain",
+        "year": "2020",
+        "change": -1.482131115
+      },
+      {
+        "country": "Spain",
+        "year": "2021",
+        "change": 8.840935747
+      },
+      {
+        "country": "Spain",
+        "year": "2022",
+        "change": 18.81875669
+      },
+      {
+        "country": "Spain",
+        "year": "2023",
+        "change": 5.235184978
+      },
+      {
+        "country": "Spain",
+        "year": "2024",
+        "change": 26.4581001
+      },
+      {
+        "country": "Spain",
+        "year": "2025",
+        "change": 43.11040592
+      },
+      {
+        "country": "Sweden",
+        "year": "2014",
+        "change": 4.18942424
+      },
+      {
+        "country": "Sweden",
+        "year": "2015",
+        "change": -1.194228872
+      },
+      {
+        "country": "Sweden",
+        "year": "2016",
+        "change": -1.888071881
+      },
+      {
+        "country": "Sweden",
+        "year": "2017",
+        "change": 1.824881776
+      },
+      {
+        "country": "Sweden",
+        "year": "2018",
+        "change": 2.293595954
+      },
+      {
+        "country": "Sweden",
+        "year": "2019",
+        "change": 9.460533217
+      },
+      {
+        "country": "Sweden",
+        "year": "2020",
+        "change": 2.896021725
+      },
+      {
+        "country": "Sweden",
+        "year": "2021",
+        "change": 37.40009828
+      },
+      {
+        "country": "Sweden",
+        "year": "2022",
+        "change": 5.307173324
+      },
+      {
+        "country": "Sweden",
+        "year": "2023",
+        "change": 13.70819867
+      },
+      {
+        "country": "Sweden",
+        "year": "2024",
+        "change": 37.76182776
+      },
+      {
+        "country": "Sweden",
+        "year": "2025",
+        "change": 10.79472349
+      },
+      {
+        "country": "Türkiye",
+        "year": "2014",
+        "change": 0.784513925
+      },
+      {
+        "country": "Türkiye",
+        "year": "2015",
+        "change": 1.444203054
+      },
+      {
+        "country": "Türkiye",
+        "year": "2016",
+        "change": 8.635165534
+      },
+      {
+        "country": "Türkiye",
+        "year": "2017",
+        "change": 11.61461047
+      },
+      {
+        "country": "Türkiye",
+        "year": "2018",
+        "change": 23.87233656
+      },
+      {
+        "country": "Türkiye",
+        "year": "2019",
+        "change": 2.849786968
+      },
+      {
+        "country": "Türkiye",
+        "year": "2020",
+        "change": 2.279181763
+      },
+      {
+        "country": "Türkiye",
+        "year": "2021",
+        "change": -3.828099391
+      },
+      {
+        "country": "Türkiye",
+        "year": "2022",
+        "change": -10.79181771
+      },
+      {
+        "country": "Türkiye",
+        "year": "2023",
+        "change": 14.92339171
+      },
+      {
+        "country": "Türkiye",
+        "year": "2024",
+        "change": 48.78440929
+      },
+      {
+        "country": "Türkiye",
+        "year": "2025",
+        "change": 12.1231057
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2014",
+        "change": -1.108390314
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2015",
+        "change": -3.048450599
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2016",
+        "change": 4.746029287
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2017",
+        "change": 2.115747294
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2018",
+        "change": 2.526194723
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2019",
+        "change": 0.7425588816
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2020",
+        "change": 1.381032487
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2021",
+        "change": 5.563529043
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2022",
+        "change": 3.881133473
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2023",
+        "change": -0.4636405021
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2024",
+        "change": 4.69745611
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2025",
+        "change": 4.426589187
+      },
+      {
+        "country": "United States",
+        "year": "2014",
+        "change": -5.597101638
+      },
+      {
+        "country": "United States",
+        "year": "2015",
+        "change": -2.842053422
+      },
+      {
+        "country": "United States",
+        "year": "2016",
+        "change": 1.345805083
+      },
+      {
+        "country": "United States",
+        "year": "2017",
+        "change": -3.724833513
+      },
+      {
+        "country": "United States",
+        "year": "2018",
+        "change": 2.218936805
+      },
+      {
+        "country": "United States",
+        "year": "2019",
+        "change": 9.883028299
+      },
+      {
+        "country": "United States",
+        "year": "2020",
+        "change": 1.286162019
+      },
+      {
+        "country": "United States",
+        "year": "2021",
+        "change": 2.265499616
+      },
+      {
+        "country": "United States",
+        "year": "2022",
+        "change": -5.422294483
+      },
+      {
+        "country": "United States",
+        "year": "2023",
+        "change": -0.8118610183
+      },
+      {
+        "country": "United States",
+        "year": "2024",
+        "change": 6.42994883
+      },
+      {
+        "country": "United States",
+        "year": "2025",
+        "change": 2.733308814
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "axis": {
+        "format": "%Y",
+        "tickCount": "year"
+      },
+      "title": "Year"
+    },
+    "y": {
+      "field": "change",
+      "type": "quantitative",
+      "scale": {
+        "domainMax": 129.95245970000002,
+        "domainMin": -56.19480395
+      },
+      "title": "Change in spending (%)"
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "legend": {
+        "title": "Group",
+        "symbolOpacity": 1
+      }
+    }
+  },
+  "title": "Change in spending (%) on defense",
+  "width": 500,
+  "height": 500
+}

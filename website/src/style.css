@@ -1,0 +1,199 @@
+:root {
+  --observablehq-max-width: auto;
+
+  --vertical-padding: 10vh;
+  --inner-padding: 1rem;
+}
+
+#observablehq-sidebar {
+  --observablehq-sidebar-padding-left: 0px;
+}
+
+#observablehq-toc {
+  right: 2rem !important;
+  top: 2rem !important;
+  width: 180px !important;
+}
+
+/* Base resets to prevent standard ObservableHQ layout overrides */
+h1, h2, h3, p {
+  max-width: 100%;
+}
+
+/* Scrollytelling Component */
+.scrolly {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--inner-padding);
+  gap: calc(2 * var(--inner-padding));
+  max-width: none;
+}
+
+/* Scoped elements within Scrollytelling */
+.scrolly article {
+  position: relative;
+  order: 2;
+  max-width: none;
+}
+
+.scrolly figure {
+  position: sticky;
+  top: var(--vertical-padding);
+  padding-top: var(--inner-padding);
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fdfdfd;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  z-index: 1;
+  max-width: none;
+}
+
+.scrolly .step {
+  height: auto;
+  margin-bottom: var(--vertical-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: calc(2 * var(--inner-padding));
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Shared utility for visualization containers */
+.title {
+  font-weight: bold;
+}
+
+.vis {
+  width: 100%;
+  height: 100%;
+}
+
+.vis .vega-bind {
+  display: none;
+}
+
+text {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* Specific page sections */
+.exploration-plot {
+  margin-top: 4rem;
+  padding: calc(2 * var(--inner-padding));
+  border-top: 2px solid #eee;
+}
+
+/* Mobile Responsive Overrides */
+@media screen and (max-width: 768px) {
+  .scrolly {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .scrolly article {
+    z-index: 1;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .scrolly figure {
+    top: 0;
+    height: 40vh;
+    z-index: 10;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+  }
+
+  .scrolly .step {
+    height: auto;
+    min-height: 50vh;
+    margin-bottom: 60vh;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Note: We no longer need 'position: relative' here since the popup is fixed to the screen */
+.footnote-ref {
+  cursor: help;
+  text-decoration: underline dotted; /* Optional: makes it clearer that it's interactive */
+}
+
+/* The actual tooltip popup */
+.footnote-ref::after {
+  content: attr(data-tooltip);
+
+  /* Fix to the bottom-right of the viewport */
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999; /* Ensure it's above all charts and scrolly elements */
+
+  /* Sizing */
+  width: max-content;
+  max-width: 350px; /* Max width for desktop readability */
+  white-space: normal;
+
+  /* Styling */
+  background-color: #222;
+  color: #fff;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  /* Smooth animation (fade and slide up) */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+
+  /* Prevent the popup itself from blocking mouse events */
+  pointer-events: none;
+}
+
+/* Hide the old directional arrow */
+.footnote-ref::before {
+  display: none;
+}
+
+/* Show tooltip on hover */
+.footnote-ref:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .footnote-ref::after {
+    /* On small screens, center it at the bottom instead of the right corner */
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+    max-width: none;
+
+    /* Slightly smaller text for mobile */
+    font-size: 0.85rem;
+  }
+}
