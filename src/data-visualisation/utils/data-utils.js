@@ -1,5 +1,7 @@
-const plots = require("../plots");
-const {writeSpec, writeAllSpecs} = require("./exporter");
+// Utilities for preparing tidy data and computing selector options
+const { categoryConfig, countryIcons } = require('./constants');
+// Use flags (URLs) instead of emoji icons by default
+const use_icons = false;
 
 function computeOptions(data) {
     const yearOptions = Array.from(new Set(data.map(d => d.year))).sort();
@@ -85,4 +87,3 @@ function prepareData(equipmentCsv, infrastructureCsv, otherCsv, personnelCsv) {
 }
 
 module.exports = { computeOptions, prepareData };
-
