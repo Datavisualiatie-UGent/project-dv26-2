@@ -1,6 +1,6 @@
 const vl = require('vega-lite-api');
-const { categoryConfig } = require('../utils/constants');
 const { computeOptions } = require('../utils/data-utils');
+const { createFlagPanel } = require('../utils/flag-panel');
 
 function getBarLabels(labelMode) {
     if (labelMode === 'none') return [];
@@ -23,18 +23,28 @@ function getBarLabels(labelMode) {
 function createStackedBar(data, { labelMode = 'none', includeParams = true } = {}) {
     const barLayer = vl.markBar()
         .encode(
-            vl.y().fieldN('country_label').title(null).sort({ 'field': 'country_order', 'op': 'min' }),
+            // Hide default Y-axis text & ticks so our custom left panel takes over smoothly
+            vl.y().fieldN('country_label').title(null)
+                .sort({ 'field': 'country_order', 'op': 'min' })
+                .axis({ labels: false, ticks: false, domain: false }),
             vl.x().fieldQ('value').title('Share (%)').stack('zero').scale({ domain: [0, 100] }),
             vl.color().fieldN('category_label').title('Category').legend({ orient: 'bottom' }).scale({ scheme: 'tableau10' }),
             vl.order().fieldQ('order'),
-            vl.tooltip(['country_label', 'category_label', 'value'])
+            vl.tooltip(['country_label', 'category_label', 'value', 'flag_url'])
         );
 
-    const layers = [barLayer, ...getBarLabels(labelMode)];
+    // Build right-side layers (bars + optional numeric labels)
+    const rightLayers = [barLayer, ...getBarLabels(labelMode)];
     const titleText = labelMode === 'none' ? 'Unlabeled' : labelMode === 'always' ? 'Labeled (Always)' : 'Labeled (Adaptive)';
 
-    let chart = vl.layer(...layers)
-        .width(350).height(120)
+    const rightPanel = vl.layer(...rightLayers).width(450).height(120);
+
+    // Build Left Panel for custom Flag and Label formatting
+    const leftPanel = createFlagPanel(vl, { width: 140 });
+
+    // Use hconcat with shared Y scale to stitch the custom labels to the rows
+    let chart = vl.hconcat(leftPanel, rightPanel)
+        .resolve({ scale: { y: 'shared' } })
         .title({ text: titleText });
 
     if (includeParams) {
@@ -59,5 +69,3 @@ function createStackedBar(data, { labelMode = 'none', includeParams = true } = {
 }
 
 module.exports = { createStackedBar };
-
-

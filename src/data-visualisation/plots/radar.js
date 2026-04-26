@@ -1,4 +1,6 @@
 const vl = require('vega-lite-api');
+const { computeOptions } = require('../utils/data-utils');
+const { createDynamicLegend } = require('../utils/flag-panel');
 const { categoryConfig } = require('../utils/constants');
 
 function createRadar(data, { legendInside = false, includeParams = true } = {}) {
@@ -68,20 +70,27 @@ function createRadar(data, { legendInside = false, includeParams = true } = {}) 
         )
         .params(hover)
         .encode(
-            vl.x().fieldQ('px').scale({ domain: [-scaleLimit, scaleLimit] }).axis(null),
-            vl.y().fieldQ('py').scale({ domain: [-scaleLimit, scaleLimit] }).axis(null),
-            vl.color().fieldN('country_label').scale({ range: ['#1f77b4', '#ff7f0e'] }).legend(legendConfig).title(null),
-            vl.order().fieldQ('order'),
-            vl.detail().fieldN('country_label'),
+            vl.x().fieldQ("px").scale({ domain: [-scaleLimit, scaleLimit] }).axis(null),
+            vl.y().fieldQ("py").scale({ domain: [-scaleLimit, scaleLimit] }).axis(null),
+            // IMPORTANT: Turn off the default legend here!
+            vl.color().fieldN("country_label").scale({ range: ["#1f77b4", "#ff7f0e"] }).legend(null).title(null),
+            vl.order().fieldQ("order"),
             vl.opacity().if(hover, vl.value(1)).value(0.3),
             vl.size().if(hover, vl.value(3)).value(2),
             vl.tooltip(['country_label', 'category_label', 'value'])
         );
 
-    let chart = vl.layer(gridLayer, gridValuesLayer, axesLayer, labelsLayer, dataLayer)
+    const mainPlot = vl.layer(gridLayer, gridValuesLayer, axesLayer, labelsLayer, dataLayer)
         .width(300).height(300)
-        .view({ stroke: null })
-        .title({ text: legendInside ? 'Legend Inside Plot' : 'Legend Outside Plot', fontSize: 14 });
+        .view({ stroke: null });
+
+    // 1. Generate the custom flag legend
+    const customLegend = createDynamicLegend(vl, { width: 300 });
+
+    // 2. Stack the legend vertically on top of the main plot
+    let chart = vl.vconcat(customLegend, mainPlot)
+        .resolve({ scale: { color: 'shared' } }) // Ensures legend colors match radar lines
+        .title({ text: "Defence Expenditure Radar", fontSize: 14 });
 
     if (includeParams) {
         const { yearOptions, natoExclUsLabel, countryOptions } = require('../utils/data-utils').computeOptions(data);
@@ -99,5 +108,3 @@ function createRadar(data, { legendInside = false, includeParams = true } = {}) 
 }
 
 module.exports = { createRadar };
-
-

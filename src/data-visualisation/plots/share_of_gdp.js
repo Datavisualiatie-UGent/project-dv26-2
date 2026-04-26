@@ -1,5 +1,6 @@
 const vl = require('vega-lite-api');
 const { flags } = require('../utils/constants');
+const { createFlagOverlay } = require('../utils/flag-panel');
 
 function createShareOfGdp(data, { includeParams = true } = {}) {
     // data is expected to be tidy: { country, year, share, flag_url }
@@ -12,23 +13,15 @@ function createShareOfGdp(data, { includeParams = true } = {}) {
             vl.tooltip(['country', 'year', 'share'])
         );
 
-    const labels = vl.markImage({ width: 30, height: 15 })
-        .transform(vl.aggregate(vl.min('avg_share').as('avg_share')).groupby(['country', 'flag_url']))
-        .encode(
-            vl.x().value(-20),
-            vl.y().fieldN('country').sort({ field: 'avg_share', order: 'descending' }),
-            vl.url().field('flag_url')
-        );
+    // Overlay flags and country text using absolute x positions so image loads
+    // do not affect the heatmap layout. Use the same aggregation to compute
+    // average share for sorting the y axis.
+    const overlay = createFlagOverlay(vl, { imageWidth: 30, imageHeight: 15, imageX: -20, textX: -40 });
 
-    const text_labels = vl.markText({ align: 'right' })
-        .transform(vl.aggregate(vl.min('avg_share').as('avg_share')).groupby(['country', 'flag_url']))
-        .encode(
-            vl.x().value(-40),
-            vl.y().fieldN('country').sort({ field: 'avg_share', order: 'descending' }),
-            vl.text().fieldN('country')
-        );
-
-    let chart = vl.layer(heatmap, labels, text_labels)
+    let chart = vl.layer(heatmap, overlay)
+        .transform(
+            vl.joinaggregate(vl.average('share').as('avg_share')).groupby(['country'])
+        )
         .resolve({ scale: { y: 'shared' } })
         .width({ step: 27.5 })
         .height({ step: 27.5 })
@@ -46,4 +39,3 @@ function createShareOfGdp(data, { includeParams = true } = {}) {
 }
 
 module.exports = { createShareOfGdp };
-

@@ -4,4 +4,3 @@ const { createRadar } = require('./radar');
 const { createShareOfGdp } = require('./share_of_gdp');
 
 module.exports = { createStackedBar, createFacetedBar, createRadar, createShareOfGdp };
-

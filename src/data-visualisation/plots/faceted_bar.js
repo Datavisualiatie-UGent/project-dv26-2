@@ -1,4 +1,5 @@
 const vl = require('vega-lite-api');
+const { computeOptions } = require('../utils/data-utils');
 
 function getBarLabels(labelMode) {
     if (labelMode === 'none') return [];
@@ -19,27 +20,36 @@ function getBarLabels(labelMode) {
 }
 
 function createFacetedBar(data, { labelMode = 'none', includeParams = true } = {}) {
+    // 1. Hide the default Y-axis labels since we will use flags
     const barLayer = vl.markBar({ cornerRadiusEnd: 2 })
         .encode(
-            vl.y().fieldN('country_label').title(null).axis({ labelAngle: 0 }).sort({ 'field': 'country_order', 'op': 'min' }),
-            vl.x().fieldQ('value').title('Share (%)').scale({ domain: [0, 100] }),
-            vl.color().fieldN('category_label').title('Category').legend({ orient: 'bottom' }).scale({ scheme: 'tableau10' }),
-            vl.tooltip(['country_label', 'category_label', 'value'])
+            vl.y().fieldN("country_label").title(null).axis({ labels: false, ticks: false }).sort({"field": "country_order", "op": "min"}),
+            vl.x().fieldQ("value").title("Share (%)").scale({domain: [0, 100]}),
+            vl.color().fieldN("category_label").title("Category").legend({ orient: "bottom" }).scale({ scheme: "tableau10" }),
+            vl.tooltip(["country_label", "category_label", "value", "flag_url"])
         );
 
-    let layers = [barLayer, ...getBarLabels(labelMode)];
-    const titleText = labelMode === 'none' ? 'Unlabeled' : labelMode === 'always' ? 'Labeled (Always)' : 'Labeled (Adaptive)';
+    // 2. Draw flags inside the facet, pinned to the left edge (x=0)
+    const flagLayer = vl.markImage({ width: 20, height: 12, align: 'right', dx: -5 })
+        .encode(
+            vl.x().value(0),
+            vl.y().fieldN("country_label").sort({"field": "country_order", "op": "min"}),
+            vl.url().field("flag_url")
+        );
 
-    let chart = vl.layer(...layers)
+    const titleText = labelMode === "none" ? "Unlabeled" : labelMode === "always" ? "Labeled (Always)" : "Labeled (Adaptive)";
+
+    // 3. Layer the flags and bars BEFORE facetting
+    let chart = vl.layer(flagLayer, barLayer, ...getBarLabels(labelMode))
         .width(200).height(50)
         .facet(
-            vl.row().fieldN('category_label').title(null).header({ labelAngle: 0, labelAlign: 'left' })
+            vl.row().fieldN("category_label").title(null).header({ labelAngle: 0, labelAlign: 'left' })
         )
-        .resolve({ scale: { x: 'shared' } })
+        .resolve({scale: {x: 'shared'}})
         .title({ text: titleText });
 
     if (includeParams) {
-        const { yearOptions, natoAvgLabel, countryOptions, defaultCountryB } = require('../utils/data-utils').computeOptions(data);
+        const { yearOptions, natoAvgLabel, countryOptions, defaultCountryB } = computeOptions(data);
 
         chart = chart.data(data)
             .params([
@@ -60,5 +70,3 @@ function createFacetedBar(data, { labelMode = 'none', includeParams = true } = {
 }
 
 module.exports = { createFacetedBar };
-
-

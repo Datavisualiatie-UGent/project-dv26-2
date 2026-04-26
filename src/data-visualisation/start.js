@@ -5,7 +5,7 @@ const { categoryConfig, countryIcons, flags } = require('./utils/constants');
 const plots = require('./plots');
 const {prepareData} = require("./utils/data-utils");
 
-const use_icons = true;
+// no emoji icons by default; flags URLs are used instead
 
 const equipment = loadCsv('portionofexpenditure_equipment.csv');
 const infrastructure = loadCsv('portionofexpenditure_infrastructure.csv');

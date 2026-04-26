@@ -1,5 +1,4 @@
-const plots = require("../plots");
-const {writeSpec, writeAllSpecs} = require("./exporter");
+const { categoryConfig, flags } = require('./constants');
 
 function computeOptions(data) {
     const yearOptions = Array.from(new Set(data.map(d => d.year))).sort();
@@ -66,15 +65,18 @@ function prepareData(equipmentCsv, infrastructureCsv, otherCsv, personnelCsv) {
 
             yearCategorySet.forEach(d => {
                 const catConf = categoryConfig[d.category];
-                const catLabel = use_icons && catConf.icon ? `${d.category} ${catConf.icon}` : d.category;
+                // category label remains the category name; flags are used for country
+                const catLabel = d.category;
 
-                const cIcon = use_icons && countryIcons[d.country] ? ` ${countryIcons[d.country]}` : "";
-                const cLabel = `${d.country}${cIcon}`;
+                const cLabel = d.country;
+                // attach flag_url if available
+                const flag_url = flags && flags[d.country] ? flags[d.country] : null;
 
                 finalData.push({
                     ...d,
                     category_label: catLabel,
                     country_label: cLabel,
+                    flag_url,
                     order: catConf.order // Passed explicitly to guarantee strict stacking sequence
                 });
             });
@@ -83,6 +85,9 @@ function prepareData(equipmentCsv, infrastructureCsv, otherCsv, personnelCsv) {
 
     return finalData;
 }
+
+// default: do not use emoji icons in labels; callers can set prepareData.use_icons = true
+prepareData.use_icons = false;
 
 module.exports = { computeOptions, prepareData };
 
