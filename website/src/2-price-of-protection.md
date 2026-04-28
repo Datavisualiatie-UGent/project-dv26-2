@@ -79,6 +79,8 @@ const viewPromise = vegaEmbed("#vis-real-change", spec, { actions: false }).then
 
 ## More than just Salaries
 
+<!-- Remove
+
 Where does that money actually go?
 A common criticism is that European armies spend too much on pensions and salaries, and not enough on the hard power needed for modern war.
 NATO targets a **20% minimum** for key equipment that provides hard combat power like missiles, fighter jets, combat vehicles etc. [^5]
@@ -101,6 +103,8 @@ By breaking down the portion of expenditure, we can see which countries are simp
 > TODO: horizontal stacked bar chart showing expenditure shares
 > x-axis: aggregates
 > y-axis: share
+
+-->
 
 ## The Weight of the Titan?
 
@@ -157,20 +161,24 @@ pictogram showing blocks of (some scale, e.g. thousands) of soldiers
 >
 > Toggle between absolute (per 1,000 inhabitants) numbers
 >
-> NOTE use flags for countreis individually?
+> NOTE use flags for countries individually?
 
+<!-- Annotate percentage in absolute
 > [!plot] soldiers-per-capita
 >
 > TODO if needed, annotate previous plot with percentages of soldiers in that country
-
+-->
 ---
 
+<!-- integrate in in-text story
 > [!plot] explore-share-of-gdp
 >
 > TODO choose year between 2014-2025
 > TODO When 2014-2024: add 2% red line indicating the 2% threshold
 > TODO when 2025: Add red dotted line indicating new 5% threshold
+-->
 
+<!-- remove in favor of previous plots
 > [!plot] explore-real-change
 >
 > x-axis over time
@@ -182,7 +190,9 @@ pictogram showing blocks of (some scale, e.g. thousands) of soldiers
 >
 > choose country in left multi-selection dropdown (enable/disable each country individually)
 > choose reference in right dropdown
+-->
 
+<!-- It does not fit in the story
 > [!plot] explore-expenditure-shares
 >
 > TODO radial chart country-to-aggregate comparison,
@@ -192,6 +202,7 @@ pictogram showing blocks of (some scale, e.g. thousands) of soldiers
 > - Choose country/aggregate with (single-option) dropdown
 > - Dropdown values are aggregates + countries, to allow comparing both
 > - Instead of dropdown, toggle-buttons
+-->
 
 ---
 
