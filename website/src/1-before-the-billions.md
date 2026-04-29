@@ -1,7 +1,7 @@
 # Before the Billions: Securing a Broken Continent
 
 In order to truly understand the contemporary situation, it is necessary to understand _how_ and _why_ NATO came to be.
-For this, we must travel back to 1949 — to a fragile Europe trying to heal the scars left behind from the Second World War.
+For this, we must travel back to 1949: to a fragile Europe trying to heal the scars left behind from the Second World War.
 In a new, bipolar world divided between the influence of the US and the USSR, twelve nations gathered in Washington to sign a pact that would redraw the strategic map of the West forever.
 
 ```js
@@ -40,9 +40,6 @@ Twelve nations form the original shield:
 - the UK, and
 - the USA
 
-From this, the goal would be to add a new step showing the new members for each of the following years.
-I believe the best approach would be to color the countries that already had joined were to be colored in NATO light blue #118ACB, with new countries being colored in the complementary color (being #cb5211).
-
 </div>
 <div class="step" data-step="1982" data-signals='{"SelectYear": 1952}'>
 
@@ -64,13 +61,13 @@ By the time Spain joined in 1982, the alliance had grown into a sixteen-nation b
 <div class="step" data-step="1999" data-signals='{"SelectYear": 1999}'>
 
 The Fall of the Berlin Wall in 1989 and the subsequent collapse of the Soviet Union fundamentally changed NATO’s purpose.
-No longer just a Cold War shield, the alliance became a tool for stabilising a newly free Eastern Europe.
+No longer just a Cold War shield, the alliance became a tool for stabilising a newly free and democratic Eastern Europe.
 In 1999, former Warsaw Pact [^2] members Poland, Hungary, and the Czech Republic led the way and joined the West.
 
 </div>
 <div class="step" data-step="2004" data-signals='{"SelectYear": 2004}'>
 
-Just five years later, in 2004, NATO underwent its most ambitious expansion to date.
+Just five years later, in 2004, NATO underwent its largest expansion to date.
 Seven nations, including the three Baltic States of Estonia, Latvia, and Lithuania, joined together with Bulgaria, Romania, Slovenia and Slovakia in a single wave.
 This move shifted the alliance’s borders directly to the doorstep of the former Soviet Union.
 
@@ -79,7 +76,7 @@ This move shifted the alliance’s borders directly to the doorstep of the forme
 
 In the last two decades, the focus has shifted again; this time toward the Balkans, with the accession of Albania, Croatia, Montenegro, and North Macedonia.
 However, the most dramatic pivot occurred in 2023 and 2024;
-as a direct response to Russia’s invasion of Ukraine and a radically changed safety situation, the long-neutral Nordic giants Finland and Sweden joined the alliance.
+as a direct response to Russia’s invasion of Ukraine and a radically different safety situation, the long-neutral Nordic countries of Finland and Sweden joined the alliance.
 
 </div>
 
