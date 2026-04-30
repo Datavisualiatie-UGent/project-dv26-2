@@ -197,3 +197,35 @@ text {
     font-size: 0.85rem;
   }
 }
+
+/* Code for the radio buttons in the equipment chart */
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.button-group input[type="radio"] {
+  display: none; /* hide actual radio */
+}
+
+.button-group label {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f5f5f5;
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.button-group label:hover {
+  background: #e0e0e0;
+}
+
+/* selected state */
+.button-group input[type="radio"]:checked + label {
+  background: #333;
+  color: white;
+  border-color: #333;
+}

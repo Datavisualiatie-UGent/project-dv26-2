@@ -1,0 +1,3126 @@
+{
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      200
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      300
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 20,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 40,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 60,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 80,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 100,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 120,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 140,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 160,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 180,
+                "col": 210
+              }
+            ]
+          },
+          "width": 300,
+          "height": 200
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      240
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 150
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 180
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 210
+              }
+            ]
+          },
+          "width": 240,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      240
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 150
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 180
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 210
+              }
+            ]
+          },
+          "width": 240,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      150
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 120
+              }
+            ]
+          },
+          "width": 150,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      150
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 120
+              }
+            ]
+          },
+          "width": 150,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      150
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 120
+              }
+            ]
+          },
+          "width": 150,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      120
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 90
+              }
+            ]
+          },
+          "width": 120,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Spain",
+                "flag": "🇪🇸 Spain",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Spain",
+                "flag": "🇪🇸 Spain",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Spain",
+                "flag": "🇪🇸 Spain",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Canada",
+                "flag": "🇨🇦 Canada",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Canada",
+                "flag": "🇨🇦 Canada",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Canada",
+                "flag": "🇨🇦 Canada",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      60
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Sweden",
+                "flag": "🇸🇪 Sweden",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Sweden",
+                "flag": "🇸🇪 Sweden",
+                "row": 0,
+                "col": 30
+              }
+            ]
+          },
+          "width": 60,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      60
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Finland",
+                "flag": "🇫🇮 Finland",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Finland",
+                "flag": "🇫🇮 Finland",
+                "row": 0,
+                "col": 30
+              }
+            ]
+          },
+          "width": 60,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Denmark",
+                "flag": "🇩🇰 Denmark",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "North Macedonia",
+                "flag": "🇲🇰 North Macedonia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Portugal",
+                "flag": "🇵🇹 Portugal",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Romania",
+                "flag": "🇷🇴 Romania",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Norway",
+                "flag": "🇳🇴 Norway",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Czechia",
+                "flag": "🇨🇿 Czechia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Belgium",
+                "flag": "🇧🇪 Belgium",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Hungary",
+                "flag": "🇭🇺 Hungary",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Croatia",
+                "flag": "🇭🇷 Croatia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Bulgaria",
+                "flag": "🇧🇬 Bulgaria",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Slovak Republic",
+                "flag": "🇸🇰 Slovak Republic",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Slovenia",
+                "flag": "🇸🇮 Slovenia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Albania",
+                "flag": "🇦🇱 Albania",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Lithuania",
+                "flag": "🇱🇹 Lithuania",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Netherlands",
+                "flag": "🇳🇱 Netherlands",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Latvia",
+                "flag": "🇱🇻 Latvia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Estonia",
+                "flag": "🇪🇪 Estonia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Luxembourg",
+                "flag": "🇱🇺 Luxembourg",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 35
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      20
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_airplane_57_icon.png"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Montenegro",
+                "flag": "🇲🇪 Montenegro",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 20
+        }
+      ],
+      "spacing": 20
+    }
+  ],
+  "spacing": 20,
+  "background": "#f0f0f0",
+  "title": {
+    "text": "Amount of aircraft equipment per country",
+    "fontSize": 20,
+    "subtitle": "100 aircraft equipment per pictogram",
+    "subtitleFontSize": 15,
+    "anchor": "middle",
+    "offset": 10
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

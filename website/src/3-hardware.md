@@ -1,5 +1,12 @@
 # 3. The Iron Reality - If budget is the promise, hardware is the proof
 
+```js
+import vegaEmbed from "npm:vega-embed";
+import scrollama from "npm:scrollama";
+const scroller = scrollama();
+```
+
+
 To understand NATO’s strategic weight, we must look at the hard power sitting in hangars, motor pools, and docks across 32 nations.
 Using data from Global Firepower 2026, we can look past the price tags to see the actual machines of war. [^7]
 
@@ -20,6 +27,47 @@ To project power globally in a matter of hours, the US Air Force maintains a lar
 > [!plot] aircraft-test-propertional-shape
 >
 > Proportional shape chart
+
+<figure id="equipment-graphic" size="200">
+  <div class="button-group">
+    <input type="radio" id="aircraft" name="equipment" value="aircraft" checked>
+    <label for="aircraft">Aircraft</label>
+    <input type="radio" id="apc" name="equipment" value="apc">
+    <label for="apc">APC</label>
+    <input type="radio" id="fighters" name="equipment" value="fighters">
+    <label for="fighters">Fighters</label>
+    <input type="radio" id="tanks" name="equipment" value="tanks">
+    <label for="tanks">Tanks</label>
+  </div>
+
+  <div class="vis" id="vis-equipment"></div>
+</figure>
+
+```js
+// Because Observable's `FileAttachment` cannot handle non-static strings
+const files = {
+  aircraft: FileAttachment("./data-visualisation/aircraft.json").json(),
+  apc: FileAttachment("./data-visualisation/apc.json").json(),
+  fighters: FileAttachment("./data-visualisation/fighters.json").json(),
+  tanks: FileAttachment("./data-visualisation/tanks.json").json()
+};
+
+async function loadVis(type) {
+  const spec = await files[type];
+  const result = await vegaEmbed("#vis-equipment", spec, { actions: false });
+}
+
+const radios = document.querySelectorAll('input[name="equipment"]');
+radios.forEach(radio => {
+  radio.addEventListener("change", (event) => {
+    loadVis(event.target.value);
+  });
+});
+
+// Load default
+const selected = document.querySelector('input[name="equipment"]:checked');
+loadVis(selected.value);
+```
 
 TODO Add hyperlinks (or highlights on hover?) to more information about these names.
 

@@ -166,6 +166,17 @@ pictogram showing blocks of (some scale, e.g. thousands) of soldiers
 >
 > NOTE use flags for countries individually?
 
+<figure id="soldiers-absolute-graphic" size=200>
+<div class="vis" id="vis-soldiers-absolute"></div>
+</figure>
+</div>
+
+```js
+const spec = await FileAttachment("./data-visualisation/soldiers-absolute.json").json();
+const viewPromise = vegaEmbed("#vis-soldiers-absolute", spec, { actions: false }).then(res => res.view);
+```
+
+
 <!-- Annotate percentage in absolute
 > [!plot] soldiers-per-capita
 >

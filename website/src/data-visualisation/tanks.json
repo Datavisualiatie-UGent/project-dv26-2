@@ -1,0 +1,2185 @@
+{
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      100
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      300
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 0,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 25,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 120
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 150
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 180
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 210
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 240
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 50,
+                "col": 270
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 75,
+                "col": 0
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 75,
+                "col": 30
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 75,
+                "col": 60
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 75,
+                "col": 90
+              },
+              {
+                "country": "United States",
+                "flag": "🇺🇸 United States",
+                "row": 75,
+                "col": 120
+              }
+            ]
+          },
+          "width": 300,
+          "height": 100
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      50
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      300
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 150
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 180
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 210
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 240
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 0,
+                "col": 270
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 25,
+                "col": 0
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 25,
+                "col": 30
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 25,
+                "col": 60
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 25,
+                "col": 90
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 25,
+                "col": 120
+              },
+              {
+                "country": "Türkiye",
+                "flag": "🇹🇷 Türkiye",
+                "row": 25,
+                "col": 150
+              }
+            ]
+          },
+          "width": 300,
+          "height": 50
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      270
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 150
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 180
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 210
+              },
+              {
+                "country": "Greece",
+                "flag": "🇬🇷 Greece",
+                "row": 0,
+                "col": 240
+              }
+            ]
+          },
+          "width": 270,
+          "height": 25
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      180
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 90
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 120
+              },
+              {
+                "country": "Poland",
+                "flag": "🇵🇱 Poland",
+                "row": 0,
+                "col": 150
+              }
+            ]
+          },
+          "width": 180,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      120
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 60
+              },
+              {
+                "country": "France",
+                "flag": "🇫🇷 France",
+                "row": 0,
+                "col": 90
+              }
+            ]
+          },
+          "width": 120,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Romania",
+                "flag": "🇷🇴 Romania",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Romania",
+                "flag": "🇷🇴 Romania",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Romania",
+                "flag": "🇷🇴 Romania",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Germany",
+                "flag": "🇩🇪 Germany",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Bulgaria",
+                "flag": "🇧🇬 Bulgaria",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Bulgaria",
+                "flag": "🇧🇬 Bulgaria",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Bulgaria",
+                "flag": "🇧🇬 Bulgaria",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      90
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Spain",
+                "flag": "🇪🇸 Spain",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Spain",
+                "flag": "🇪🇸 Spain",
+                "row": 0,
+                "col": 30
+              },
+              {
+                "country": "Spain",
+                "flag": "🇪🇸 Spain",
+                "row": 0,
+                "col": 60
+              }
+            ]
+          },
+          "width": 90,
+          "height": 25
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      60
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "United Kingdom",
+                "flag": "🇬🇧 United Kingdom",
+                "row": 0,
+                "col": 30
+              }
+            ]
+          },
+          "width": 60,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      60
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Hungary",
+                "flag": "🇭🇺 Hungary",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Hungary",
+                "flag": "🇭🇺 Hungary",
+                "row": 0,
+                "col": 30
+              }
+            ]
+          },
+          "width": 60,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      60
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Finland",
+                "flag": "🇫🇮 Finland",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Finland",
+                "flag": "🇫🇮 Finland",
+                "row": 0,
+                "col": 30
+              }
+            ]
+          },
+          "width": 60,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      60
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "country": "Italy",
+                "flag": "🇮🇹 Italy",
+                "row": 0,
+                "col": 30
+              }
+            ]
+          },
+          "width": 60,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Sweden",
+                "flag": "🇸🇪 Sweden",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Canada",
+                "flag": "🇨🇦 Canada",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Croatia",
+                "flag": "🇭🇷 Croatia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Slovenia",
+                "flag": "🇸🇮 Slovenia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Denmark",
+                "flag": "🇩🇰 Denmark",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Slovak Republic",
+                "flag": "🇸🇰 Slovak Republic",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Norway",
+                "flag": "🇳🇴 Norway",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Portugal",
+                "flag": "🇵🇹 Portugal",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "Czechia",
+                "flag": "🇨🇿 Czechia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        }
+      ],
+      "spacing": 20
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "image",
+                "width": 25,
+                "height": 30
+              },
+              "encoding": {
+                "y": {
+                  "field": "row",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "reverse": true,
+                    "nice": false,
+                    "domain": [
+                      0,
+                      25
+                    ]
+                  }
+                },
+                "x": {
+                  "field": "col",
+                  "type": "quantitative",
+                  "axis": null,
+                  "scale": {
+                    "nice": false,
+                    "domain": [
+                      0,
+                      30
+                    ]
+                  }
+                },
+                "url": {
+                  "value": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Big_guy_637%27s_tank_icon.svg"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "align": "left",
+                "dy": -25,
+                "dx": -10
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "value": 0
+                },
+                "text": {
+                  "field": "flag"
+                }
+              }
+            }
+          ],
+          "data": {
+            "values": [
+              {
+                "country": "North Macedonia",
+                "flag": "🇲🇰 North Macedonia",
+                "row": 0,
+                "col": 0
+              }
+            ]
+          },
+          "width": 30,
+          "height": 25
+        }
+      ],
+      "spacing": 20
+    }
+  ],
+  "spacing": 20,
+  "background": "#f0f0f0",
+  "title": {
+    "text": "Amount of tanks equipment per country",
+    "fontSize": 20,
+    "subtitle": "100 tanks equipment per pictogram",
+    "subtitleFontSize": 15,
+    "anchor": "middle",
+    "offset": 10
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
