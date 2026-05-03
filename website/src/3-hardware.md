@@ -30,14 +30,22 @@ To project power globally in a matter of hours, the US Air Force maintains a lar
 
 <figure id="equipment-graphic" size="200">
   <div class="button-group">
-    <input type="radio" id="aircraft" name="equipment" value="aircraft" checked>
+    <input type="radio" id="tanks" name="equipment" value="tanks" checked>
+    <label for="tanks">Tanks</label>
+    <input type="radio" id="fighters" name="equipment" value="fighters">
+    <label for="fighters">Fighters</label>
+    <input type="radio" id="aircraft" name="equipment" value="aircraft">
     <label for="aircraft">Aircraft</label>
     <input type="radio" id="apc" name="equipment" value="apc">
     <label for="apc">APC</label>
-    <input type="radio" id="fighters" name="equipment" value="fighters">
-    <label for="fighters">Fighters</label>
-    <input type="radio" id="tanks" name="equipment" value="tanks">
-    <label for="tanks">Tanks</label>
+    <input type="radio" id="spg" name="equipment" value="spg">
+    <label for="spg">SPG Artillery</label>   
+    <input type="radio" id="towed" name="equipment" value="towed">
+    <label for="towed">Towed Artillery</label>
+    <input type="radio" id="aircraft_carrier" name="equipment" value="aircraft_carrier">
+    <label for="aircraft_carrier">Aircraft Carriers</label>
+    <input type="radio" id="submarine" name="equipment" value="submarine">
+    <label for="submarine">Submarines</label>
   </div>
 
   <div class="vis" id="vis-equipment"></div>
@@ -47,9 +55,13 @@ To project power globally in a matter of hours, the US Air Force maintains a lar
 // Because Observable's `FileAttachment` cannot handle non-static strings
 const files = {
   aircraft: FileAttachment("./data-visualisation/aircraft.json").json(),
-  apc: FileAttachment("./data-visualisation/apc.json").json(),
   fighters: FileAttachment("./data-visualisation/fighters.json").json(),
-  tanks: FileAttachment("./data-visualisation/tanks.json").json()
+  tanks: FileAttachment("./data-visualisation/tanks.json").json(),
+  apc: FileAttachment("./data-visualisation/apc.json").json(),
+  spg: FileAttachment("./data-visualisation/spg.json").json(),
+  towed: FileAttachment("./data-visualisation/towed.json").json(),
+  aircraft_carrier: FileAttachment("./data-visualisation/aircraft_carrier.json").json(),
+  submarine: FileAttachment("./data-visualisation/submarine.json").json()
 };
 
 async function loadVis(type) {
