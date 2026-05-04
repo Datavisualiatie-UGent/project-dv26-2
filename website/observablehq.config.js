@@ -22,8 +22,8 @@ export default {
 
   // search: true,
 
-  // TODO Add names
-  footer: `Built with ❤️`,
+  // TODO Add links?
+  footer: `Built with ❤️ by Bram Comyn, Tibo De Peuter & Brent Janssens for the 2026 Datavisualisation project at Ghent University.`,
 
   // Plugins
   markdownIt: (md) => md.use(footnote),

@@ -1,8 +1,29 @@
+/* Observable modifications */
 :root {
   --observablehq-max-width: auto;
 
   --vertical-padding: 10vh;
   --inner-padding: 1rem;
+
+  --nato-max-height: 90vh;
+
+}
+
+body {
+  font-family: var(--sans-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif);
+}
+
+#observablehq-main p a[href] {
+  text-decoration: underline;
 }
 
 #observablehq-sidebar {
@@ -15,16 +36,46 @@
   width: 180px !important;
 }
 
+/*.role-title-text > text {*/
+/*  font-size: 22px;*/
+/*}*/
+
+/*.role-title-subtitle > text {*/
+/*  font-size: 14px;*/
+/*}*/
+
 /* Base resets to prevent standard ObservableHQ layout overrides */
 h1, h2, h3, p {
   max-width: 100%;
+}
+
+/* Breakout graphics */
+.breakout {
+  display: block;
+
+  margin: auto;
+
+  width: 100%;
+  max-width: 100%;
+  max-height: var(--nato-max-height);
+}
+
+.breakout .vis {
+  display: block;
+}
+
+.vis canvas,
+.vis svg {
+  width: 100% !important;
+  height: auto !important;
+  max-height: var(--nato-max-height);
 }
 
 /* Scrollytelling Component */
 .scrolly {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   padding: var(--inner-padding);
   gap: calc(2 * var(--inner-padding));
   max-width: none;
@@ -80,12 +131,13 @@ h1, h2, h3, p {
   height: 100%;
 }
 
-.vis .vega-bind {
+/* Hide interactive controls */
+.no-control .vega-bindings {
   display: none;
 }
 
 text {
-  font-size: inherit;
+  /*font-size: inherit;*/
   font-family: inherit;
 }
 

@@ -1,9 +1,9 @@
-# 3. The Iron Reality - If budget is the promise, hardware is the proof
+# The Iron Reality
+
+*If budget is the promise, hardware is the proof*
 
 ```js
 import vegaEmbed from "npm:vega-embed";
-import scrollama from "npm:scrollama";
-const scroller = scrollama();
 ```
 
 
@@ -17,18 +17,7 @@ NATO’s combined air fleets are enormous, yet they are a patchwork of capabilit
 The USA is the unrivaled king of air superiority with modern combat systems like the F-35 and F-22.
 To project power globally in a matter of hours, the US Air Force maintains a large fleet of Multi-Role Tanker Transports (MRTT) for in-air refueling, such as the KC-135, alongside heavy Fixed Wing Transport like the C-17.
 
-> [!plot] aircraft-test-pictogram
->
-> TODO: pictogram charts showing total number of aircraft per __country__
->
-> - TODO toggle to make ready / stock visible (play with opacity?)
-> - TODO Direct values?
-
-> [!plot] aircraft-test-propertional-shape
->
-> Proportional shape chart
-
-<figure id="equipment-graphic" size="200">
+<figure id="equipment-graphic" class="breakout" size="200">
   <div class="button-group">
     <input type="radio" id="tanks" name="equipment" value="tanks" checked>
     <label for="tanks">Tanks</label>
@@ -125,18 +114,6 @@ European allies contribute a diverse array of frigates, submarines [^9], and amp
 
 > TODO: charts showing number of aircraft carriers, cruisers, destroyers, frigates, submarines and amphibious assault ships\
 > Note to self: check numbers in claims above
-
----
-
-> [!plot] explore-equipment
->
-> Pictogram chart (type depends on what works best)
->
-> - y-axis: for every country
-> - x-axis: number of specific equipments, with corresponding icons
-> - TODO Choose which equipments to show with multitoggle
-
----
 
 [^7]: Global Firepower data provides a quantitative snapshot, but does not account for qualitative force multipliers like training or logistical integration, however.
 

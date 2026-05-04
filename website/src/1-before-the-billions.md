@@ -10,20 +10,13 @@ import scrollama from "npm:scrollama";
 ```
 
 <!-- TODO I think we should add a legend for the fading to darker colors with "age" or some bar that denotes the colors. -->
-
 <!-- TODO I would add the title in HTML instead of in the graph/visualisation -->
-
 <!-- TODO Highlight the currently active block -->
-
-## The Expansion of NATO
-
-TODO Focus on Europe or global view preferred?
-
-> [!plot] nato-map
+<!-- TODO Make sure proper focussing of global/Europe view -->
 
 <div id="scrolly-world-map" class="scrolly">
-  <article>
-    <div class="step" data-step="1949" data-signals='{"SelectYear": 1949}'>
+<article>
+<div class="step" data-step="1949" data-signals='{"SelectYear": 1949}'>
 
 Twelve nations form the original shield:
 
@@ -88,17 +81,10 @@ As the map grew, so did the friction: can 32 different nations truly share the b
 </div>
 </article>
 
-<figure id="graphic">
+<figure id="graphic" class="no-control">
   <div class="vis" id="vis-world-map"></div>
 </figure>
 </div>
-
----
-
-> [!plot] explore-nato-map
-> TODO Exploration with choosing between years, choose europe focus view or global view
-
----
 
 [^2]: The Warsaw Pact formed NATO's biggest challenger during the Cold War era.
     Backed by the Soviet Union's nuclear umbrella, many communist countries joined forming a defensive alliance of 8 members a its peak, with a few notable observers.
@@ -108,8 +94,6 @@ As the map grew, so did the friction: can 32 different nations truly share the b
     The most well-known is of course Switzerland, which has known a history of neutrality since centuries ago.
     However, the attentive reader also notices some EU countries missing on the map: Ireland, Austria, Cyprus and Malta are also holding on to their military neutrality, which is often anchored in their constitutions.
     Even though they have fundamental objection to picking a side, these countries often cooperate with NATO in the so-called [**Partnership for Peace**-programme](https://www.nato.int/en/what-we-do/partnerships-and-cooperation/partnership-for-peace-programme).
-
-    > It might be interesting to include a map showing all EU countries, coloured into NATO/EU and just NATO or EU members in different colours to provide more information and context to the readers.
 
 ```js
 const spec = await FileAttachment("./plots/nato-world-map.json").json();

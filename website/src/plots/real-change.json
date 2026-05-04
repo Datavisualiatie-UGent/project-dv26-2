@@ -1,100 +1,144 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "layer": [
     {
       "mark": {
-        "type": "line",
-        "color": "steelblue",
-        "opacity": 0.15
+        "type": "rect",
+        "color": "#f5f5f5"
       },
-      "transform": [
-        {
-          "calculate": "\"Individual Countries\"",
-          "as": "group"
-        }
-      ],
-      "params": [
-        {
-          "name": "name7",
-          "bind": "scales",
-          "select": {
-            "type": "interval"
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "orient": "top",
+            "labelAngle": 0,
+            "labelFontSize": 12
+          }
+        },
+        "y": {
+          "field": "countryWithFlag",
+          "type": "nominal",
+          "title": null,
+          "sort": {
+            "field": "change",
+            "op": "mean",
+            "order": "descending"
+          },
+          "axis": {
+            "labelFontSize": 12
           }
         }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "n/a",
+        "color": "#666",
+        "fontSize": 10,
+        "fontStyle": "bold"
+      },
+      "transform": [
+        {
+          "filter": "datum.change == null"
+        }
       ],
       "encoding": {
-        "detail": {
-          "field": "country",
-          "type": "nominal"
+        "x": {
+          "field": "year",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "orient": "top",
+            "labelAngle": 0,
+            "labelFontSize": 12
+          }
+        },
+        "y": {
+          "field": "countryWithFlag",
+          "type": "nominal",
+          "title": null,
+          "sort": {
+            "field": "change",
+            "op": "mean",
+            "order": "descending"
+          },
+          "axis": {
+            "labelFontSize": 12
+          }
         }
       }
     },
     {
       "mark": {
-        "type": "line",
-        "opacity": 0.8,
-        "strokeWidth": 3
+        "type": "rect"
       },
-      "transform": [
-        {
-          "filter": "datum.country === \"United States\""
-        },
-        {
-          "calculate": "\"US\"",
-          "as": "group"
-        }
-      ],
       "encoding": {
+        "x": {
+          "field": "year",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "orient": "top",
+            "labelAngle": 0,
+            "labelFontSize": 12
+          }
+        },
         "y": {
+          "field": "countryWithFlag",
+          "type": "nominal",
+          "title": null,
+          "sort": {
+            "field": "change",
+            "op": "mean",
+            "order": "descending"
+          },
+          "axis": {
+            "labelFontSize": 12
+          }
+        },
+        "color": {
           "field": "change",
           "type": "quantitative",
-          "aggregate": "average"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "line",
-        "opacity": 0.8,
-        "strokeWidth": 3
-      },
-      "transform": [
-        {
-          "filter": "datum.country !== \"United States\""
+          "scale": {
+            "scheme": "redblue",
+            "domainMid": 0,
+            "domain": [
+              -30,
+              75
+            ],
+            "clamp": true
+          },
+          "title": "Real Change (%)",
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "gradientLength": 456,
+            "gradientThickness": 12,
+            "titleAnchor": "start",
+            "offset": 15
+          }
         },
-        {
-          "calculate": "\"NATO Without the US\"",
-          "as": "group"
-        }
-      ],
-      "encoding": {
-        "y": {
-          "field": "change",
-          "type": "quantitative",
-          "aggregate": "average"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "line",
-        "opacity": 0.8,
-        "strokeWidth": 3
-      },
-      "transform": [
-        {
-          "filter": "indexof([\"Norway\",\"Finland\",\"Estonia\",\"Latvia\",\"Lithuania\",\"Poland\"], datum.country) >= 0"
-        },
-        {
-          "calculate": "\"NATO Neighbouring Russia\"",
-          "as": "group"
-        }
-      ],
-      "encoding": {
-        "y": {
-          "field": "change",
-          "type": "quantitative",
-          "aggregate": "average"
-        }
+        "tooltip": [
+          {
+            "field": "countryWithFlag",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "year",
+            "type": "nominal",
+            "title": "Year"
+          },
+          {
+            "field": "change",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Change in %"
+          }
+        ]
       }
     }
   ],
@@ -152,12 +196,12 @@
       },
       {
         "country": "Albania",
-        "year": "2024",
+        "year": "2024e",
         "change": 0.9913997963
       },
       {
         "country": "Albania",
-        "year": "2025",
+        "year": "2025e",
         "change": 22.71452515
       },
       {
@@ -212,12 +256,12 @@
       },
       {
         "country": "Belgium",
-        "year": "2024",
+        "year": "2024e",
         "change": 9.875326
       },
       {
         "country": "Belgium",
-        "year": "2025",
+        "year": "2025e",
         "change": 57.41244136
       },
       {
@@ -272,12 +316,12 @@
       },
       {
         "country": "Bulgaria",
-        "year": "2024",
+        "year": "2024e",
         "change": 3.310166165
       },
       {
         "country": "Bulgaria",
-        "year": "2025",
+        "year": "2025e",
         "change": 7.477670235
       },
       {
@@ -332,12 +376,12 @@
       },
       {
         "country": "Canada",
-        "year": "2024",
+        "year": "2024e",
         "change": 12.11990767
       },
       {
         "country": "Canada",
-        "year": "2025",
+        "year": "2025e",
         "change": 39.14874315
       },
       {
@@ -392,12 +436,12 @@
       },
       {
         "country": "Croatia",
-        "year": "2024",
+        "year": "2024e",
         "change": 15.95707776
       },
       {
         "country": "Croatia",
-        "year": "2025",
+        "year": "2025e",
         "change": 12.06110579
       },
       {
@@ -452,12 +496,12 @@
       },
       {
         "country": "Czechia",
-        "year": "2024",
+        "year": "2024e",
         "change": 58.71333681
       },
       {
         "country": "Czechia",
-        "year": "2025",
+        "year": "2025e",
         "change": -1.348495938
       },
       {
@@ -512,12 +556,12 @@
       },
       {
         "country": "Denmark",
-        "year": "2024",
+        "year": "2024e",
         "change": 16.63065724
       },
       {
         "country": "Denmark",
-        "year": "2025",
+        "year": "2025e",
         "change": 45.31015022
       },
       {
@@ -572,12 +616,12 @@
       },
       {
         "country": "Estonia",
-        "year": "2024",
+        "year": "2024e",
         "change": 11.2773235
       },
       {
         "country": "Estonia",
-        "year": "2025",
+        "year": "2025e",
         "change": 2.060350895
       },
       {
@@ -632,12 +676,12 @@
       },
       {
         "country": "Finland",
-        "year": "2024",
+        "year": "2024e",
         "change": 13.08049342
       },
       {
         "country": "Finland",
-        "year": "2025",
+        "year": "2025e",
         "change": 17.2264535
       },
       {
@@ -692,12 +736,12 @@
       },
       {
         "country": "France",
-        "year": "2024",
+        "year": "2024e",
         "change": 5.73494267
       },
       {
         "country": "France",
-        "year": "2025",
+        "year": "2025e",
         "change": 1.960066447
       },
       {
@@ -752,12 +796,12 @@
       },
       {
         "country": "Germany",
-        "year": "2024",
+        "year": "2024e",
         "change": 24.04203639
       },
       {
         "country": "Germany",
-        "year": "2025",
+        "year": "2025e",
         "change": null
       },
       {
@@ -812,12 +856,12 @@
       },
       {
         "country": "Greece",
-        "year": "2024",
+        "year": "2024e",
         "change": 1.473694928
       },
       {
         "country": "Greece",
-        "year": "2025",
+        "year": "2025e",
         "change": 6.194000442
       },
       {
@@ -872,12 +916,12 @@
       },
       {
         "country": "Hungary",
-        "year": "2024",
+        "year": "2024e",
         "change": 4.459816618
       },
       {
         "country": "Hungary",
-        "year": "2025",
+        "year": "2025e",
         "change": -1.372312938
       },
       {
@@ -932,12 +976,12 @@
       },
       {
         "country": "Italy",
-        "year": "2024",
+        "year": "2024e",
         "change": 2.333195614
       },
       {
         "country": "Italy",
-        "year": "2025",
+        "year": "2025e",
         "change": 35.20426859
       },
       {
@@ -992,12 +1036,12 @@
       },
       {
         "country": "Latvia",
-        "year": "2024",
+        "year": "2024e",
         "change": 12.8833118
       },
       {
         "country": "Latvia",
-        "year": "2025",
+        "year": "2025e",
         "change": 13.22614335
       },
       {
@@ -1052,12 +1096,12 @@
       },
       {
         "country": "Lithuania",
-        "year": "2024",
+        "year": "2024e",
         "change": 16.60325425
       },
       {
         "country": "Lithuania",
-        "year": "2025",
+        "year": "2025e",
         "change": 33.55657371
       },
       {
@@ -1112,12 +1156,12 @@
       },
       {
         "country": "Luxembourg",
-        "year": "2024",
+        "year": "2024e",
         "change": 15.83177675
       },
       {
         "country": "Luxembourg",
-        "year": "2025",
+        "year": "2025e",
         "change": 69.00893536
       },
       {
@@ -1172,12 +1216,12 @@
       },
       {
         "country": "Montenegro",
-        "year": "2024",
+        "year": "2024e",
         "change": 16.41733221
       },
       {
         "country": "Montenegro",
-        "year": "2025",
+        "year": "2025e",
         "change": 22.11402379
       },
       {
@@ -1232,12 +1276,12 @@
       },
       {
         "country": "Netherlands",
-        "year": "2024",
+        "year": "2024e",
         "change": 26.11818893
       },
       {
         "country": "Netherlands",
-        "year": "2025",
+        "year": "2025e",
         "change": 26.39624913
       },
       {
@@ -1292,12 +1336,12 @@
       },
       {
         "country": "North Macedonia",
-        "year": "2024",
+        "year": "2024e",
         "change": 15.47616027
       },
       {
         "country": "North Macedonia",
-        "year": "2025",
+        "year": "2025e",
         "change": 9.342888446
       },
       {
@@ -1352,12 +1396,12 @@
       },
       {
         "country": "Norway",
-        "year": "2024",
+        "year": "2024e",
         "change": 26.28050178
       },
       {
         "country": "Norway",
-        "year": "2025",
+        "year": "2025e",
         "change": 49.87749672
       },
       {
@@ -1412,12 +1456,12 @@
       },
       {
         "country": "Poland",
-        "year": "2024",
+        "year": "2024e",
         "change": 19.1377928
       },
       {
         "country": "Poland",
-        "year": "2025",
+        "year": "2025e",
         "change": 22.23034715
       },
       {
@@ -1472,12 +1516,12 @@
       },
       {
         "country": "Portugal",
-        "year": "2024",
+        "year": "2024e",
         "change": 20.6792394
       },
       {
         "country": "Portugal",
-        "year": "2025",
+        "year": "2025e",
         "change": 29.29266876
       },
       {
@@ -1532,12 +1576,12 @@
       },
       {
         "country": "Romania",
-        "year": "2024",
+        "year": "2024e",
         "change": 36.9512509
       },
       {
         "country": "Romania",
-        "year": "2025",
+        "year": "2025e",
         "change": 6.553194618
       },
       {
@@ -1592,12 +1636,12 @@
       },
       {
         "country": "Slovak Republic",
-        "year": "2024",
+        "year": "2024e",
         "change": 9.072213084
       },
       {
         "country": "Slovak Republic",
-        "year": "2025",
+        "year": "2025e",
         "change": 6.823026784
       },
       {
@@ -1652,12 +1696,12 @@
       },
       {
         "country": "Slovenia",
-        "year": "2024",
+        "year": "2024e",
         "change": 5.252298281
       },
       {
         "country": "Slovenia",
-        "year": "2025",
+        "year": "2025e",
         "change": 51.46966596
       },
       {
@@ -1712,12 +1756,12 @@
       },
       {
         "country": "Spain",
-        "year": "2024",
+        "year": "2024e",
         "change": 26.4581001
       },
       {
         "country": "Spain",
-        "year": "2025",
+        "year": "2025e",
         "change": 43.11040592
       },
       {
@@ -1772,12 +1816,12 @@
       },
       {
         "country": "Sweden",
-        "year": "2024",
+        "year": "2024e",
         "change": 37.76182776
       },
       {
         "country": "Sweden",
-        "year": "2025",
+        "year": "2025e",
         "change": 10.79472349
       },
       {
@@ -1832,12 +1876,12 @@
       },
       {
         "country": "Türkiye",
-        "year": "2024",
+        "year": "2024e",
         "change": 48.78440929
       },
       {
         "country": "Türkiye",
-        "year": "2025",
+        "year": "2025e",
         "change": 12.1231057
       },
       {
@@ -1892,12 +1936,12 @@
       },
       {
         "country": "United Kingdom",
-        "year": "2024",
+        "year": "2024e",
         "change": 4.69745611
       },
       {
         "country": "United Kingdom",
-        "year": "2025",
+        "year": "2025e",
         "change": 4.426589187
       },
       {
@@ -1952,45 +1996,53 @@
       },
       {
         "country": "United States",
-        "year": "2024",
+        "year": "2024e",
         "change": 6.42994883
       },
       {
         "country": "United States",
-        "year": "2025",
+        "year": "2025e",
         "change": 2.733308814
       }
     ]
   },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "temporal",
-      "axis": {
-        "format": "%Y",
-        "tickCount": "year"
-      },
-      "title": "Year"
-    },
-    "y": {
-      "field": "change",
-      "type": "quantitative",
-      "scale": {
-        "domainMax": 129.95245970000002,
-        "domainMin": -56.19480395
-      },
-      "title": "Change in spending (%)"
-    },
-    "color": {
-      "field": "group",
-      "type": "nominal",
-      "legend": {
-        "title": "Group",
-        "symbolOpacity": 1
-      }
+  "transform": [
+    {
+      "calculate": "datum.country + ' ' + {\"NATO Average\":\"🌐\",\"NATO Excl. US Average\":\"✨\",\"NATO Eastflank\":\"🛡️\",\"Albania\":\"🇦🇱\",\"Belgium\":\"🇧🇪\",\"Bulgaria\":\"🇧🇬\",\"Canada\":\"🇨🇦\",\"Croatia\":\"🇭🇷\",\"Czechia\":\"🇨🇿\",\"Denmark\":\"🇩🇰\",\"Estonia\":\"🇪🇪\",\"Finland\":\"🇫🇮\",\"France\":\"🇫🇷\",\"Germany\":\"🇩🇪\",\"Greece\":\"🇬🇷\",\"Hungary\":\"🇭🇺\",\"Italy\":\"🇮🇹\",\"Latvia\":\"🇱🇻\",\"Lithuania\":\"🇱🇹\",\"Luxembourg\":\"🇱🇺\",\"Montenegro\":\"🇲🇪\",\"Netherlands\":\"🇳🇱\",\"North Macedonia\":\"🇲🇰\",\"Norway\":\"🇳🇴\",\"Poland\":\"🇵🇱\",\"Portugal\":\"🇵🇹\",\"Romania\":\"🇷🇴\",\"Slovak Republic\":\"🇸🇰\",\"Slovenia\":\"🇸🇮\",\"Spain\":\"🇪🇸\",\"Sweden\":\"🇸🇪\",\"Türkiye\":\"🇹🇷\",\"United Kingdom\":\"🇬🇧\",\"United States\":\"🇺🇸\",\"USA\":\"🇺🇸\"}[datum.country]",
+      "as": "countryWithFlag"
     }
+  ],
+  "title": {
+    "text": "Real Change in Defense Expenditure",
+    "subtitle": "Annual percentage change (n/a indicates missing data)",
+    "anchor": "start",
+    "offset": 30,
+    "fontSize": 20,
+    "subtitleFontSize": 16,
+    "subtitlePadding": 5
   },
-  "title": "Change in spending (%) on defense",
-  "width": 500,
-  "height": 500
+  "width": {
+    "step": 38
+  },
+  "height": {
+    "step": 32
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "rect": {
+      "stroke": "white",
+      "strokeWidth": 0.5
+    },
+    "axis": {
+      "grid": false
+    },
+    "padding": {
+      "top": 20,
+      "bottom": 20,
+      "left": 20,
+      "right": 20
+    }
+  }
 }
