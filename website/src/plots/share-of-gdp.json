@@ -1,0 +1,2486 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "x": {
+          "field": "share",
+          "type": "quantitative",
+          "title": "Share of GDP (%)",
+          "scale": {
+            "domain": [
+              0,
+              5.2
+            ],
+            "nice": false
+          }
+        },
+        "y": {
+          "field": "countryWithFlag",
+          "type": "nominal",
+          "sort": {
+            "field": "share",
+            "op": "max",
+            "order": "descending"
+          },
+          "title": null
+        },
+        "color": {
+          "field": "CountryGroup",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "United States",
+              "East Flank",
+              "Other NATO members"
+            ],
+            "range": [
+              "#B22234",
+              "#1B365D",
+              "#CED4DA"
+            ]
+          },
+          "legend": {
+            "orient": "none",
+            "legendX": 330,
+            "legendY": 500,
+            "direction": "vertical",
+            "fillColor": "white",
+            "padding": 10,
+            "strokeColor": "#ccc",
+            "cornerRadius": 4
+          }
+        },
+        "tooltip": [
+          {
+            "field": "countryWithFlag",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "year",
+            "type": "nominal",
+            "title": "Year"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "% of GDP"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -4,
+        "color": "white",
+        "fontWeight": "bold"
+      },
+      "transform": [
+        {
+          "filter": "datum.share > 0"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "share",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "countryWithFlag",
+          "type": "nominal",
+          "sort": {
+            "field": "share",
+            "op": "max",
+            "order": "descending"
+          }
+        },
+        "text": {
+          "field": "share",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "fontStyle": "italic"
+      },
+      "transform": [
+        {
+          "filter": "datum.share <= 0 || datum.share == null"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "datum": 0
+        },
+        "y": {
+          "field": "countryWithFlag",
+          "type": "nominal",
+          "sort": {
+            "field": "share",
+            "op": "max",
+            "order": "descending"
+          }
+        },
+        "text": {
+          "value": "Data unavailable"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "gold",
+        "strokeWidth": 2,
+        "strokeDash": [
+          4,
+          2
+        ]
+      },
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "'2024e' === '2025e' ? 5.0 : 2.0",
+          "as": "t"
+        },
+        {
+          "calculate": "'2024e' === '2025e' ? 'Proposed 5% Target' : 'NATO 2% Target'",
+          "as": "targetLabel"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "targetLabel",
+            "type": "nominal",
+            "title": "Threshold"
+          },
+          {
+            "field": "t",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Target %"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -5,
+        "dy": -12,
+        "fontWeight": "bold",
+        "color": "#b8860b"
+      },
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "'2024e' === '2025e' ? 5.0 : 2.0",
+          "as": "t"
+        },
+        {
+          "calculate": "'2024e' === '2025e' ? '5% Target' : '2% Target'",
+          "as": "labelText"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "quantitative"
+        },
+        "y": {
+          "value": 0
+        },
+        "text": {
+          "field": "labelText",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "data": {
+    "values": [
+      {
+        "country": "Albania",
+        "year": "2014",
+        "share": 1.330681866,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2015",
+        "share": 1.14864463,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2016",
+        "share": 1.090626925,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2017",
+        "share": 1.096085014,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2018",
+        "share": 1.146882847,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2019",
+        "share": 1.265739175,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2020",
+        "share": 1.289147963,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2021",
+        "share": 1.236001144,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2022",
+        "share": 1.20237731,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2023",
+        "share": 1.75,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2024e",
+        "share": 1.7,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Albania",
+        "year": "2025e",
+        "share": 2.01,
+        "flag_url": "🇦🇱"
+      },
+      {
+        "country": "Belgium",
+        "year": "2014",
+        "share": 0.9663272297,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2015",
+        "share": 0.9118451853,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2016",
+        "share": 0.8980673412,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2017",
+        "share": 0.8868469445,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2018",
+        "share": 0.8924427561,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2019",
+        "share": 0.8869968401,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2020",
+        "share": 1.005822694,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2021",
+        "share": 1.042687518,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2022",
+        "share": 1.16243721,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2023",
+        "share": 1.18178773,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2024e",
+        "share": 1.286805534,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Belgium",
+        "year": "2025e",
+        "share": 2.000904949,
+        "flag_url": "🇧🇪"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2014",
+        "share": 1.309083361,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2015",
+        "share": 1.246351274,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2016",
+        "share": 1.243596249,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2017",
+        "share": 1.221937834,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2018",
+        "share": 1.450952374,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2019",
+        "share": 3.144799907,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2020",
+        "share": 1.585822094,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2021",
+        "share": 1.510380055,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2022",
+        "share": 1.587078902,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2023",
+        "share": 1.944403925,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2024e",
+        "share": 1.953847329,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Bulgaria",
+        "year": "2025e",
+        "share": 2.05839993,
+        "flag_url": "🇧🇬"
+      },
+      {
+        "country": "Canada",
+        "year": "2014",
+        "share": 1.006365256,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2015",
+        "share": 1.200724604,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2016",
+        "share": 1.15891838,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2017",
+        "share": 1.436996587,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2018",
+        "share": 1.298263517,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2019",
+        "share": 1.294475316,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2020",
+        "share": 1.409079362,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2021",
+        "share": 1.270351961,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2022",
+        "share": 1.198141316,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2023",
+        "share": 1.327219657,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2024e",
+        "share": 1.471471309,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Canada",
+        "year": "2025e",
+        "share": 2.008308392,
+        "flag_url": "🇨🇦"
+      },
+      {
+        "country": "Croatia",
+        "year": "2014",
+        "share": 1.80819936,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2015",
+        "share": 1.748830519,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2016",
+        "share": 1.589121373,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2017",
+        "share": 1.63329763,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2018",
+        "share": 1.542434772,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2019",
+        "share": 1.60370654,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2020",
+        "share": 1.696655962,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2021",
+        "share": 1.971597657,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2022",
+        "share": 1.80262149,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2023",
+        "share": 1.670287254,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2024e",
+        "share": 1.867474031,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Croatia",
+        "year": "2025e",
+        "share": 2.031668193,
+        "flag_url": "🇭🇷"
+      },
+      {
+        "country": "Czechia",
+        "year": "2014",
+        "share": 0.9367701375,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2015",
+        "share": 1.015594148,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2016",
+        "share": 0.9418977072,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2017",
+        "share": 1.018359581,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2018",
+        "share": 1.090114588,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2019",
+        "share": 1.160554267,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2020",
+        "share": 1.273719698,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2021",
+        "share": 1.345746877,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2022",
+        "share": 1.290615505,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2023",
+        "share": 1.320845313,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2024e",
+        "share": 2.075680277,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Czechia",
+        "year": "2025e",
+        "share": 2.00044022,
+        "flag_url": "🇨🇿"
+      },
+      {
+        "country": "Denmark",
+        "year": "2014",
+        "share": 1.149802569,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2015",
+        "share": 1.114793425,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2016",
+        "share": 1.151061987,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2017",
+        "share": 1.139989183,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2018",
+        "share": 1.28310485,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2019",
+        "share": 1.299197935,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2020",
+        "share": 1.373782618,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2021",
+        "share": 1.291546723,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2022",
+        "share": 1.361574238,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2023",
+        "share": 2.000183792,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2024e",
+        "share": 2.268266221,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Denmark",
+        "year": "2025e",
+        "share": 3.215799325,
+        "flag_url": "🇩🇰"
+      },
+      {
+        "country": "Estonia",
+        "year": "2014",
+        "share": 1.898494092,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2015",
+        "share": 1.988478971,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2016",
+        "share": 2.026480893,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2017",
+        "share": 1.973270908,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2018",
+        "share": 1.97256087,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2019",
+        "share": 2.001031973,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2020",
+        "share": 2.264143827,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2021",
+        "share": 2.016303424,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2022",
+        "share": 2.13743863,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2023",
+        "share": 2.998590044,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2024e",
+        "share": 3.365538348,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Estonia",
+        "year": "2025e",
+        "share": 3.37882703,
+        "flag_url": "🇪🇪"
+      },
+      {
+        "country": "Finland",
+        "year": "2014",
+        "share": 1.459058075,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2015",
+        "share": 1.458125904,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2016",
+        "share": 1.431742514,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2017",
+        "share": 1.393282333,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2018",
+        "share": 1.396192838,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2019",
+        "share": 1.460266526,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2020",
+        "share": 1.540577351,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2021",
+        "share": 1.407979169,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2022",
+        "share": 1.685157182,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2023",
+        "share": 2.119757568,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2024e",
+        "share": 2.403650958,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "Finland",
+        "year": "2025e",
+        "share": 2.772590002,
+        "flag_url": "🇫🇮"
+      },
+      {
+        "country": "France",
+        "year": "2014",
+        "share": 1.815176473,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2015",
+        "share": 1.77959376,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2016",
+        "share": 1.791256438,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2017",
+        "share": 1.780362057,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2018",
+        "share": 1.813712698,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2019",
+        "share": 1.815453354,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2020",
+        "share": 1.986004023,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2021",
+        "share": 1.903833004,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2022",
+        "share": 1.867632655,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2023",
+        "share": 1.94418577,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2024e",
+        "share": 2.032427247,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "France",
+        "year": "2025e",
+        "share": 2.053831236,
+        "flag_url": "🇫🇷"
+      },
+      {
+        "country": "Germany",
+        "year": "2014",
+        "share": 1.162231588,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2015",
+        "share": 1.164425933,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2016",
+        "share": 1.178305888,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2017",
+        "share": 1.207244413,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2018",
+        "share": 1.226072617,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2019",
+        "share": 1.325497463,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2020",
+        "share": 1.492791624,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2021",
+        "share": 1.429699281,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2022",
+        "share": 1.476118417,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2023",
+        "share": 1.6149766,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2024e",
+        "share": 2.003724285,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Germany",
+        "year": "2025e",
+        "share": null,
+        "flag_url": "🇩🇪"
+      },
+      {
+        "country": "Greece",
+        "year": "2014",
+        "share": 2.236943799,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2015",
+        "share": 2.322669732,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2016",
+        "share": 2.401869437,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2017",
+        "share": 2.372439371,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2018",
+        "share": 2.524910327,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2019",
+        "share": 2.420838076,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2020",
+        "share": 2.872205659,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2021",
+        "share": 3.664724182,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2022",
+        "share": 3.874744412,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2023",
+        "share": 2.763596213,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2024e",
+        "share": 2.740117844,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Greece",
+        "year": "2025e",
+        "share": 2.848055706,
+        "flag_url": "🇬🇷"
+      },
+      {
+        "country": "Hungary",
+        "year": "2014",
+        "share": 0.8572330936,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2015",
+        "share": 0.9042158906,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2016",
+        "share": 0.9991172531,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2017",
+        "share": 1.191696835,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2018",
+        "share": 1.00220412,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2019",
+        "share": 1.327824879,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2020",
+        "share": 1.746280526,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2021",
+        "share": 1.315210033,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2022",
+        "share": 1.833148034,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2023",
+        "share": 2.049511493,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2024e",
+        "share": 2.129138634,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Hungary",
+        "year": "2025e",
+        "share": 2.057472644,
+        "flag_url": "🇭🇺"
+      },
+      {
+        "country": "Italy",
+        "year": "2014",
+        "share": 1.132310942,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2015",
+        "share": 1.058422287,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2016",
+        "share": 1.170152023,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2017",
+        "share": 1.19390937,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2018",
+        "share": 1.220332891,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2019",
+        "share": 1.166080013,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2020",
+        "share": 1.579536902,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2021",
+        "share": 1.522678926,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2022",
+        "share": 1.498107305,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2023",
+        "share": 1.470395502,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2024e",
+        "share": 1.497509515,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Italy",
+        "year": "2025e",
+        "share": 2.006712396,
+        "flag_url": "🇮🇹"
+      },
+      {
+        "country": "Latvia",
+        "year": "2014",
+        "share": 0.9699214848,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2015",
+        "share": 1.068632858,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2016",
+        "share": 1.486506719,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2017",
+        "share": 1.651554288,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2018",
+        "share": 2.133252391,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2019",
+        "share": 2.091230036,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2020",
+        "share": 2.226394134,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2021",
+        "share": 2.156119646,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2022",
+        "share": 2.252180855,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2023",
+        "share": 2.967720312,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2024e",
+        "share": 3.360018421,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Latvia",
+        "year": "2025e",
+        "share": 3.732053096,
+        "flag_url": "🇱🇻"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2014",
+        "share": 0.8838112129,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2015",
+        "share": 1.13488756,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2016",
+        "share": 1.480169244,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2017",
+        "share": 1.71220031,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2018",
+        "share": 1.94689342,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2019",
+        "share": 1.983566633,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2020",
+        "share": 2.049452011,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2021",
+        "share": 1.94937649,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2022",
+        "share": 2.444381973,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2023",
+        "share": 2.712640331,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2024e",
+        "share": 3.087800111,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Lithuania",
+        "year": "2025e",
+        "share": 3.999312792,
+        "flag_url": "🇱🇹"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2014",
+        "share": 0.3676631417,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2015",
+        "share": 0.4144832754,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2016",
+        "share": 0.379846626,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2017",
+        "share": 0.4947441744,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2018",
+        "share": 0.5012142279,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2019",
+        "share": 0.5473562748,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2020",
+        "share": 0.578256425,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2021",
+        "share": 0.4716884161,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2022",
+        "share": 0.5631558523,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2023",
+        "share": 1.056754852,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2024e",
+        "share": 1.189560392,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Luxembourg",
+        "year": "2025e",
+        "share": 2,
+        "flag_url": "🇱🇺"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2014",
+        "share": 1.504432324,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2015",
+        "share": 1.40397735,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2016",
+        "share": 1.423126679,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2017",
+        "share": 1.340730402,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2018",
+        "share": 1.368968475,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2019",
+        "share": 1.333266007,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2020",
+        "share": 1.731844243,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2021",
+        "share": 1.554954591,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2022",
+        "share": 1.377987846,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2023",
+        "share": 1.518862723,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2024e",
+        "share": 1.716077691,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Montenegro",
+        "year": "2025e",
+        "share": 2.030415094,
+        "flag_url": "🇲🇪"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2014",
+        "share": 1.123601249,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2015",
+        "share": 1.103381164,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2016",
+        "share": 1.125074587,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2017",
+        "share": 1.118377971,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2018",
+        "share": 1.185721203,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2019",
+        "share": 1.285456299,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2020",
+        "share": 1.365666283,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2021",
+        "share": 1.319154555,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2022",
+        "share": 1.38597409,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2023",
+        "share": 1.602799219,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2024e",
+        "share": 2.003353528,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "Netherlands",
+        "year": "2025e",
+        "share": 2.491210214,
+        "flag_url": "🇳🇱"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2014",
+        "share": 1.088401743,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2015",
+        "share": 1.047100477,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2016",
+        "share": 0.9701173852,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2017",
+        "share": 0.8949921211,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2018",
+        "share": 0.9429893914,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2019",
+        "share": 1.159116075,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2020",
+        "share": 1.240588753,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2021",
+        "share": 1.453709949,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2022",
+        "share": 1.580597095,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2023",
+        "share": 1.679972997,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2024e",
+        "share": 1.887932196,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "North Macedonia",
+        "year": "2025e",
+        "share": 2.000311036,
+        "flag_url": "🇲🇰"
+      },
+      {
+        "country": "Norway",
+        "year": "2014",
+        "share": 1.539005243,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2015",
+        "share": 1.582297479,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2016",
+        "share": 1.733689781,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2017",
+        "share": 1.705163049,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2018",
+        "share": 1.715286027,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2019",
+        "share": 1.843732453,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2020",
+        "share": 1.965994667,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2021",
+        "share": 1.676316677,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2022",
+        "share": 1.458062133,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2023",
+        "share": 1.823688454,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2024e",
+        "share": 2.274756647,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Norway",
+        "year": "2025e",
+        "share": 3.353429059,
+        "flag_url": "🇳🇴"
+      },
+      {
+        "country": "Poland",
+        "year": "2014",
+        "share": 1.864472246,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2015",
+        "share": 2.211085341,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2016",
+        "share": 1.986723542,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2017",
+        "share": 1.881390838,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2018",
+        "share": 1.995933772,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2019",
+        "share": 1.964549673,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2020",
+        "share": 2.207215563,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2021",
+        "share": 2.191406468,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2022",
+        "share": 2.20795495,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2023",
+        "share": 3.270387078,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2024e",
+        "share": 3.788951289,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Poland",
+        "year": "2025e",
+        "share": 4.480548763,
+        "flag_url": "🇵🇱"
+      },
+      {
+        "country": "Portugal",
+        "year": "2014",
+        "share": 1.306764053,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2015",
+        "share": 1.328835106,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2016",
+        "share": 1.268260343,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2017",
+        "share": 1.239953722,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2018",
+        "share": 1.341308239,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2019",
+        "share": 1.373804447,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2020",
+        "share": 1.426347963,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2021",
+        "share": 1.521866694,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2022",
+        "share": 1.39174987,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2023",
+        "share": 1.332486452,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2024e",
+        "share": 1.581433015,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Portugal",
+        "year": "2025e",
+        "share": 2.003743478,
+        "flag_url": "🇵🇹"
+      },
+      {
+        "country": "Romania",
+        "year": "2014",
+        "share": 1.347606162,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2015",
+        "share": 1.450712302,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2016",
+        "share": 1.427723436,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2017",
+        "share": 1.733706794,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2018",
+        "share": 1.790533501,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2019",
+        "share": 1.830805868,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2020",
+        "share": 2.00358629,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2021",
+        "share": 1.847647249,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2022",
+        "share": 1.750151873,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2023",
+        "share": 1.598189092,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2024e",
+        "share": 2.171074155,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Romania",
+        "year": "2025e",
+        "share": 2.281828823,
+        "flag_url": "🇷🇴"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2014",
+        "share": 0.9816341274,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2015",
+        "share": 1.106623186,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2016",
+        "share": 1.111366669,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2017",
+        "share": 1.100123602,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2018",
+        "share": 1.216731131,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2019",
+        "share": 1.702368498,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2020",
+        "share": 1.903634438,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2021",
+        "share": 1.71240922,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2022",
+        "share": 1.80168434,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2023",
+        "share": 1.838808959,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2024e",
+        "share": 1.960171699,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovak Republic",
+        "year": "2025e",
+        "share": 2.043977387,
+        "flag_url": "🇸🇰"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2014",
+        "share": 0.9832315091,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2015",
+        "share": 0.9387875182,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2016",
+        "share": 1.015080585,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2017",
+        "share": 0.9905226188,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2018",
+        "share": 1.017656305,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2019",
+        "share": 1.061658529,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2020",
+        "share": 1.065527299,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2021",
+        "share": 1.239449488,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2022",
+        "share": 1.295577962,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2023",
+        "share": 1.316628122,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2024e",
+        "share": 1.371048503,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Slovenia",
+        "year": "2025e",
+        "share": 2.023794942,
+        "flag_url": "🇸🇮"
+      },
+      {
+        "country": "Spain",
+        "year": "2014",
+        "share": 0.9151315416,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2015",
+        "share": 0.9198509445,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2016",
+        "share": 0.802699456,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2017",
+        "share": 0.8998157303,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2018",
+        "share": 0.9215888131,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2019",
+        "share": 0.8998237232,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2020",
+        "share": 0.9953835146,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2021",
+        "share": 1.015516312,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2022",
+        "share": 1.136402915,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2023",
+        "share": 1.164731393,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2024e",
+        "share": 1.429382384,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Spain",
+        "year": "2025e",
+        "share": 2.000015259,
+        "flag_url": "🇪🇸"
+      },
+      {
+        "country": "Sweden",
+        "year": "2014",
+        "share": 1.07216224,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2015",
+        "share": 1.01761951,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2016",
+        "share": 0.9776912057,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2017",
+        "share": 0.9752827993,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2018",
+        "share": 0.9780012786,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2019",
+        "share": 1.04377515,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2020",
+        "share": 1.098100433,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2021",
+        "share": 1.426863042,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2022",
+        "share": 1.479289932,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2023",
+        "share": 1.683017165,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2024e",
+        "share": 2.305686177,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Sweden",
+        "year": "2025e",
+        "share": 2.508718687,
+        "flag_url": "🇸🇪"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2014",
+        "share": 1.446641358,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2015",
+        "share": 1.383363254,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2016",
+        "share": 1.45448512,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2017",
+        "share": 1.510128174,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2018",
+        "share": 1.815914487,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2019",
+        "share": 1.852501188,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2020",
+        "share": 1.860127141,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2021",
+        "share": 1.605284598,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2022",
+        "share": 1.356958867,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2023",
+        "share": 1.483632282,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2024e",
+        "share": 2.131924372,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "Türkiye",
+        "year": "2025e",
+        "share": 2.329999986,
+        "flag_url": "🇹🇷"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2014",
+        "share": 2.142375696,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2015",
+        "share": 2.031899571,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2016",
+        "share": 2.088204876,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2017",
+        "share": 2.077204963,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2018",
+        "share": 2.100167851,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2019",
+        "share": 2.081942199,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2020",
+        "share": 2.352978817,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2021",
+        "share": 2.287695808,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2022",
+        "share": 2.266792325,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2023",
+        "share": 2.24863795,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2024e",
+        "share": 2.33298845,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United Kingdom",
+        "year": "2025e",
+        "share": 2.395866933,
+        "flag_url": "🇬🇧"
+      },
+      {
+        "country": "United States",
+        "year": "2014",
+        "share": 3.713862253,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2015",
+        "share": 3.505068784,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2016",
+        "share": 3.488763768,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2017",
+        "share": 3.278246175,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2018",
+        "share": 3.25444531,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2019",
+        "share": 3.486010422,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2020",
+        "share": 3.608908025,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2021",
+        "share": 3.479954639,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2022",
+        "share": 3.210598883,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2023",
+        "share": 3.095158874,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2024e",
+        "share": 3.205383573,
+        "flag_url": "🇺🇸"
+      },
+      {
+        "country": "United States",
+        "year": "2025e",
+        "share": 3.216586309,
+        "flag_url": "🇺🇸"
+      }
+    ]
+  },
+  "transform": [
+    {
+      "filter": "datum.year == '2024e'"
+    },
+    {
+      "calculate": "datum.country + ' ' + {\"NATO Average\":\"🌐\",\"NATO Excl. US Average\":\"✨\",\"NATO Eastflank\":\"🛡️\",\"Albania\":\"🇦🇱\",\"Belgium\":\"🇧🇪\",\"Bulgaria\":\"🇧🇬\",\"Canada\":\"🇨🇦\",\"Croatia\":\"🇭🇷\",\"Czechia\":\"🇨🇿\",\"Denmark\":\"🇩🇰\",\"Estonia\":\"🇪🇪\",\"Finland\":\"🇫🇮\",\"France\":\"🇫🇷\",\"Germany\":\"🇩🇪\",\"Greece\":\"🇬🇷\",\"Hungary\":\"🇭🇺\",\"Italy\":\"🇮🇹\",\"Latvia\":\"🇱🇻\",\"Lithuania\":\"🇱🇹\",\"Luxembourg\":\"🇱🇺\",\"Montenegro\":\"🇲🇪\",\"Netherlands\":\"🇳🇱\",\"North Macedonia\":\"🇲🇰\",\"Norway\":\"🇳🇴\",\"Poland\":\"🇵🇱\",\"Portugal\":\"🇵🇹\",\"Romania\":\"🇷🇴\",\"Slovak Republic\":\"🇸🇰\",\"Slovenia\":\"🇸🇮\",\"Spain\":\"🇪🇸\",\"Sweden\":\"🇸🇪\",\"Türkiye\":\"🇹🇷\",\"United Kingdom\":\"🇬🇧\",\"United States\":\"🇺🇸\",\"USA\":\"🇺🇸\"}[datum.country]",
+      "as": "countryWithFlag"
+    },
+    {
+      "calculate": "datum.country === 'United States' \n        ? 'United States' : indexof([\"Norway\",\"Sweden\",\"Finland\",\"Estonia\",\"Latvia\",\"Lithuania\",\"Poland\",\"Romania\"], datum.country) !== -1 \n        ? 'East Flank'    : 'Other NATO members'",
+      "as": "CountryGroup"
+    }
+  ],
+  "width": 520,
+  "height": {
+    "step": 20
+  },
+  "title": {
+    "text": "NATO Defense Spending as % of GDP",
+    "subtitle": "2024 estimates (2% Target)",
+    "anchor": "start",
+    "offset": 25,
+    "fontSize": 20,
+    "subtitleFontSize": 14
+  }
+}
