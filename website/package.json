@@ -3,13 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "mkdir -p src/data-visualisation && cp -r ../src/data-visualisation/. src/data-visualisation/ 2>/dev/null || :",
     "dev": "observable preview",
-    "prebuild": "mkdir -p src/data-visualisation && cp -r ../src/data-visualisation/ ../assets/ src/ 2>/dev/null || :",
-    "build": "observable build"
+    "build": "observable build",
+    "start": "npx http-server dist"
   },
   "devDependencies": {
-    "@observablehq/framework": "1.13.4"
+    "@observablehq/framework": "1.13.4",
+    "http-server": "^14.1.1"
   },
   "dependencies": {
     "markdown-it-footnote": "^4.0.0",

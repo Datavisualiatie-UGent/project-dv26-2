@@ -112,7 +112,7 @@ As the map grew, so did the friction: can 32 different nations truly share the b
     > It might be interesting to include a map showing all EU countries, coloured into NATO/EU and just NATO or EU members in different colours to provide more information and context to the readers.
 
 ```js
-const spec = await FileAttachment("./data-visualisation/nato-world-map.json").json();
+const spec = await FileAttachment("./plots/nato-world-map.json").json();
 
 const viewPromise = vegaEmbed("#vis-world-map", spec, { actions: false }).then(res => res.view);
 

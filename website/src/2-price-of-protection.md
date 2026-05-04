@@ -41,7 +41,7 @@ In 2014, the alliance set a clear benchmark: every member should spend at least 
 <!-- TODO Add 2% threshold -->
 
 ```js
-const spec = await FileAttachment("./data-visualisation/share-of-gdp.json").json();
+const spec = await FileAttachment("./plots/share-of-gdp.json").json();
 const viewPromise = vegaEmbed("#vis-share-of-gdp", spec, { actions: false }).then(res => res.view);
 ```
 
@@ -75,7 +75,7 @@ Our data shows a radical pivot: defense budgets are no longer stagnating; they a
 </div>
 
 ```js
-const spec = await FileAttachment("./data-visualisation/real-change.json").json();
+const spec = await FileAttachment("./plots/real-change.json").json();
 const viewPromise = vegaEmbed("#vis-real-change", spec, { actions: false }).then(res => res.view);
 ```
 
@@ -172,7 +172,7 @@ pictogram showing blocks of (some scale, e.g. thousands) of soldiers
 </div>
 
 ```js
-const spec = await FileAttachment("./data-visualisation/soldiers-absolute.json").json();
+const spec = await FileAttachment("./plots/soldiers-absolute.json").json();
 const viewPromise = vegaEmbed("#vis-soldiers-absolute", spec, { actions: false }).then(res => res.view);
 ```
 

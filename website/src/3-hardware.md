@@ -54,14 +54,14 @@ To project power globally in a matter of hours, the US Air Force maintains a lar
 ```js
 // Because Observable's `FileAttachment` cannot handle non-static strings
 const files = {
-  aircraft: FileAttachment("./data-visualisation/aircraft.json").json(),
-  fighters: FileAttachment("./data-visualisation/fighters.json").json(),
-  tanks: FileAttachment("./data-visualisation/tanks.json").json(),
-  apc: FileAttachment("./data-visualisation/apc.json").json(),
-  spg: FileAttachment("./data-visualisation/spg.json").json(),
-  towed: FileAttachment("./data-visualisation/towed.json").json(),
-  aircraft_carrier: FileAttachment("./data-visualisation/aircraft_carrier.json").json(),
-  submarine: FileAttachment("./data-visualisation/submarine.json").json()
+  aircraft: FileAttachment("./plots/aircraft.json").json(),
+  fighters: FileAttachment("./plots/fighters.json").json(),
+  tanks: FileAttachment("./plots/tanks.json").json(),
+  apc: FileAttachment("./plots/apc.json").json(),
+  spg: FileAttachment("./plots/spg.json").json(),
+  towed: FileAttachment("./plots/towed.json").json(),
+  aircraft_carrier: FileAttachment("./plots/aircraft_carrier.json").json(),
+  submarine: FileAttachment("./plots/submarine.json").json()
 };
 
 async function loadVis(type) {
