@@ -63,19 +63,15 @@
             },
             "tooltip": [
               {
-                "field": "formatted_pc",
+                "field": "total_pc",
                 "type": "nominal",
-                "title": "Per Capita ($)"
+                "format": "$,.0f",
+                "title": "Per Capita"
               },
               {
                 "field": "display_country",
                 "type": "nominal",
                 "title": "Aggregate"
-              },
-              {
-                "field": "year_label",
-                "type": "nominal",
-                "title": "Year"
               }
             ]
           }
@@ -117,12 +113,13 @@
               }
             },
             "text": {
-              "field": "formatted_pc",
-              "type": "nominal"
+              "field": "total_pc",
+              "type": "nominal",
+              "format": "$,.0f"
             },
             "opacity": {
               "condition": {
-                "test": "datum.total_pc > 175",
+                "test": "datum.total_pc > 200",
                 "value": 1
               },
               "value": 0
@@ -130,7 +127,20 @@
             "detail": {
               "field": "group",
               "type": "nominal"
-            }
+            },
+            "tooltip": [
+              {
+                "field": "total_pc",
+                "type": "nominal",
+                "format": "$,.0f",
+                "title": "Per Capita"
+              },
+              {
+                "field": "display_country",
+                "type": "nominal",
+                "title": "Aggregate"
+              }
+            ]
           }
         },
         {
@@ -161,7 +171,20 @@
             },
             "text": {
               "value": "Data unavailable"
-            }
+            },
+            "tooltip": [
+              {
+                "field": "total_pc",
+                "type": "nominal",
+                "format": "$,.0f",
+                "title": "Per Capita"
+              },
+              {
+                "field": "display_country",
+                "type": "nominal",
+                "title": "Aggregate"
+              }
+            ]
           }
         }
       ],
@@ -232,19 +255,15 @@
             },
             "tooltip": [
               {
-                "field": "formatted_pc",
+                "field": "total_pc",
                 "type": "nominal",
-                "title": "Per Capita ($)"
+                "format": "$,.0f",
+                "title": "Per Capita"
               },
               {
                 "field": "display_country",
                 "type": "nominal",
                 "title": "Country"
-              },
-              {
-                "field": "year_label",
-                "type": "nominal",
-                "title": "Year"
               },
               {
                 "field": "group",
@@ -286,12 +305,13 @@
               }
             },
             "text": {
-              "field": "formatted_pc",
-              "type": "nominal"
+              "field": "total_pc",
+              "type": "nominal",
+              "format": "$,.0f"
             },
             "opacity": {
               "condition": {
-                "test": "datum.total_pc > 175",
+                "test": "datum.total_pc > 200",
                 "value": 1
               },
               "value": 0
@@ -299,7 +319,25 @@
             "detail": {
               "field": "group",
               "type": "nominal"
-            }
+            },
+            "tooltip": [
+              {
+                "field": "total_pc",
+                "type": "nominal",
+                "format": "$,.0f",
+                "title": "Per Capita"
+              },
+              {
+                "field": "display_country",
+                "type": "nominal",
+                "title": "Country"
+              },
+              {
+                "field": "group",
+                "type": "nominal",
+                "title": "Region"
+              }
+            ]
           }
         },
         {
@@ -330,7 +368,25 @@
             },
             "text": {
               "value": "Data unavailable"
-            }
+            },
+            "tooltip": [
+              {
+                "field": "total_pc",
+                "type": "nominal",
+                "format": "$,.0f",
+                "title": "Per Capita"
+              },
+              {
+                "field": "display_country",
+                "type": "nominal",
+                "title": "Country"
+              },
+              {
+                "field": "group",
+                "type": "nominal",
+                "title": "Region"
+              }
+            ]
           }
         }
       ],
@@ -5533,29 +5589,12 @@
       }
     ]
   },
-  "params": [
-    {
-      "name": "year_select",
-      "value": 2024,
-      "bind": {
-        "input": "range",
-        "min": "2014",
-        "max": "2025",
-        "step": 1,
-        "name": "Select Year: "
-      }
-    }
-  ],
   "transform": [
     {
       "filter": "datum.country !== 'NATO Total' && datum.country !== 'NATO Europe and Canada'"
     },
     {
-      "filter": "datum.year === year_select"
-    },
-    {
-      "calculate": "join(split(format(datum.total_pc, '$,.0f'), ','), ' ')",
-      "as": "formatted_pc"
+      "filter": "datum.year === 2024"
     },
     {
       "calculate": "datum.country === 'United States' \n              ? 'United States' : indexof([\"Norway\",\"Sweden\",\"Finland\",\"Estonia\",\"Latvia\",\"Lithuania\",\"Poland\",\"Romania\"], datum.country) !== -1 || datum.country == \"NATO East Flank Average\"\n              ? 'East Flank'    : 'Other NATO members'\n          ",
@@ -5565,7 +5604,7 @@
   "title": {
     "text": "Expenditure per Capita",
     "subtitle": {
-      "expr": "year_select + (year_select >= 2024 ? ' estimates' : ' actuals')"
+      "expr": "2024 + (2024 >= 2024 ? ' estimates' : ' actuals')"
     },
     "anchor": "start"
   }
