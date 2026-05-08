@@ -37,7 +37,7 @@ These systems rarely fight alone, but are rather supported by modern heavy artil
 In order to quickly move troops and equipment across the continent and to the frontlines, NATO allies rely on rotary-wing transport helicopters (and previously mentioned fixed-wing transports).
 Together with attack helicopters, these assets are crucial for rapid deployment, close air support, logistical resupply, and medical evacuation, especially in the challenging terrains of Eastern Europe.
 
-## Naval Power - The Unsung Shield
+## Naval Power
 
 While NATO’s air and land forces often take the spotlight, its naval power forms a critical shield that is often overlooked.
 The alliance’s combined naval fleet is a formidable force, with the United States leading the charge with its 11 aircraft carriers.
