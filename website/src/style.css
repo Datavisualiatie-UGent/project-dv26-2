@@ -119,6 +119,15 @@ h1, h2, h3, p {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* Highlight focused step */
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+/* Highlight focused step */
+.scrolly .step.is-active {
+  opacity: 1;
 }
 
 /* Shared utility for visualization containers */

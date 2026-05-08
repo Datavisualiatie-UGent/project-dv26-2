@@ -95,6 +95,9 @@ scroller
     debug: false
   })
   .onStepEnter(async (response) => {
+    // Make active
+    response.element.classList.add('is-active');  
+      
     const signalsRaw = response.element.dataset.signals;
     
     if (signalsRaw) {
@@ -107,5 +110,7 @@ scroller
       
       view.run();
     }
+  }).onStepExit((response) => {
+      response.element.classList.remove('is-active');
   });
 ```
