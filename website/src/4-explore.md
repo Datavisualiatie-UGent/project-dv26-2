@@ -2,6 +2,7 @@
 
 <div id="explore-wrapper" class="grid">
 <div id="explore-introduction">
+<div>
 <p>
 As we've illustrated in the previous sections, Trump has a certain point in saying the US spends a lot more than the other allies on NATO.
 However, we've also seen that the US's share of GDP spent on NATO has been declining, while the other allies have all been increasing their relative efforts.
@@ -16,6 +17,7 @@ Note that the data from Germany hasn't even been included in the 2025 plots, and
 <div class="controls">
 <label for="yearSlider"><strong>Selected Year:</strong> <span id="yearLabel">2024</span></label>
 <input type="range" id="yearSlider" min="2014" max="2025" step="1" value="2024">
+</div>
 </div>
 </div>
 <figure id="share-of-gdp-graphic">
