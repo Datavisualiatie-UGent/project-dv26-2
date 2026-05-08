@@ -5462,7 +5462,7 @@
       {
         "country": "NATO Average",
         "year": 2024,
-        "year_label": "2024e",
+        "year_label": "2024",
         "total_pc": 808.569072657576,
         "is_missing": false,
         "type": "Aggregate",
@@ -5474,7 +5474,7 @@
       {
         "country": "NATO Excl. US Average",
         "year": 2024,
-        "year_label": "2024e",
+        "year_label": "2024",
         "total_pc": 758.2354354593754,
         "is_missing": false,
         "type": "Aggregate",
@@ -5486,7 +5486,7 @@
       {
         "country": "NATO East Flank Average",
         "year": 2024,
-        "year_label": "2024e",
+        "year_label": "2024",
         "total_pc": 1035.5617300625,
         "is_missing": false,
         "type": "Aggregate",
@@ -5498,7 +5498,7 @@
       {
         "country": "NATO Average",
         "year": 2025,
-        "year_label": "2025e",
+        "year_label": "2025",
         "total_pc": 979.9395478312501,
         "is_missing": false,
         "type": "Aggregate",
@@ -5510,7 +5510,7 @@
       {
         "country": "NATO Excl. US Average",
         "year": 2025,
-        "year_label": "2025e",
+        "year_label": "2025",
         "total_pc": 931.9090442774194,
         "is_missing": false,
         "type": "Aggregate",
@@ -5522,7 +5522,7 @@
       {
         "country": "NATO East Flank Average",
         "year": 2025,
-        "year_label": "2025e",
+        "year_label": "2025",
         "total_pc": 1281.3496295500001,
         "is_missing": false,
         "type": "Aggregate",
