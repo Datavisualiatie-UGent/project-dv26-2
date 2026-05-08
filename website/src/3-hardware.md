@@ -46,7 +46,7 @@ European allies contribute a diverse array of frigates, submarines [^9], and amp
 ## Explore the Equipment
 
 We provided a breakdown of the most important types of equipment in the NATO arsenal, including aircraft, fighters, tanks, APCs, SPG artillery, towed artillery, aircraft carriers and submarines.
-Use the buttons below to explore the distribution of these assets across the alliance.
+Use the buttons below to explore the distribution of these assets across the alliance. [^10]
 
 <figure id="equipment-graphic" class="breakout" size="200">
   <div class="button-group">
@@ -109,3 +109,12 @@ loadVis(selected.value);
 [^9]: Submarines are a particularly important component of NATO’s naval strategy, providing stealthy platforms for intelligence gathering, special operations, and strategic deterrence.
     Only few countries operate submarines capable of launching ballistic (nuclear) missiles, which are a key component of NATO’s nuclear deterrence strategy and often form the most challenging part of obtaining a *nuclear triad*, i.e. the ability to launch nuclear weapons from land, air and sea.
     NATO's nuclear deterrence relies heavily on the United States, with only the UK and France maintaining independent nuclear arsenals, while other allies benefit from the extended deterrence provided by the US nuclear umbrella.
+
+[^10]: Icons were provided by [Flaticon](https://www.flaticon.com/)'s contributors:
+
+    - <a href="https://www.flaticon.com/free-icons/aircraft-carrier" title="aircraft carrier icons">Aircraft carrier icons created by max.icons</a>
+    - <a href="https://www.flaticon.com/free-icons/artillery" title="Artillery icons">Artillery icons created by Umeicon</a>
+    - <a href="https://www.flaticon.com/free-icons/armored-vehicle" title="armored vehicle icons">Armored vehicle icons created by Iconic Artisan</a>
+    - <a href="https://www.flaticon.com/free-icons/airforce" title="airforce icons">Airforce icons created by IYIKON</a>
+    - <a href="https://www.flaticon.com/free-icons/military" title="military icons">Military icons created by Iconsmeet</a>
+    - <a href="https://www.flaticon.com/free-icons/armored-vehicle" title="armored vehicle icons">Armored vehicle icons created by Iconic Artisan</a>
