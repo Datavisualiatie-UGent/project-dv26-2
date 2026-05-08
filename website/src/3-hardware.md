@@ -1,11 +1,10 @@
 # The Iron Reality
 
-*If budget is the promise, hardware is the proof*
+*If budget is the promise, then hardware is the proof*
 
 ```js
 import vegaEmbed from "npm:vega-embed";
 ```
-
 
 To understand NATO’s strategic weight, we must look at the hard power sitting in hangars, motor pools, and docks across 32 nations.
 Using data from Global Firepower 2026, we can look past the price tags to see the actual machines of war. [^7]
@@ -28,7 +27,7 @@ To project power globally in a matter of hours, the US Air Force maintains a lar
     <input type="radio" id="apc" name="equipment" value="apc">
     <label for="apc">APC</label>
     <input type="radio" id="spg" name="equipment" value="spg">
-    <label for="spg">SPG Artillery</label>   
+    <label for="spg">SPG Artillery</label>
     <input type="radio" id="towed" name="equipment" value="towed">
     <label for="towed">Towed Artillery</label>
     <input type="radio" id="aircraft_carrier" name="equipment" value="aircraft_carrier">
@@ -121,5 +120,5 @@ European allies contribute a diverse array of frigates, submarines [^9], and amp
     We have not accounted for this, as there is limited data available.
 
 [^9]: Submarines are a particularly important component of NATO’s naval strategy, providing stealthy platforms for intelligence gathering, special operations, and strategic deterrence.
-    Only few countries operate submarines capable of launching ballistic (nuclear) missiles, which are a key component of NATO’s nuclear deterrence strategy and often form the most challenging part of obtaining a _nuclear triad_, i.e. the ability to launch nuclear weapons from land, air and sea.
+    Only few countries operate submarines capable of launching ballistic (nuclear) missiles, which are a key component of NATO’s nuclear deterrence strategy and often form the most challenging part of obtaining a *nuclear triad*, i.e. the ability to launch nuclear weapons from land, air and sea.
     NATO's nuclear deterrence relies heavily on the United States, with only the UK and France maintaining independent nuclear arsenals, while other allies benefit from the extended deterrence provided by the US nuclear umbrella.

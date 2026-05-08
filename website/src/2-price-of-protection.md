@@ -1,6 +1,6 @@
 # The Price of Protection
 
-*If NATO is a shield, then the defense budget is the cost of the steel*
+*If NATO is a shield, then budget is the cost of the steel*
 
 > [!warning]
 > Alternative storyline:
@@ -33,7 +33,7 @@ const spec = await FileAttachment("./plots/share-of-gdp.json").json();
 const viewPromise = vegaEmbed("#vis-share-of-gdp", spec, { actions: false }).then(res => res.view);
 ```
 
-For a long time, many European allies fell short, enjoying what economists call the _peace dividend_.
+For a long time, many European allies fell short, enjoying what economists call the *peace dividend*.
 However, the world changed in 2022 with Russia's invasion of Ukraine.
 Our data shows a radical pivot: defense budgets are no longer stagnating; they are surging.
 
