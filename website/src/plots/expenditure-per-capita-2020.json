@@ -5594,7 +5594,7 @@
       "filter": "datum.country !== 'NATO Total' && datum.country !== 'NATO Europe and Canada'"
     },
     {
-      "filter": "datum.year === 2025"
+      "filter": "datum.year === 2020"
     },
     {
       "calculate": "datum.country === 'United States' \n              ? 'United States' : indexof([\"Norway\",\"Sweden\",\"Finland\",\"Estonia\",\"Latvia\",\"Lithuania\",\"Poland\",\"Romania\"], datum.country) !== -1 || datum.country == \"NATO East Flank Average\"\n              ? 'East Flank'    : 'Other NATO members'\n          ",
@@ -5604,7 +5604,7 @@
   "title": {
     "text": "Expenditure per Capita",
     "subtitle": {
-      "expr": "2025 + (2025 >= 2024 ? ' estimates' : ' actuals')"
+      "expr": "2020 + (2020 >= 2024 ? ' estimates' : ' actuals')"
     },
     "anchor": "start",
     "offset": 50

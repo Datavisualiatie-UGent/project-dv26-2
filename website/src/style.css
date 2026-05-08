@@ -33,13 +33,13 @@ body {
   width: 180px !important;
 }
 
-/*.role-title-text > text {*/
-/*  font-size: 22px;*/
-/*}*/
+.role-title-text > text {
+  font-size: 20px;
+}
 
-/*.role-title-subtitle > text {*/
-/*  font-size: 14px;*/
-/*}*/
+.role-title-subtitle > text {
+  font-size: 14px;
+}
 
 /* Base resets to prevent standard ObservableHQ layout overrides */
 h1, h2, h3, p {
@@ -356,4 +356,14 @@ text {
 #toggle-year:checked + .toggle-label {
   background: #1b365d;
   color: white;
+}
+
+/* Grid for exploration */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, auto);    /* Two rows */
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
 }

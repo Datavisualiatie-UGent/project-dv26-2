@@ -5606,6 +5606,7 @@
     "subtitle": {
       "expr": "2024 + (2024 >= 2024 ? ' estimates' : ' actuals')"
     },
-    "anchor": "start"
+    "anchor": "start",
+    "offset": 50
   }
 }
