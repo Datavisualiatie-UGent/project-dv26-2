@@ -367,3 +367,10 @@ text {
   width: 100%;
   max-width: 1200px;
 }
+
+#explore-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

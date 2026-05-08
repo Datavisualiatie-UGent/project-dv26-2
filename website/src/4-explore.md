@@ -2,12 +2,14 @@
 
 <div id="explore-wrapper" class="grid">
 <div id="explore-introduction">
+<div>
 <p>
 Dit is een uitleg
 </p>
 <div class="controls">
 <label for="yearSlider"><strong>Selected Year:</strong> <span id="yearLabel">2024</span></label>
 <input type="range" id="yearSlider" min="2014" max="2025" step="1" value="2024">
+</div>
 </div>
 </div>
 <figure id="share-of-gdp-graphic">
