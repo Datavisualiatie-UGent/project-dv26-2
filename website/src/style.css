@@ -285,3 +285,34 @@ text {
   color: white;
   border-color: #333;
 }
+
+.column {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the 2025 figure by default */
+  #expenditure-2025 {
+    display: none;
+  }
+
+  /* When the checkbox is checked, swap visibility */
+  #toggle-year:checked ~ .column #expenditure-2024 {
+    display: none;
+  }
+  
+  #toggle-year:checked ~ .column #expenditure-2025 {
+    display: block;
+  }
+  
+  /* Simple styling for the label */
+  .toggle-label {
+    font-family: sans-serif;
+    cursor: pointer;
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    user-select: none;
+  }

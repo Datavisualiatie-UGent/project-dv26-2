@@ -2,27 +2,29 @@
 
 *If NATO is a shield, then budget is the cost of the steel*
 
-> [!warning]
-> Alternative storyline:
->
-> 1. absolute dollars
-> 2. 2% threshold (as introduction, also Trump frustration, actually so? -> relative)
-> 3. relative dollars (gpd or per capita) (based on 2024 estimates)
-> 4. change over time
-> 5. expenditure shares
-> 6. soldiers
-
 ```js
 import vegaEmbed from "npm:vega-embed";
 ```
 
-For decades, the United States has shouldered the majority of the financial burden; a fact that led to the friction we see in modern politics.
-In 2014, the alliance set a clear benchmark: every member should spend at least **2% of its GDP** on defense. [^4]
+## The Elephant in the Room
 
-<!-- TODO Add title in markdown instead of svg -->
-<!-- TODO Move legend somewhere else? -->
-<!-- TODO Add 2% threshold -->
-<!-- TODO Either use 2023 or 2024 throughout -->
+To understand the friction within NATO, we have to look who's contributing what to the alliance.
+In 2023, the United States spent nearly **twice as much** on defense as the rest of the 31 allies combined.
+
+<figure id="expenditure-absolute-graphic" class="breakout">
+<div class="vis" id="vis-expenditure-absolute"></div>
+</figure>
+
+```js
+const spec = await FileAttachment("./plots/expenditure-absolute.json").json();
+const viewPromise = vegaEmbed("#vis-expenditure-absolute", spec, { actions: false }).then(res => res.view);
+```
+
+For every \$1 spent by a European ally, the US spends nearly \$2.
+Trump argues that the US is paying for the protection of Europe, while European allies are not doing their fair share.
+Since 2014, NATO has been pushing for a more equitable distribution of the financial burden.
+Each country is expected to contribute according to its economic capacity, which is measured as a percentage of its Gross Domestic Product (GDP).
+The alliance set a clear benchmark: every member should spend at least **2% of its GDP** on defense. [^4]
 
 <figure id="share-of-gdp-graphic" class="breakout">
 <div class="vis" id="vis-share-of-gdp"></div>
@@ -46,38 +48,34 @@ const spec = await FileAttachment("./plots/real-change.json").json();
 const viewPromise = vegaEmbed("#vis-real-change", spec, { actions: false }).then(res => res.view);
 ```
 
-## The Weight of the Titan?
-
-To understand the friction within NATO, we have to look past percentages and look at raw cash.
-In 2023, the United States spent nearly **twice as much** on defense as the rest of the 31 allies combined.
-
-<figure id="expenditure-absolute-graphic" class="breakout">
-<div class="vis" id="vis-expenditure-absolute"></div>
-</figure>
-
-```js
-const spec = await FileAttachment("./plots/expenditure-absolute.json").json();
-const viewPromise = vegaEmbed("#vis-expenditure-absolute", spec, { actions: false }).then(res => res.view);
-```
-
-While almost every member now meets the 2% threshold, the absolute dollar amounts reveal the true scale of American dominance.
-For every \$1 spent by a European ally, the US spends nearly \$2.
-However, this might be an unfair comparison, as there are no countries that have the population number the US has.
-To see the true "fairness" of the alliance, we must ask: how much does the average citizen contribute to the shield?
-By factoring in population, we move from the power of nations to the commitment of individuals.
-
-<figure id="expenditure-per-capita-graphic" class="breakout">
-<div class="vis no-control" id="vis-expenditure-per-capita"></div>
-</figure>
-
-```js
-const spec = await FileAttachment("./plots/expenditure-per-capita.json").json();
-const viewPromise = vegaEmbed("#vis-expenditure-per-capita", spec, { actions: false }).then(res => res.view);
-```
-
 When viewed per capita, the spending gap begins to shrink.
 While the US still leads, citizens in nations like Norway and the Baltic states often shoulder a personal financial burden that rivals or even exceeds that of the average American.
 This data suggests that the "cowardly" label ignores the significant personal investment made by people living on the alliance's frontlines. [^6]
+However, the gap shrinks each year, and the estimates for 2025 show that US citizens will be paying less than other NATO citizens for their protection for the first time in history.
+
+<input type="checkbox" id="toggle-year" style="display:none;">
+<label for="toggle-year" class="toggle-label">
+  Click to switch between 2024 and 2025 estimates
+</label>
+
+<div class="column">
+    <figure id="expenditure-2024">
+        <div class="vis no-control" id="vis-expenditure-per-capita-2024"></div>
+        <figcaption>Data for 2024</figcaption>
+    </figure>
+    <figure id="expenditure-2025">
+        <div class="vis no-control" id="vis-expenditure-per-capita-2025"></div>
+        <figcaption>Data for 2025</figcaption>
+    </figure>
+</div>
+
+```js
+const spec2024 = await FileAttachment("./plots/expenditure-per-capita-2024.json").json();
+const spec2025 = await FileAttachment("./plots/expenditure-per-capita-2025.json").json();
+
+const viewPromise1 = vegaEmbed("#vis-expenditure-per-capita-2024", spec2024, { actions: false }).then(res => res.view);
+const viewPromise2 = vegaEmbed("#vis-expenditure-per-capita-2025", spec2025, { actions: false }).then(res => res.view);
+```
 
 Another important aspect of NATO's defense is the human cost, in terms of soldiers.
 While the US has the largest military, by far, these absolute numbers can again be misleading.
