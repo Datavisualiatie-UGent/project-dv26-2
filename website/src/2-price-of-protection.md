@@ -58,16 +58,14 @@ However, the gap shrinks each year, and the estimates for 2025 show that US citi
   Click to switch between 2024 and 2025 estimates
 </label>
 
-<div class="column">
-    <figure id="expenditure-2024">
-        <div class="vis no-control" id="vis-expenditure-per-capita-2024"></div>
-        <figcaption>Data for 2024</figcaption>
-    </figure>
-    <figure id="expenditure-2025">
-        <div class="vis no-control" id="vis-expenditure-per-capita-2025"></div>
-        <figcaption>Data for 2025</figcaption>
-    </figure>
-</div>
+<figure id="expenditure-2024" class="breakout">
+    <div class="vis no-control" id="vis-expenditure-per-capita-2024"></div>
+    <figcaption>Data for 2024</figcaption>
+</figure>
+<figure id="expenditure-2025" class="breakout">
+    <div class="vis no-control" id="vis-expenditure-per-capita-2025"></div>
+    <figcaption>Data for 2025</figcaption>
+</figure>
 
 ```js
 const spec2024 = await FileAttachment("./plots/expenditure-per-capita-2024.json").json();

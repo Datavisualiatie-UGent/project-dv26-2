@@ -301,25 +301,60 @@ text {
 }
 
 /* Hide the 2025 figure by default */
-  #expenditure-2025 {
-    display: none;
-  }
+#expenditure-2025 {
+  display: none;
+}
 
-  /* When the checkbox is checked, swap visibility */
-  #toggle-year:checked ~ .column #expenditure-2024 {
-    display: none;
-  }
-  
-  #toggle-year:checked ~ .column #expenditure-2025 {
-    display: block;
-  }
-  
-  /* Simple styling for the label */
-  .toggle-label {
-    font-family: sans-serif;
-    cursor: pointer;
-    background: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 4px;
-    user-select: none;
-  }
+/* Toggle chart visibility */
+#toggle-year:checked ~ #expenditure-2024 {
+  display: none;
+}
+
+#toggle-year:checked ~ #expenditure-2025 {
+  display: block;
+}
+
+/* Hide native checkbox */
+#toggle-year {
+  display: none;
+}
+
+/* Pretty toggle button */
+.toggle-label {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+
+  background: #f5f5f5;
+  border: 1px solid #d0d0d0;
+  border-radius: 999px;
+
+  padding: 10px 18px;
+  margin-bottom: 14px;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Hover effect */
+.toggle-label:hover {
+  background: #ced4da;
+  color: black;
+}
+
+/* Active click effect */
+.toggle-label:active {
+  transform: scale(0.98);
+}
+
+/* Checked state */
+#toggle-year:checked + .toggle-label {
+  background: #1b365d;
+  color: white;
+}
