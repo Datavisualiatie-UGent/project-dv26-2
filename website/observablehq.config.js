@@ -5,16 +5,14 @@ export default {
 
   root: "src",
   head: `
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/graph.png" sizes="any">
     <link rel="stylesheet" href="./style.css">
     <script type="module" src="./script.js"></script>
     `,
 
   // logo: "logo.png",
-
-  // favicons: [
-  //   {rel: "icon", href: "favicon.ico", sizes: "any"},
-  //   {rel: "icon", href: "favicon.svg", type: "image/svg+xml"}
-  // ],
 
   sidebar: true,
   toc: true,
@@ -22,8 +20,7 @@ export default {
 
   // search: true,
 
-  // TODO Add links?
-  footer: `Built with ❤️ by Bram Comyn, Tibo De Peuter & Brent Janssens for the 2026 Datavisualisation project at Ghent University.`,
+  footer: `Built with 🩸, 💦 & 💧 by <a href="https://github.com/bramcomyn">Bram Comyn</a>, <a href="https://github.com/tdpeuter">Tibo De Peuter</a> & <a href="https://github.com/brentjan">Brent Janssens</a> for the <a href="https://studiekiezer.ugent.be/2025/studiefiche/en/C004074">2026 Datavisualisation project</a> at <a href="https://www.ugent.be/">Ghent University.</a></br><a href="https://www.flaticon.com/free-icons/data-visualization" title="data visualization icons">Data visualization icons created by meaicon - Flaticon</a>`,
 
   // Plugins
   markdownIt: (md) => md.use(footnote),
