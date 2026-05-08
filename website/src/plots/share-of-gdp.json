@@ -31,6 +31,7 @@
         "color": {
           "field": "CountryGroup",
           "type": "nominal",
+          "title": "Region",
           "scale": {
             "domain": [
               "United States",
@@ -61,14 +62,9 @@
             "title": "Country"
           },
           {
-            "field": "year",
-            "type": "nominal",
-            "title": "Year"
-          },
-          {
             "field": "share",
             "type": "quantitative",
-            "format": ".1f",
+            "format": ".2f",
             "title": "% of GDP"
           }
         ]
@@ -85,6 +81,10 @@
       "transform": [
         {
           "filter": "datum.share > 0"
+        },
+        {
+          "calculate": "format(datum.share, '.2f') + '%'",
+          "as": "shareLabel"
         }
       ],
       "encoding": {
@@ -102,10 +102,27 @@
           }
         },
         "text": {
-          "field": "share",
-          "type": "quantitative",
-          "format": ".1f"
-        }
+          "field": "shareLabel",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "countryWithFlag",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "yearlabel",
+            "type": "nominal",
+            "title": "Year"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "% of GDP"
+          }
+        ]
       }
     },
     {
@@ -155,11 +172,11 @@
       },
       "transform": [
         {
-          "calculate": "'2024e' === '2025e' ? 5.0 : 2.0",
+          "calculate": "'2025e' === '2025e' ? 5.0 : 2.0",
           "as": "t"
         },
         {
-          "calculate": "'2024e' === '2025e' ? 'Proposed 5% Target' : 'NATO 2% Target'",
+          "calculate": "'2025e' === '2025e' ? 'Proposed 5% Target' : 'NATO 2% Target'",
           "as": "targetLabel"
         }
       ],
@@ -186,8 +203,8 @@
     {
       "mark": {
         "type": "text",
-        "align": "right",
-        "dx": -5,
+        "align": "center",
+        "dx": -10,
         "dy": -12,
         "fontWeight": "bold",
         "color": "#b8860b"
@@ -199,11 +216,11 @@
       },
       "transform": [
         {
-          "calculate": "'2024e' === '2025e' ? 5.0 : 2.0",
+          "calculate": "'2025e' === '2025e' ? 5.0 : 2.0",
           "as": "t"
         },
         {
-          "calculate": "'2024e' === '2025e' ? '5% Target' : '2% Target'",
+          "calculate": "'2025e' === '2025e' ? '5% Target' : '2% Target'",
           "as": "labelText"
         }
       ],
@@ -2460,7 +2477,7 @@
   },
   "transform": [
     {
-      "filter": "datum.year == '2024e'"
+      "filter": "datum.year == '2025e'"
     },
     {
       "calculate": "datum.country + ' ' + {\"NATO Average\":\"🌐\",\"NATO Excl. US Average\":\"✨\",\"NATO Eastflank\":\"🛡️\",\"Albania\":\"🇦🇱\",\"Belgium\":\"🇧🇪\",\"Bulgaria\":\"🇧🇬\",\"Canada\":\"🇨🇦\",\"Croatia\":\"🇭🇷\",\"Czechia\":\"🇨🇿\",\"Denmark\":\"🇩🇰\",\"Estonia\":\"🇪🇪\",\"Finland\":\"🇫🇮\",\"France\":\"🇫🇷\",\"Germany\":\"🇩🇪\",\"Greece\":\"🇬🇷\",\"Hungary\":\"🇭🇺\",\"Italy\":\"🇮🇹\",\"Latvia\":\"🇱🇻\",\"Lithuania\":\"🇱🇹\",\"Luxembourg\":\"🇱🇺\",\"Montenegro\":\"🇲🇪\",\"Netherlands\":\"🇳🇱\",\"North Macedonia\":\"🇲🇰\",\"Norway\":\"🇳🇴\",\"Poland\":\"🇵🇱\",\"Portugal\":\"🇵🇹\",\"Romania\":\"🇷🇴\",\"Slovak Republic\":\"🇸🇰\",\"Slovenia\":\"🇸🇮\",\"Spain\":\"🇪🇸\",\"Sweden\":\"🇸🇪\",\"Türkiye\":\"🇹🇷\",\"United Kingdom\":\"🇬🇧\",\"United States\":\"🇺🇸\",\"USA\":\"🇺🇸\"}[datum.country]",
@@ -2469,6 +2486,10 @@
     {
       "calculate": "datum.country === 'United States' \n        ? 'United States' : indexof([\"Norway\",\"Sweden\",\"Finland\",\"Estonia\",\"Latvia\",\"Lithuania\",\"Poland\",\"Romania\"], datum.country) !== -1 \n        ? 'East Flank'    : 'Other NATO members'",
       "as": "CountryGroup"
+    },
+    {
+      "calculate": "2025",
+      "as": "yearlabel"
     }
   ],
   "width": 520,
@@ -2477,7 +2498,7 @@
   },
   "title": {
     "text": "NATO Defense Spending as % of GDP",
-    "subtitle": "2024 estimates (2% Target)",
+    "subtitle": "2025 estimates (Proposed 5% Target)",
     "anchor": "start",
     "offset": 25,
     "fontSize": 20,
