@@ -50,9 +50,6 @@ h1, h2, h3, p {
 .breakout {
   display: block;
 
-  margin: auto;
-
-  width: 100%;
   max-width: 100%;
   max-height: var(--nato-max-height);
 }
@@ -64,7 +61,6 @@ h1, h2, h3, p {
 .vis canvas,
 .vis svg {
   width: 100% !important;
-  height: auto !important;
   max-height: var(--nato-max-height);
 }
 
