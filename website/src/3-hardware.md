@@ -13,16 +13,16 @@ Using data from Global Firepower 2026, we can look past the price tags to see th
 
 Being able to fly safely over long distances is important not only for air operations, but also for ground support and logistics.
 NATO’s combined air fleets are enormous, yet they are a patchwork of capabilities, with the United States dominating in terms of numbers and advanced technology.
-The USA is the unrivaled king of air superiority with modern combat systems like the F-35 and F-22.
-To project power globally in a matter of hours, the US Air Force maintains a large fleet of Multi-Role Tanker Transports (MRTT) for in-air refueling, such as the KC-135, alongside heavy Fixed Wing Transport like the C-17.
+The USA is the unrivaled king of air superiority with modern combat systems like the [F-35](https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II) and [F-22](https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor).
+To project power globally in a matter of hours, the US Air Force maintains a large fleet of Multi-Role Tanker Transports (MRTT) for in-air refueling, such as the [KC-135](https://en.wikipedia.org/wiki/Boeing_KC-135_Stratotanker), alongside heavy Fixed Wing Transport like the [C-17](https://en.wikipedia.org/wiki/Boeing_C-17_Globemaster_III).
 
 The alliance’s arsenal is a shared burden, forming a complex patchwork of air power that spans generations of aviation history.
-While the United States operates the iconic A-10 Warthog for close air support, its NATO allies contribute a diverse array of high-end strike and interceptor capabilities.
-This includes sophisticated European platforms like the French Dassault Rafale, the British-German Eurofighter Typhoon, and the Swedish JAS Gripen.
+While the United States operates the iconic [A-10 Thunderbolt](https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II) for close air support, its NATO allies contribute a diverse array of high-end strike and interceptor capabilities.
+This includes sophisticated European platforms like the French [Dassault Rafale](https://en.wikipedia.org/wiki/Dassault_Rafale), the British-German [Eurofighter Typhoon](https://en.wikipedia.org/wiki/Eurofighter_Typhoon), and the Swedish [JAS Gripen](https://en.wikipedia.org/wiki/Saab_JAS_39_Gripen).
 
 This collective shield is defined by its contrast.
 While some members deploy cutting-edge 5th-generation stealth fighters like the F-35, others continue to rely on modernized but aging legacy systems.
-This fleet ranges from the ubiquitous F-16 to Soviet-era MiG-29s, creating a mix of state-of-the-art technology and Cold War relics.
+This fleet ranges from the ubiquitous [F-16](https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon) to Soviet-era [MiG-29s](https://en.wikipedia.org/wiki/Mikoyan_MiG-29), creating a mix of state-of-the-art technology and Cold War relics.
 Ultimately, managing this variety of hardware highlights the challenge of interoperability within a 32-nation alliance.
 
 ## The Steel Backbone of Ground Combat
@@ -30,7 +30,7 @@ Ultimately, managing this variety of hardware highlights the challenge of intero
 While air power provides the shield, ground forces remain the ultimate sword of territorial integrity.
 In the flatlands of Eastern Europe, strategic depth is measured in tracks and armor.
 Modern land warfare relies on the interoperability between ground systems, like main battle tanks (MBTs) that provide breakthrough power, infantry fighting vehicles (IFVs) and armored personel carriers (APCs) which ensure infantry can move under protection of armor. [^8]
-Where the US has the obvious upper hand in air capabilities, it is the European allies that hold a majority of modern MBTs, e.g. the German Leopard 2A7, French Leclerc and British Challenger 2.
+Where the US has the obvious upper hand in air capabilities, it is the European allies that hold a majority of modern MBTs, e.g. the German [Leopard 2A7](https://en.wikipedia.org/wiki/Leopard_2), French [Leclerc](https://en.wikipedia.org/wiki/Leclerc_(tank)) and British [Challenger 2](https://en.wikipedia.org/wiki/Challenger_2).
 
 These systems rarely fight alone, but are rather supported by modern heavy artillery, both in the form of traditional self-propelled guns (SPGs) and towed artillery as in the form of multiple-launch rocket systems (MLRS).
 
