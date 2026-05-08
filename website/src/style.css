@@ -56,17 +56,16 @@ h1, h2, h3, p {
 
 .breakout .vis {
   display: block;
-  margin-left: 0;
+  margin-left: 10%;
   margin-right: auto;
 }
 
 .vis canvas,
 .vis svg {
   width: auto;
+  max-width: 100%;
   max-height: var(--nato-max-height);
   display: block;
-  margin-left: 10%;
-  margin-right: auto;
 }
 
 /* Scrollytelling Component */
@@ -295,7 +294,7 @@ text {
 
 .column {
   display: flex;
-  flex-direction: horizontal;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

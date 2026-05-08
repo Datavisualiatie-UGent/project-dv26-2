@@ -172,11 +172,11 @@
       },
       "transform": [
         {
-          "calculate": "'2025e' === '2025e' ? 5.0 : 2.0",
+          "calculate": "selectedYear === 2025 ? 5.0 : 2.0",
           "as": "t"
         },
         {
-          "calculate": "'2025e' === '2025e' ? 'Proposed 5% Target' : 'NATO 2% Target'",
+          "calculate": "selectedYear === 2025 ? 'Proposed 5% Target' : 'NATO 2% Target'",
           "as": "targetLabel"
         }
       ],
@@ -216,11 +216,11 @@
       },
       "transform": [
         {
-          "calculate": "'2025e' === '2025e' ? 5.0 : 2.0",
+          "calculate": "selectedYear === 2025 ? 5.0 : 2.0",
           "as": "t"
         },
         {
-          "calculate": "'2025e' === '2025e' ? '5% Target' : '2% Target'",
+          "calculate": "selectedYear === 2025 ? '5% Target' : '2% Target'",
           "as": "labelText"
         }
       ],
@@ -236,6 +236,19 @@
           "field": "labelText",
           "type": "nominal"
         }
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2025,
+        "step": 1,
+        "name": "Select Year: "
       }
     }
   ],
@@ -2477,10 +2490,10 @@
   },
   "transform": [
     {
-      "filter": "datum.year == '2025e'"
+      "filter": "parseInt(datum.year) == selectedYear"
     },
     {
-      "calculate": "datum.country + ' ' + {\"NATO Average\":\"🌐\",\"NATO Excl. US Average\":\"✨\",\"NATO Eastflank\":\"🛡️\",\"Albania\":\"🇦🇱\",\"Belgium\":\"🇧🇪\",\"Bulgaria\":\"🇧🇬\",\"Canada\":\"🇨🇦\",\"Croatia\":\"🇭🇷\",\"Czechia\":\"🇨🇿\",\"Denmark\":\"🇩🇰\",\"Estonia\":\"🇪🇪\",\"Finland\":\"🇫🇮\",\"France\":\"🇫🇷\",\"Germany\":\"🇩🇪\",\"Greece\":\"🇬🇷\",\"Hungary\":\"🇭🇺\",\"Italy\":\"🇮🇹\",\"Latvia\":\"🇱🇻\",\"Lithuania\":\"🇱🇹\",\"Luxembourg\":\"🇱🇺\",\"Montenegro\":\"🇲🇪\",\"Netherlands\":\"🇳🇱\",\"North Macedonia\":\"🇲🇰\",\"Norway\":\"🇳🇴\",\"Poland\":\"🇵🇱\",\"Portugal\":\"🇵🇹\",\"Romania\":\"🇷🇴\",\"Slovak Republic\":\"🇸🇰\",\"Slovenia\":\"🇸🇮\",\"Spain\":\"🇪🇸\",\"Sweden\":\"🇸🇪\",\"Türkiye\":\"🇹🇷\",\"United Kingdom\":\"🇬🇧\",\"United States\":\"🇺🇸\",\"USA\":\"🇺🇸\"}[datum.country]",
+      "calculate": "datum.country + ' ' + {\"NATO Average\":\"🌐\",\"NATO Excl. US Average\":\"✨\",\"NATO Eastflank\":\"🛡️\",\"USA\":\"🇺🇸\",\"United States of America\":\"🇺🇸\",\"South Korea\":\"🇰🇷\",\"North Korea\":\"🇰🇵\",\"Czech Republic\":\"🇨🇿\",\"Afghanistan\":\"🇦🇫\",\"Albania\":\"🇦🇱\",\"Algeria\":\"🇩🇿\",\"Andorra\":\"🇦🇩\",\"Angola\":\"🇦🇴\",\"Antigua and Barbuda\":\"🇦🇬\",\"Argentina\":\"🇦🇷\",\"Armenia\":\"🇦🇲\",\"Australia\":\"🇦🇺\",\"Austria\":\"🇦🇹\",\"Azerbaijan\":\"🇦🇿\",\"Bahamas\":\"🇧🇸\",\"Bahrain\":\"🇧🇭\",\"Bangladesh\":\"🇧🇩\",\"Barbados\":\"🇧🇧\",\"Belarus\":\"🇧🇾\",\"Belgium\":\"🇧🇪\",\"Belize\":\"🇧🇿\",\"Benin\":\"🇧🇯\",\"Bhutan\":\"🇧🇹\",\"Bolivia\":\"🇧🇴\",\"Bosnia and Herzegovina\":\"🇧🇦\",\"Botswana\":\"🇧🇼\",\"Brazil\":\"🇧🇷\",\"Brunei\":\"🇧🇳\",\"Bulgaria\":\"🇧🇬\",\"Burkina Faso\":\"🇧🇫\",\"Burundi\":\"🇧🇮\",\"Cabo Verde\":\"🇨🇻\",\"Cambodia\":\"🇰🇭\",\"Cameroon\":\"🇨🇲\",\"Canada\":\"🇨🇦\",\"Central African Republic\":\"🇨🇫\",\"Chad\":\"🇹🇩\",\"Chile\":\"🇨🇱\",\"China\":\"🇨🇳\",\"Colombia\":\"🇨🇴\",\"Comoros\":\"🇰🇲\",\"Congo (Congo-Brazzaville)\":\"🇨🇬\",\"Congo (Democratic Republic)\":\"🇨🇩\",\"Costa Rica\":\"🇨🇷\",\"Croatia\":\"🇭🇷\",\"Cuba\":\"🇨🇺\",\"Cyprus\":\"🇨🇾\",\"Czechia\":\"🇨🇿\",\"Denmark\":\"🇩🇰\",\"Djibouti\":\"🇩🇯\",\"Dominica\":\"🇩🇲\",\"Dominican Republic\":\"🇩🇴\",\"Ecuador\":\"🇪🇨\",\"Egypt\":\"🇪🇬\",\"El Salvador\":\"🇸🇻\",\"Equatorial Guinea\":\"🇬🇶\",\"Eritrea\":\"🇪🇷\",\"Estonia\":\"🇪🇪\",\"Eswatini\":\"🇸🇿\",\"Ethiopia\":\"🇪🇹\",\"Fiji\":\"🇫🇯\",\"Finland\":\"🇫🇮\",\"France\":\"🇫🇷\",\"Gabon\":\"🇬🇦\",\"Gambia\":\"🇬🇲\",\"Georgia\":\"🇬🇪\",\"Germany\":\"🇩🇪\",\"Ghana\":\"🇬🇭\",\"Greece\":\"🇬🇷\",\"Grenada\":\"🇬🇩\",\"Guatemala\":\"🇬🇹\",\"Guinea\":\"🇬🇳\",\"Guinea-Bissau\":\"🇬🇼\",\"Guyana\":\"🇬🇾\",\"Haiti\":\"🇭🇹\",\"Honduras\":\"🇭🇳\",\"Hungary\":\"🇭🇺\",\"Iceland\":\"🇮🇸\",\"India\":\"🇮🇳\",\"Indonesia\":\"🇮🇩\",\"Iran\":\"🇮🇷\",\"Iraq\":\"🇮🇶\",\"Ireland\":\"🇮🇪\",\"Israel\":\"🇮🇱\",\"Italy\":\"🇮🇹\",\"Jamaica\":\"🇯🇲\",\"Japan\":\"🇯🇵\",\"Jordan\":\"🇯🇴\",\"Kazakhstan\":\"🇰🇿\",\"Kenya\":\"🇰🇪\",\"Kiribati\":\"🇰🇮\",\"Kuwait\":\"🇰🇼\",\"Kyrgyzstan\":\"🇰🇬\",\"Laos\":\"🇱🇦\",\"Latvia\":\"🇱🇻\",\"Lebanon\":\"🇱🇧\",\"Lesotho\":\"🇱🇸\",\"Liberia\":\"🇱🇷\",\"Libya\":\"🇱🇾\",\"Liechtenstein\":\"🇱🇮\",\"Lithuania\":\"🇱🇹\",\"Luxembourg\":\"🇱🇺\",\"Madagascar\":\"🇲🇬\",\"Malawi\":\"🇲🇼\",\"Malaysia\":\"🇲🇾\",\"Maldives\":\"🇲🇻\",\"Mali\":\"🇲🇱\",\"Malta\":\"🇲🇹\",\"Marshall Islands\":\"🇲🇭\",\"Mauritania\":\"🇲🇷\",\"Mauritius\":\"🇲🇺\",\"Mexico\":\"🇲🇽\",\"Micronesia\":\"🇫🇲\",\"Moldova\":\"🇲🇩\",\"Monaco\":\"🇲🇨\",\"Mongolia\":\"🇲🇳\",\"Montenegro\":\"🇲🇪\",\"Morocco\":\"🇲🇦\",\"Mozambique\":\"🇲🇿\",\"Myanmar\":\"🇲🇲\",\"Namibia\":\"🇳🇦\",\"Nauru\":\"🇳🇷\",\"Nepal\":\"🇳🇵\",\"Netherlands\":\"🇳🇱\",\"New Zealand\":\"🇳🇿\",\"Nicaragua\":\"🇳🇮\",\"Niger\":\"🇳🇪\",\"Nigeria\":\"🇳🇬\",\"North Macedonia\":\"🇲🇰\",\"Norway\":\"🇳🇴\",\"Oman\":\"🇴🇲\",\"Pakistan\":\"🇵🇰\",\"Palau\":\"🇵🇼\",\"Panama\":\"🇵🇦\",\"Papua New Guinea\":\"🇵🇬\",\"Paraguay\":\"🇵🇾\",\"Peru\":\"🇵🇪\",\"Philippines\":\"🇵🇭\",\"Poland\":\"🇵🇱\",\"Portugal\":\"🇵🇹\",\"Qatar\":\"🇶🇦\",\"Romania\":\"🇷🇴\",\"Russia\":\"🇷🇺\",\"Rwanda\":\"🇷🇼\",\"Saint Kitts and Nevis\":\"🇰🇳\",\"Saint Lucia\":\"🇱🇨\",\"Saint Vincent\":\"🇻🇨\",\"Samoa\":\"🇼🇸\",\"San Marino\":\"🇸🇲\",\"Sao Tome and Principe\":\"🇸🇹\",\"Saudi Arabia\":\"🇸🇦\",\"Senegal\":\"🇸🇳\",\"Serbia\":\"🇷🇸\",\"Seychelles\":\"🇸🇨\",\"Sierra Leone\":\"🇸🇱\",\"Singapore\":\"🇸🇬\",\"Slovakia\":\"🇸🇰\",\"Slovak Republic\":\"🇸🇰\",\"Slovenia\":\"🇸🇮\",\"Solomon Islands\":\"🇸🇧\",\"Somalia\":\"🇸🇴\",\"South Africa\":\"🇿🇦\",\"South Sudan\":\"🇸🇸\",\"Spain\":\"🇪🇸\",\"Sri Lanka\":\"🇱🇰\",\"Sudan\":\"🇸🇩\",\"Suriname\":\"🇸🇷\",\"Sweden\":\"🇸🇪\",\"Switzerland\":\"🇨🇭\",\"Syria\":\"🇸🇾\",\"Taiwan\":\"🇹🇼\",\"Tajikistan\":\"🇹🇯\",\"Tanzania\":\"🇹🇿\",\"Thailand\":\"🇹🇭\",\"Timor-Leste\":\"🇹🇱\",\"Togo\":\"🇹🇬\",\"Tonga\":\"🇹🇴\",\"Trinidad and Tobago\":\"🇹🇹\",\"Tunisia\":\"🇹🇳\",\"Türkiye\":\"🇹🇷\",\"Turkey\":\"🇹🇷\",\"Turkmenistan\":\"🇹🇲\",\"Tuvalu\":\"🇹🇻\",\"Uganda\":\"🇺🇬\",\"Ukraine\":\"🇺🇦\",\"United Arab Emirates\":\"🇦🇪\",\"United Kingdom\":\"🇬🇧\",\"United States\":\"🇺🇸\",\"Uruguay\":\"🇺🇾\",\"Uzbekistan\":\"🇺🇿\",\"Vanuatu\":\"🇻🇺\",\"Vatican City\":\"🇻🇦\",\"Venezuela\":\"🇻🇪\",\"Vietnam\":\"🇻🇳\",\"Yemen\":\"🇾🇪\",\"Zambia\":\"🇿🇲\",\"Zimbabwe\":\"🇿🇼\"}[datum.country]",
       "as": "countryWithFlag"
     },
     {
@@ -2488,7 +2501,7 @@
       "as": "CountryGroup"
     },
     {
-      "calculate": "2025",
+      "calculate": "replace(selectedYear, 'e', '')",
       "as": "yearlabel"
     }
   ],
@@ -2498,10 +2511,8 @@
   },
   "title": {
     "text": "NATO Defense Spending as % of GDP",
-    "subtitle": "2025 estimates (Proposed 5% Target)",
     "anchor": "start",
     "offset": 25,
-    "fontSize": 20,
-    "subtitleFontSize": 14
+    "fontSize": 20
   }
 }
