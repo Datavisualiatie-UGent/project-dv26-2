@@ -1,0 +1,590 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 40,
+        "outerRadius": 100,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "data": {
+        "values": [
+          {
+            "group": "United States",
+            "spending": 747200.4599675125,
+            "pctNATO": "72.14%",
+            "theta": 0,
+            "theta2": 4.532840618746632,
+            "midTheta": 2.266420309373316,
+            "midThetaEnd": 2.271420309373316
+          },
+          {
+            "group": "East Flank",
+            "spending": 30850.18067127102,
+            "pctNATO": "2.98%",
+            "theta": 4.532840618746632,
+            "theta2": 4.719991135287387,
+            "midTheta": 4.62641587701701,
+            "midThetaEnd": 4.63141587701701
+          },
+          {
+            "group": "Other NATO members",
+            "spending": 257679.34557984816,
+            "pctNATO": "24.88%",
+            "theta": 4.719991135287387,
+            "theta2": 6.283185307179586,
+            "midTheta": 5.501588221233487,
+            "midThetaEnd": 5.5065882212334865
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "datum.group === 'United States' ? 'United States 🇺🇸' : datum.group",
+          "as": "grouplabel"
+        }
+      ],
+      "encoding": {
+        "theta": {
+          "field": "theta",
+          "type": "quantitative",
+          "scale": null
+        },
+        "theta2": {
+          "field": "theta2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "United States",
+              "East Flank",
+              "Other NATO members"
+            ],
+            "range": [
+              "#8B0000",
+              "#1B365D",
+              "#CED4DA"
+            ]
+          },
+          "legend": {
+            "orient": "none",
+            "legendX": 380,
+            "legendY": 10,
+            "direction": "vertical",
+            "fillColor": "white",
+            "padding": 10,
+            "strokeColor": "#ccc",
+            "cornerRadius": 4,
+            "title": "Region",
+            "labelFontSize": 12,
+            "symbolType": "square"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "grouplabel",
+            "title": "Region"
+          },
+          {
+            "field": "spending",
+            "type": "quantitative",
+            "format": ",.2f",
+            "title": "Spending (US$M)"
+          },
+          {
+            "field": "pctNATO",
+            "title": "% of NATO total"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 105,
+        "outerRadius": 170,
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "data": {
+        "values": [
+          {
+            "country": "Poland",
+            "label": "Poland 🇵🇱",
+            "spending": 9764.180916797148,
+            "shareOfGDP": "1.86%",
+            "group": "East Flank",
+            "pctNATO": "0.94%",
+            "theta": 4.532840618746632,
+            "theta2": 4.592074356196918
+          },
+          {
+            "country": "Norway",
+            "label": "Norway 🇳🇴",
+            "spending": 7015.047719321961,
+            "shareOfGDP": "1.54%",
+            "group": "East Flank",
+            "pctNATO": "0.68%",
+            "theta": 4.592074356196918,
+            "theta2": 4.634630664641872
+          },
+          {
+            "country": "Sweden",
+            "label": "Sweden 🇸🇪",
+            "spending": 5804.747666091748,
+            "shareOfGDP": "1.07%",
+            "group": "East Flank",
+            "pctNATO": "0.56%",
+            "theta": 4.634630664641872,
+            "theta2": 4.669844770376736
+          },
+          {
+            "country": "Finland",
+            "label": "Finland 🇫🇮",
+            "spending": 3927.657271450364,
+            "shareOfGDP": "1.46%",
+            "group": "East Flank",
+            "pctNATO": "0.38%",
+            "theta": 4.669844770376736,
+            "theta2": 4.693671635281664
+          },
+          {
+            "country": "Romania",
+            "label": "Romania 🇷🇴",
+            "spending": 3002.381086662511,
+            "shareOfGDP": "1.35%",
+            "group": "East Flank",
+            "pctNATO": "0.29%",
+            "theta": 4.693671635281664,
+            "theta2": 4.711885375330984
+          },
+          {
+            "country": "Estonia",
+            "label": "Estonia 🇪🇪",
+            "spending": 566.2818153568794,
+            "shareOfGDP": "1.90%",
+            "group": "East Flank",
+            "pctNATO": "0.05%",
+            "theta": 4.711885375330984,
+            "theta2": 4.7153206853338965
+          },
+          {
+            "country": "Lithuania",
+            "label": "Lithuania 🇱🇹",
+            "spending": 459.249724945679,
+            "shareOfGDP": "0.88%",
+            "group": "East Flank",
+            "pctNATO": "0.04%",
+            "theta": 4.7153206853338965,
+            "theta2": 4.71810669246172
+          },
+          {
+            "country": "Latvia",
+            "label": "Latvia 🇱🇻",
+            "spending": 310.6344706447286,
+            "shareOfGDP": "0.97%",
+            "group": "East Flank",
+            "pctNATO": "0.03%",
+            "theta": 4.71810669246172,
+            "theta2": 4.719991135287387
+          },
+          {
+            "country": "United Kingdom",
+            "label": "United Kingdom 🇬🇧",
+            "spending": 62746.31950432199,
+            "shareOfGDP": "2.14%",
+            "group": "Other NATO members",
+            "pctNATO": "6.06%",
+            "theta": 4.719991135287387,
+            "theta2": 5.100637402205385
+          },
+          {
+            "country": "France",
+            "label": "France 🇫🇷",
+            "spending": 50539.61000570442,
+            "shareOfGDP": "1.82%",
+            "group": "Other NATO members",
+            "pctNATO": "4.88%",
+            "theta": 5.100637402205385,
+            "theta2": 5.407232498653039
+          },
+          {
+            "country": "Germany",
+            "label": "Germany 🇩🇪",
+            "spending": 46708.41746466194,
+            "shareOfGDP": "1.16%",
+            "group": "Other NATO members",
+            "pctNATO": "4.51%",
+            "theta": 5.407232498653039,
+            "theta2": 5.6905859269022665
+          },
+          {
+            "country": "Italy",
+            "label": "Italy 🇮🇹",
+            "spending": 23699.588675195664,
+            "shareOfGDP": "1.13%",
+            "group": "Other NATO members",
+            "pctNATO": "2.29%",
+            "theta": 5.6905859269022665,
+            "theta2": 5.834357864889544
+          },
+          {
+            "country": "Canada",
+            "label": "Canada 🇨🇦",
+            "spending": 18417.852479256668,
+            "shareOfGDP": "1.01%",
+            "group": "Other NATO members",
+            "pctNATO": "1.78%",
+            "theta": 5.834357864889544,
+            "theta2": 5.946088510547455
+          },
+          {
+            "country": "Spain",
+            "label": "Spain 🇪🇸",
+            "spending": 12241.551097976715,
+            "shareOfGDP": "0.92%",
+            "group": "Other NATO members",
+            "pctNATO": "1.18%",
+            "theta": 5.946088510547455,
+            "theta2": 6.020351045203528
+          },
+          {
+            "country": "Netherlands",
+            "label": "Netherlands 🇳🇱",
+            "spending": 10321.504469348136,
+            "shareOfGDP": "1.12%",
+            "group": "Other NATO members",
+            "pctNATO": "1.00%",
+            "theta": 6.020351045203528,
+            "theta2": 6.082965747966519
+          },
+          {
+            "country": "Türkiye",
+            "label": "Türkiye 🇹🇷",
+            "spending": 8413.448888762063,
+            "shareOfGDP": "1.45%",
+            "group": "Other NATO members",
+            "pctNATO": "0.81%",
+            "theta": 6.082965747966519,
+            "theta2": 6.134005361711386
+          },
+          {
+            "country": "Belgium",
+            "label": "Belgium 🇧🇪",
+            "spending": 5263.102400692491,
+            "shareOfGDP": "0.97%",
+            "group": "Other NATO members",
+            "pctNATO": "0.51%",
+            "theta": 6.134005361711386,
+            "theta2": 6.165933613393029
+          },
+          {
+            "country": "Greece",
+            "label": "Greece 🇬🇷",
+            "spending": 4687.911446162543,
+            "shareOfGDP": "2.24%",
+            "group": "Other NATO members",
+            "pctNATO": "0.45%",
+            "theta": 6.165933613393029,
+            "theta2": 6.194372508386719
+          },
+          {
+            "country": "Denmark",
+            "label": "Denmark 🇩🇰",
+            "spending": 3962.0103772084167,
+            "shareOfGDP": "1.15%",
+            "group": "Other NATO members",
+            "pctNATO": "0.38%",
+            "theta": 6.194372508386719,
+            "theta2": 6.218407774064268
+          },
+          {
+            "country": "Portugal",
+            "label": "Portugal 🇵🇹",
+            "spending": 3051.4157509303795,
+            "shareOfGDP": "1.31%",
+            "group": "Other NATO members",
+            "pctNATO": "0.29%",
+            "theta": 6.218407774064268,
+            "theta2": 6.23691897955938
+          },
+          {
+            "country": "Czechia",
+            "label": "Czechia 🇨🇿",
+            "spending": 2293.7928978297846,
+            "shareOfGDP": "0.94%",
+            "group": "Other NATO members",
+            "pctNATO": "0.22%",
+            "theta": 6.23691897955938,
+            "theta2": 6.250834117698785
+          },
+          {
+            "country": "Hungary",
+            "label": "Hungary 🇭🇺",
+            "spending": 1249.5657341252706,
+            "shareOfGDP": "0.86%",
+            "group": "Other NATO members",
+            "pctNATO": "0.12%",
+            "theta": 6.250834117698785,
+            "theta2": 6.258414522983443
+          },
+          {
+            "country": "Croatia",
+            "label": "Croatia 🇭🇷",
+            "spending": 1042.317267003575,
+            "shareOfGDP": "1.81%",
+            "group": "Other NATO members",
+            "pctNATO": "0.10%",
+            "theta": 6.258414522983443,
+            "theta2": 6.264737669580142
+          },
+          {
+            "country": "Slovak Republic",
+            "label": "Slovak Republic 🇸🇰",
+            "spending": 979.660188291418,
+            "shareOfGDP": "0.98%",
+            "group": "Other NATO members",
+            "pctNATO": "0.09%",
+            "theta": 6.264737669580142,
+            "theta2": 6.2706807112831
+          },
+          {
+            "country": "Bulgaria",
+            "label": "Bulgaria 🇧🇬",
+            "spending": 910.0221864557473,
+            "shareOfGDP": "1.31%",
+            "group": "Other NATO members",
+            "pctNATO": "0.09%",
+            "theta": 6.2706807112831,
+            "theta2": 6.276201298798405
+          },
+          {
+            "country": "Slovenia",
+            "label": "Slovenia 🇸🇮",
+            "spending": 485.7494679506169,
+            "shareOfGDP": "0.98%",
+            "group": "Other NATO members",
+            "pctNATO": "0.05%",
+            "theta": 6.276201298798405,
+            "theta2": 6.279148064809439
+          },
+          {
+            "country": "Luxembourg",
+            "label": "Luxembourg 🇱🇺",
+            "spending": 261.0542196117997,
+            "shareOfGDP": "0.37%",
+            "group": "Other NATO members",
+            "pctNATO": "0.03%",
+            "theta": 6.279148064809439,
+            "theta2": 6.280731732424423
+          },
+          {
+            "country": "Albania",
+            "label": "Albania 🇦🇱",
+            "spending": 196.2267956314289,
+            "shareOfGDP": "1.33%",
+            "group": "Other NATO members",
+            "pctNATO": "0.02%",
+            "theta": 6.280731732424423,
+            "theta2": 6.281922128894151
+          },
+          {
+            "country": "North Macedonia",
+            "label": "North Macedonia 🇲🇰",
+            "spending": 132.60657669020716,
+            "shareOfGDP": "1.09%",
+            "group": "Other NATO members",
+            "pctNATO": "0.01%",
+            "theta": 6.281922128894151,
+            "theta2": 6.282726577645642
+          },
+          {
+            "country": "Montenegro",
+            "label": "Montenegro 🇲🇪",
+            "spending": 75.6176860368672,
+            "shareOfGDP": "1.50%",
+            "group": "Other NATO members",
+            "pctNATO": "0.01%",
+            "theta": 6.282726577645642,
+            "theta2": 6.283185307179585
+          }
+        ]
+      },
+      "encoding": {
+        "theta": {
+          "field": "theta",
+          "type": "quantitative",
+          "scale": null
+        },
+        "theta2": {
+          "field": "theta2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "United States",
+              "East Flank",
+              "Other NATO members"
+            ],
+            "range": [
+              "#8B0000",
+              "#1B365D",
+              "#CED4DA"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "title": "Country"
+          },
+          {
+            "field": "spending",
+            "type": "quantitative",
+            "format": ",.2f",
+            "title": "Spending (US$M)"
+          },
+          {
+            "field": "pctNATO",
+            "title": "% of NATO total"
+          },
+          {
+            "field": "shareOfGDP",
+            "title": "% of GDP on defence"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 102,
+        "outerRadius": 195,
+        "stroke": "#444",
+        "strokeWidth": 0.5,
+        "clip": false
+      },
+      "data": {
+        "values": [
+          {
+            "group": "United States",
+            "spending": 747200.4599675125,
+            "pctNATO": "72.14%",
+            "theta": 0,
+            "theta2": 4.532840618746632,
+            "midTheta": 2.266420309373316,
+            "midThetaEnd": 2.271420309373316
+          },
+          {
+            "group": "East Flank",
+            "spending": 30850.18067127102,
+            "pctNATO": "2.98%",
+            "theta": 4.532840618746632,
+            "theta2": 4.719991135287387,
+            "midTheta": 4.62641587701701,
+            "midThetaEnd": 4.63141587701701
+          },
+          {
+            "group": "Other NATO members",
+            "spending": 257679.34557984816,
+            "pctNATO": "24.88%",
+            "theta": 4.719991135287387,
+            "theta2": 6.283185307179586,
+            "midTheta": 5.501588221233487,
+            "midThetaEnd": 5.5065882212334865
+          }
+        ]
+      },
+      "encoding": {
+        "theta": {
+          "field": "midTheta",
+          "type": "quantitative",
+          "scale": null
+        },
+        "theta2": {
+          "field": "midThetaEnd",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "#444"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 215,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "fill": "#333",
+        "clip": false
+      },
+      "data": {
+        "values": [
+          {
+            "group": "United States",
+            "spending": 747200.4599675125,
+            "pctNATO": "72.14%",
+            "theta": 0,
+            "theta2": 4.532840618746632,
+            "midTheta": 2.266420309373316,
+            "midThetaEnd": 2.271420309373316
+          },
+          {
+            "group": "East Flank",
+            "spending": 30850.18067127102,
+            "pctNATO": "2.98%",
+            "theta": 4.532840618746632,
+            "theta2": 4.719991135287387,
+            "midTheta": 4.62641587701701,
+            "midThetaEnd": 4.63141587701701
+          },
+          {
+            "group": "Other NATO members",
+            "spending": 257679.34557984816,
+            "pctNATO": "24.88%",
+            "theta": 4.719991135287387,
+            "theta2": 6.283185307179586,
+            "midTheta": 5.501588221233487,
+            "midThetaEnd": 5.5065882212334865
+          }
+        ]
+      },
+      "encoding": {
+        "theta": {
+          "field": "midTheta",
+          "type": "quantitative",
+          "scale": null
+        },
+        "text": {
+          "field": "pctNATO",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "width": 500,
+  "height": 500,
+  "padding": 50,
+  "view": {
+    "stroke": null
+  },
+  "title": {
+    "text": "NATO Defence Spending",
+    "subtitle": "2014 actuals by NATO",
+    "anchor": "start",
+    "offset": 10,
+    "fontSize": 20,
+    "subtitleFontSize": 16,
+    "subtitlePadding": 5
+  }
+}

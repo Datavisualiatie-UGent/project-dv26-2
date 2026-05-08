@@ -16,7 +16,7 @@ In 2023, the United States spent nearly **twice as much** on defense as the rest
 </figure>
 
 ```js
-const spec = await FileAttachment("./plots/expenditure-absolute.json").json();
+const spec = await FileAttachment("./plots/expenditure-absolute-2024.json").json();
 const viewPromise = vegaEmbed("#vis-expenditure-absolute", spec, { actions: false }).then(res => res.view);
 ```
 
@@ -31,7 +31,7 @@ The alliance set a clear benchmark: every member should spend at least **2% of i
 </figure>
 
 ```js
-const spec = await FileAttachment("./plots/share-of-gdp.json").json();
+const spec = await FileAttachment("./plots/share-of-gdp-2024.json").json();
 const viewPromise = vegaEmbed("#vis-share-of-gdp", spec, { actions: false }).then(res => res.view);
 ```
 
