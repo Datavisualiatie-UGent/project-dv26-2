@@ -3,7 +3,15 @@
 <div id="explore-wrapper" class="grid">
 <div id="explore-introduction">
 <p>
-Dit is een uitleg
+As we've illustrated in the previous sections, Trump has a certain point in saying the US spends a lot more than the other allies on NATO.
+However, we've also seen that the US's share of GDP spent on NATO has been declining, while the other allies have all been increasing their relative efforts.
+If the trend continues, the US's dominance in NATO's expenditure will continue to decline, and the European allies will soon be spending more than the US in absolute terms as well.
+
+If you want to explore the data yourself, you can use the interactive slider below to select a year and see the corresponding visualizations for that year.
+Note the increase in average spending per capita for NATO on average has more than doubled since 2014, and even tripled for the Nordics and East Flank countries.
+
+Do you also notice how the US's total share for NATO has declined from nearly 75% to almost less than 60%?
+Note that the data from Germany hasn't even been included in the 2025 plots, and would reduce the US's share even further if it were included.
 </p>
 <div class="controls">
 <label for="yearSlider"><strong>Selected Year:</strong> <span id="yearLabel">2024</span></label>
