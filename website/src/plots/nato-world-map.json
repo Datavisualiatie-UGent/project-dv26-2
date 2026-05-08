@@ -187,8 +187,8 @@
   "width": 1080,
   "height": 720,
   "title": {
-    "text": "Interactive NATO Expansion Map (Global View)",
-    "subtitle": "Select a year to see expansion",
+    "text": "NATO Expansion Map",
+    "subtitle": "",
     "fontSize": 20,
     "anchor": "start",
     "offset": 20
