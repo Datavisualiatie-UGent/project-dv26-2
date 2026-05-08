@@ -50,11 +50,11 @@ Use the buttons below to explore the distribution of these assets across the all
 
 <figure id="equipment-graphic" class="breakout" size="200">
   <div class="button-group">
-    <input type="radio" id="aircraft" name="equipment" value="aircraft">
+    <input type="radio" id="aircraft" name="equipment" value="aircraft" checked>
     <label for="aircraft">Aircraft</label>
     <input type="radio" id="fighters" name="equipment" value="fighters">
     <label for="fighters">Fighters</label>
-    <input type="radio" id="tanks" name="equipment" value="tanks" checked>
+    <input type="radio" id="tanks" name="equipment" value="tanks">
     <label for="tanks">Tanks</label>
     <input type="radio" id="apc" name="equipment" value="apc">
     <label for="apc">APC</label>
