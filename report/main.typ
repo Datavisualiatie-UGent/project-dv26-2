@@ -83,19 +83,21 @@ Hierna hebben we enkel nog styllistische aanpassingen gemaakt, zoals het juist z
 
 == Bram
 
-- Verwerking dataset #cite(<NATO2025DefenceExpenditure>, form: "prose") naar CSV-bestanden.
-- Verwerking dataset #cite(<globalfirepower2026>, form: "prose") (via scraping) naar CSV-bestand.
-- Documenteren datasets.
-- Uitschrijven verhaal in README.
-- Kaarten NAVO-uitbreiding doorheen de jaren in sectie 1.
-- `share-of-gdp`, `real-change` en `expenditure-absolute`-grafieken in sectie 2.
-- Herwerken verhaal na integratie.
+- Verwerking dataset #cite(<NATO2025DefenceExpenditure>, form: "prose") naar CSV-bestanden
+- Verwerking dataset #cite(<globalfirepower2026>, form: "prose") (via scraping) naar CSV-bestand
+- Documenteren datasets
+- Uitschrijven verhaal in README
+- Kaarten NAVO-uitbreiding doorheen de jaren in sectie 1
+- `share-of-gdp`, `real-change` en `expenditure-absolute`-grafieken in sectie 2
+- Herwerken verhaal na integratie
+- Uitschrijven explore sectie
 - Uitwerken verslag
 
 == Tibo
 
 - `expenditure-per-capita` in sectie 2, en ongebruikte grafieken.
 - Website setup & deployment
+- Uniformisering van styles
 - Rudimentaire exploratie-visualisaties tijdens start project
 
 == Brent
@@ -104,32 +106,42 @@ Hierna hebben we enkel nog styllistische aanpassingen gemaakt, zoals het juist z
 - `explore-equipment`, `soldiers-absolute`, en ongebruikte grafieken.
 - Verwerking population dataset
 
-= Voor en na van enkele visualisaties
+#let before-after-section = {
 
-#let image-height = 42%
-#let before-after(title, before, after) = {
-  align(center + horizon, grid(
-    columns: (1fr, 1fr),
-    column-gutter: 1em,
-    align: center + horizon,
-    inset: 10pt,
-    figure(
-      image(before),
-      caption: [#title before]
-    ),
-    figure(
-      image(after),
-      caption: [#title after]
-    )
-  ))
+  set page(flipped: true)
+
+  let image-height = 50%
+  let before-after(title, before, after) = {
+    align(center + horizon, grid(
+      columns: (1fr, 1fr),
+      column-gutter: 1em,
+      align: center + horizon,
+      inset: 10pt,
+      figure(
+        image(before),
+        caption: [#title before]
+      ),
+      figure(
+        image(after),
+        caption: [#title after]
+      )
+    ))
+  }
+
+  [
+    = Voor en na van enkele visualisaties
+
+    #before-after(`share-of-gdp`, "assets/share-of-gdp.before.png", "assets/share-of-gdp.after.png")
+
+    #pagebreak()
+    #before-after(`real-change`, "assets/real-change.before.png", "assets/real-change.after.png")
+
+    #pagebreak()
+    #before-after(`expenditure-per-capita`, "assets/expenditure-per-capita.before.png", "assets/expenditure-per-capita.after.png")
+  ]
+
 }
 
-#before-after(`share-of-gdp`, "assets/share-of-gdp.before.png", "assets/share-of-gdp.after.png")
-
-#pagebreak()
-#before-after(`real-change`, "assets/real-change.before.png", "assets/real-change.after.png")
-
-#pagebreak()
-#before-after(`expenditure-per-capita`, "assets/expenditure-per-capita.before.png", "assets/expenditure-per-capita.after.png")
+#before-after-section
 
 #bibliography("works.bib")
