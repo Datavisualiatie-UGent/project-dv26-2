@@ -56,12 +56,17 @@ h1, h2, h3, p {
 
 .breakout .vis {
   display: block;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .vis canvas,
 .vis svg {
-  width: 100% !important;
+  width: auto;
   max-height: var(--nato-max-height);
+  display: block;
+  margin-left: 10%;
+  margin-right: auto;
 }
 
 /* Scrollytelling Component */
