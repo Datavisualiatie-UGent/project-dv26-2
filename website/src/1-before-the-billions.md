@@ -1,8 +1,6 @@
 # Before the Billions: Securing a Broken Continent
 
-In order to truly understand the contemporary situation, it is necessary to understand _how_ and _why_ NATO came to be.
-For this, we must travel back to 1949: to a fragile Europe trying to heal the scars left behind from the Second World War.
-In a new, bipolar world divided between the influence of the US and the USSR, twelve nations gathered in Washington to sign a pact that would redraw the strategic map of the West forever.
+In order to understand the contemporary situation, it is necessary to know _how_ and _why_ NATO came to be.
 
 ```js
 import vegaEmbed from "npm:vega-embed";
@@ -18,20 +16,8 @@ import scrollama from "npm:scrollama";
 <article>
 <div class="step" data-step="1949" data-signals='{"SelectYear": 1949}'>
 
-Twelve nations form the original shield:
-
-- Belgium,
-- Canada,
-- Denmark,
-- France,
-- Iceland,
-- Italy,
-- Luxembourg,
-- Norway,
-- Portugal,
-- The Netherlands,
-- the UK, and
-- the USA
+For this, we must travel back to 1949 towards a fragile Europe trying to heal the scars left behind from the Second World War.
+In a new, bipolar world divided between the influence of the US and the USSR, twelve nations gathered in Washington to sign a pact that would redraw the strategic map of the West forever:
 
 </div>
 <div class="step" data-step="1982" data-signals='{"SelectYear": 1952}'>
@@ -43,7 +29,7 @@ In 1952, Greece and Turkey joined to anchor the Mediterranean.
 
 <div class="step" data-step="1955" data-signals='{"SelectYear": 1955}'>
 
-They were followed in 1955 by West Germany, a pivotal move that integrated the former frontline of the war into the Western defense architecture.
+They were followed in 1955 by West Germany, an important move that integrated the former frontline of the war into the Western defense architecture.
 
 </div>
 <div class="step" data-step="1982" data-signals='{"SelectYear": 1982}'>
@@ -67,7 +53,7 @@ This move shifted the alliance’s borders directly to the doorstep of the forme
 </div>
 <div class="step" data-step="2024" data-signals='{"SelectYear": 2024}'>
 
-In the last two decades, the focus has shifted again; this time toward the Balkans, with the accession of Albania, Croatia, Montenegro, and North Macedonia.
+In the last two decades, the focus has shifted again; this time toward the Balkans, with the inclusion of Albania, Croatia, Montenegro, and North Macedonia.
 However, the most dramatic pivot occurred in 2023 and 2024;
 as a direct response to Russia’s invasion of Ukraine and a radically different safety situation, the long-neutral Nordic countries of Finland and Sweden joined the alliance.
 
