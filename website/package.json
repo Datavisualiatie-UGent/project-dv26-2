@@ -1,0 +1,21 @@
+{
+  "name": "project-dv26-2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build",
+    "start": "npx http-server dist"
+  },
+  "devDependencies": {
+    "@observablehq/framework": "1.13.4",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^4.0.0",
+    "scrollama": "3.2.0",
+    "vega": "6.2.0",
+    "vega-embed": "7.1.0",
+    "vega-lite": "6.4.2"
+  }
+}
