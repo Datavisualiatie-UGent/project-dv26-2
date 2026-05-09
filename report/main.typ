@@ -95,7 +95,7 @@ Hierna hebben we enkel nog styllistische aanpassingen gemaakt, zoals het juist z
 
 == Tibo
 
-- `expenditure-per-capita` in sectie 2, en ongebruikte grafieken.
+- `expenditure-per-capita` in sectie 2, en ongebruikte grafieken
 - Website setup & deployment
 - Uniformisering van styles
 - Rudimentaire exploratie-visualisaties tijdens start project
@@ -103,7 +103,7 @@ Hierna hebben we enkel nog styllistische aanpassingen gemaakt, zoals het juist z
 == Brent
 
 - Rudimentaire exploratie-visualisaties tijdens start project
-- `explore-equipment`, `soldiers-absolute`, en ongebruikte grafieken.
+- `explore-equipment`, `soldiers-absolute`, en ongebruikte grafieken
 - Verwerking population dataset
 
 #let before-after-section = {
@@ -128,17 +128,21 @@ Hierna hebben we enkel nog styllistische aanpassingen gemaakt, zoals het juist z
     ))
   }
 
-  [
-    = Voor en na van enkele visualisaties
+  heading[Voor en na van enkele visualisaties]
 
-    #before-after(`share-of-gdp`, "assets/share-of-gdp.before.png", "assets/share-of-gdp.after.png")
+  before-after(`share-of-gdp`, "assets/share-of-gdp.before.png", "assets/share-of-gdp.after.png")
+  pagebreak()
 
-    #pagebreak()
-    #before-after(`real-change`, "assets/real-change.before.png", "assets/real-change.after.png")
+  before-after(`real-change`, "assets/real-change.before.png", "assets/real-change.after.png")
+  pagebreak()
 
-    #pagebreak()
-    #before-after(`expenditure-per-capita`, "assets/expenditure-per-capita.before.png", "assets/expenditure-per-capita.after.png")
-  ]
+  before-after(`expenditure-per-capita`, "assets/expenditure-per-capita.before.png", "assets/expenditure-per-capita.after.png")
+  pagebreak()
+  
+  before-after(`soldiers-absolute`, "assets/soldiers-absolute.before.png", "assets/soldiers-absolute.after.png")
+  pagebreak()
+
+  before-after(`equipment`, "assets/equipment.before.png", "assets/equipment.after.png")
 
 }
 
