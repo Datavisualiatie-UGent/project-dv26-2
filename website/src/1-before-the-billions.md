@@ -17,7 +17,7 @@ import scrollama from "npm:scrollama";
 <div class="step" data-step="1949" data-signals='{"SelectYear": 1949}'>
 
 For this, we must travel back to 1949 towards a fragile Europe trying to heal the scars left behind from the Second World War.
-In a new, bipolar world divided between the influence of the US and the USSR, twelve nations gathered in Washington to sign a pact that would redraw the strategic map of the West forever:
+In a new, bipolar world divided between the influence of the US and the USSR, twelve nations gathered in Washington to sign a pact that would redraw the strategic map of the West forever.
 
 </div>
 <div class="step" data-step="1982" data-signals='{"SelectYear": 1952}'>
