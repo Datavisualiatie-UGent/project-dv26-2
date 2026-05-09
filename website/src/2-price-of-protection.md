@@ -9,7 +9,10 @@ import vegaEmbed from "npm:vega-embed";
 ## The Elephant in the Room
 
 To understand the friction within NATO, we have to look who's contributing what to the alliance.
-In 2023, the United States spent nearly **twice as much** on defense as the rest of the 31 allies combined.
+In 2024, the United States spent nearly **twice as much** on defense as the rest of the 31 allies combined.
+However, this number might be misleading and is decreasing each year.
+A noticable increase in defense budgets across Europe, especially in the Eastern flank and Nordic countries, is closing the gap.
+We have highlighted these countries in the plot below: Norway, Sweden, Finland, and the Baltic states of Estonia, Latvia, and Lithuania, but also Poland and Romania feel the pressure and are increasing their defense budgets significantly.
 
 <figure id="expenditure-absolute-graphic" class="breakout">
 <div class="vis" id="vis-expenditure-absolute"></div>
@@ -25,6 +28,7 @@ Trump argues that the US is paying for the protection of Europe, while European 
 Since 2014, NATO has been pushing for a more equitable distribution of the financial burden.
 Each country is expected to contribute according to its economic capacity, which is measured as a percentage of its Gross Domestic Product (GDP).
 The alliance set a clear benchmark: every member should spend at least **2% of its GDP** on defense. [^4]
+In 2024, 13 countries still didn't meet this target, although this number is projected to drop significantly in 2025 (see our explore section for more details).
 
 <figure id="share-of-gdp-graphic" class="breakout">
 <div class="vis" id="vis-share-of-gdp"></div>
