@@ -36,7 +36,7 @@ The Python dependencies live in `pyproject.toml`.
 uv sync
 ```
 
-### 3. Build the written report
+### 2. Build the written report
 
 The Typst source lives in `docs/main.typ`.
 
