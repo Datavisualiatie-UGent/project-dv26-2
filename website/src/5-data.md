@@ -1,5 +1,7 @@
 # Data & Methodology
 
+We used several datasources for this project.
+
 ## NATO Defence Expenditure 2014-2025
 
 In August 2025, NATO published a large overview[^1] of some key summary figures for the alliance between 2014 and 2025. A similar overview of expenditures between 1949 and 2024 can be found in SIPRI[^2]. We have chosen to base ourselves on the data provided by NATO itself. It is important to note that the figures for 2024 and 2025 are only estimates, for which no exact figures have been released at the time of writing. We extracted the following files from the Excel files that NATO itself provides (all under `assets/nato-defence-expenditure`):
